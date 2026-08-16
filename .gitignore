@@ -19,6 +19,23 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node / Scratch
+# Dependencies & Build artifacts
+**/node_modules/
 node_modules/
 .npm
+**/dist/
+**/build/
+**/.output/
+**/.next/
+**/.react-router/
+**/.turbo/
+**/.cache/
+*.log
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Ignore external code clones in projects (they have their own standalone git repositories)
+projects/**/koda-fe-utama/
+projects/**/koda-fe-client/
+projects/**/koda-api-utama/
