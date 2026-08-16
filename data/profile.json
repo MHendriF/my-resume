@@ -1,0 +1,130 @@
+{
+  "name": "MUHAMAD HENDRI FEBRIANSYAH",
+  "title": "Senior Software Engineer (Frontend, Full Stack & Web3)",
+  "contact": {
+    "location": "Surabaya / Jakarta, Indonesia",
+    "email": "hendrifebriansyah28@gmail.com",
+    "phone": "+62 896 9827 7267",
+    "linkedin": "linkedin.com/in/hendrifebriansyah",
+    "linkedin_url": "https://linkedin.com/in/hendrifebriansyah",
+    "portfolio": "Portfolio",
+    "portfolio_url": "https://hendrifebriansyah.dev",
+    "github": "github.com/hendrifebriansyah",
+    "github_url": "https://github.com/hendrifebriansyah"
+  },
+  "summaries": {
+    "general": "Results-driven Software Engineer with over 6 years of experience architecting and delivering scalable Web2 and Web3 applications. Proven frontend & full-stack expertise across modern technologies including React 19, React Router v7, TypeScript, Tailwind CSS v4, shadcn/ui, TanStack Query/Table, Laravel, native Android (Kotlin, Jetpack), and decentralized solutions (Solidity, TON SDK). Demonstrated track record building real-time operational traffic monitoring dashboards (NTMC), optimizing flagship mobile apps serving 1.5M+ users (38.6% size reduction, 99.42% crash-free stability), and developing high-concurrency Telegram AI assistants with crypto payments. Adept in Agile leadership, type-safe clean architecture, and cross-functional team collaboration.",
+    "frontend": "Senior Frontend Engineer with 6+ years of experience building high-performance, real-time web applications. Specialized in modern TypeScript ecosystems, React 19, React Router v7, Tailwind CSS v4, shadcn/ui, and TanStack Query/Table. Proven success leading the frontend architecture for the NTMC Traffic Monitoring Dashboard (handling real-time WebSockets via Pusher, complex server-side data tables, and strict Zod validation) and integrating Web3 interfaces with smart contracts.",
+    "android": "Senior Android Engineer with 6+ years of experience architecting robust mobile applications using Kotlin, Java, and Android Jetpack. Track record includes leading native Android development for an education platform with 1.5M+ users, achieving a 38.6% reduction in APK bundle size (69.5 MB to 42.7 MB), and maintaining 99.42%+ crash-free user sessions. Certified Android Developer Expert (MADE) with deep expertise in Clean Architecture, MVVM, and Room DB.",
+    "web3": "Full Stack Web3 Engineer with extensive experience in decentralized application (dApp) development, Ethereum smart contracts (Solidity), and TON blockchain ecosystem. Proven track record at Kipley Pte. Ltd. building Telegram AI bots with multi-chain crypto payment support (TON, USDT, Stars) and connecting Next.js/React frontends with DeFi/NFT protocols via Wagmi and Ethers.js."
+  },
+  "experiences": [
+    {
+      "id": "lapantiga",
+      "company": "PT Lapantiga Solusi Algoritma",
+      "role": "Frontend Developer / Software Engineer",
+      "commitment": "Full-time / Active",
+      "period": "Jan 2019 – Present",
+      "location": "Surabaya, Indonesia",
+      "project_ref": "01-ntmc-dashboard-utama",
+      "bullets": [
+        "Developed the NTMC Dashboard Utama, a mission-critical operational and traffic monitoring web application leveraging React 19, React Router v7, TypeScript, Tailwind CSS v4, and shadcn/ui.",
+        "Integrated real-time WebSocket communication using Pusher JS for live incident streaming, instant operational alerts, and dynamic dashboard event updates.",
+        "Architected high-performance server-side data tables with TanStack Table v8 and server state caching via TanStack Query v5, supporting complex multi-field filtering, sorting, and pagination across large datasets.",
+        "Engineered robust type-safe forms with React Hook Form and Zod schema validation, along with interactive data analytics charts using Recharts.",
+        "Previously built backend architectures, virtual event platforms, and CMS solutions using Laravel, Node.js, MySQL, and MongoDB, delivering high-concurrency client solutions on schedule."
+      ]
+    },
+    {
+      "id": "kipley",
+      "company": "Kipley Pte. Ltd.",
+      "role": "Full Stack Developer (Web3 & AI)",
+      "commitment": "Contract / Remote",
+      "period": "Nov 2024 – Jul 2025",
+      "location": "Singapore (Remote)",
+      "project_ref": "02-telegram-ai-crypto-bot",
+      "bullets": [
+        "Built and integrated high-performance REST and GraphQL APIs for 5+ Kipley projects, improving frontend response times by 30% through optimized caching and state management.",
+        "Integrated Ethereum smart contracts (Solidity) with Web3 frontend architectures (Next.js, Ethers.js/Wagmi), facilitating secure decentralized transactions for DeFi and NFT features.",
+        "Developed a high-concurrency Telegram AI Assistant supporting multichain transactions (TON, USDT, Telegram Stars), enabling real-time user interaction and automated crypto payments.",
+        "Collaborated closely with product, UI/UX, and backend teams in an Agile environment to iterate on features, resolve technical blockers, and meet sprint deadlines consistently."
+      ]
+    },
+    {
+      "id": "aku-pintar",
+      "company": "PT Aku Pintar Indonesia",
+      "role": "Android Developer",
+      "commitment": "Full-time",
+      "period": "Feb 2021 – May 2024",
+      "location": "Surabaya, Indonesia",
+      "project_ref": "03-aku-pintar-edtech-app",
+      "bullets": [
+        "Spearheaded native Android development for a flagship education platform with 1.5M+ active users and a 4.42/5.00 Play Store rating.",
+        "Architected and refactored the app into a modular MVVM structure using Android Jetpack, reducing the application size by 38.6% (from 69.5 MB to 42.7 MB) and boosting runtime performance.",
+        "Optimized and maintained core application modules to achieve a 99.42%+ crash-free user rate over continuous 90-day release cycles.",
+        "Facilitated bi-weekly agile standups and sprint planning, collaborating cross-functionally to deliver feature releases on schedule."
+      ]
+    },
+    {
+      "id": "qira",
+      "company": "PT Qira Teknologi Indonesia",
+      "role": "Software Developer",
+      "commitment": "Contract / Project-based",
+      "period": "Nov 2020 – Jan 2024",
+      "location": "Surabaya, Indonesia",
+      "project_ref": "04-qira-enterprise-crm-cms",
+      "bullets": [
+        "Developed secure, scalable web-based back-end systems (online assessments, e-commerce, CRM, and CMS) utilizing PHP, Laravel, MySQL, and RESTful APIs.",
+        "Integrated end-to-end payment gateway workflows (Midtrans, Moota) and Google API services, ensuring 99.9% billing transaction accuracy and seamless automated reconciliation.",
+        "Engineered companion native Android applications utilizing Java, Kotlin, Android Jetpack, and Firebase for real-time synchronization and intuitive user experiences.",
+        "Configured deployment pipelines and server environments across Linux/SSH, cPanel, and Plesk, ensuring high availability and zero-downtime releases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institut Teknologi Sepuluh Nopember (ITS)",
+      "location": "Surabaya, Indonesia",
+      "degree": "Bachelor of Computer Science (S.Kom.) in Informatics Engineering",
+      "period": "Jul 2014 – Aug 2018",
+      "gpa": "3.42 / 4.00",
+      "focus": "Network Centric Computing & Distributed Systems"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Belajar Fundamental Aplikasi Web dengan React",
+      "issuer": "Dicoding Indonesia",
+      "period": "Apr 2024 – Apr 2027",
+      "focus": "Single Page Application (SPA), React.js, Tailwind CSS, Vite"
+    },
+    {
+      "title": "Belajar Analisis Data dengan Python",
+      "issuer": "Dicoding Indonesia",
+      "period": "Jan 2024 – Jan 2027",
+      "focus": "Data Wrangling, Exploratory Data Analysis, Visualization"
+    },
+    {
+      "title": "Menjadi Android Developer Expert (MADE)",
+      "issuer": "Dicoding Indonesia",
+      "period": "Jan 2021 – Jan 2024",
+      "focus": "Clean Architecture, MVVM Design Pattern, Room Database, App Security & Certificate Pinning"
+    },
+    {
+      "title": "Belajar Android Jetpack Pro",
+      "issuer": "Dicoding Indonesia",
+      "period": "Dec 2020 – Dec 2023",
+      "focus": "Android Architecture Components, LiveData, ViewModel, Room Library"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Indonesian",
+      "proficiency": "Native proficiency"
+    },
+    {
+      "language": "English",
+      "proficiency": "Professional working proficiency"
+    }
+  ]
+}

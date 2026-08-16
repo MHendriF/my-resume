@@ -1,0 +1,8 @@
+{
+  "target_id": "frontend",
+  "display_title": "Senior Frontend Engineer",
+  "summary_key": "frontend",
+  "skills_key": "frontend",
+  "experience_order": ["lapantiga", "kipley", "qira", "aku-pintar"],
+  "output_filename": "Resume_Frontend_Engineer"
+}

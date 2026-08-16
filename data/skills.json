@@ -1,0 +1,90 @@
+{
+  "general": [
+    {
+      "category": "Frontend & Mobile",
+      "items": "React 19, React Router v7, TypeScript, Tailwind CSS v4, shadcn/ui, TanStack Query/Table, Next.js, Redux, Android Jetpack (Kotlin/Java), Vite, Bun"
+    },
+    {
+      "category": "Backend & Web3",
+      "items": "Laravel (PHP), Node.js, RESTful APIs, GraphQL, TON SDK, Smart Contracts (Solidity), Telegram Bot API, Pusher JS (WebSockets)"
+    },
+    {
+      "category": "Programming Languages",
+      "items": "TypeScript, JavaScript, PHP, Kotlin, Java, Solidity, Python, SQL, HTML5, CSS3"
+    },
+    {
+      "category": "Databases & ORMs",
+      "items": "MySQL, PostgreSQL, MongoDB, Prisma ORM, Drizzle ORM, Room Database"
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": "Git, Docker, Linux/SSH, Vercel, Firebase, Plesk, cPanel, Jira, Slack, VS Code, Android Studio, Sentry, Figma, Recharts, Zod"
+    },
+    {
+      "category": "Core Competencies",
+      "items": "Real-time WebSocket Streaming, Type-safe Clean Architecture, MVVM, Payment Gateway Integration, Agile/Scrum Methodologies"
+    }
+  ],
+  "frontend": [
+    {
+      "category": "Core Frontend",
+      "items": "React 19, React Router v7, Next.js (App Router), TypeScript, JavaScript (ESNext), HTML5, CSS3/SASS"
+    },
+    {
+      "category": "Styling & UI Systems",
+      "items": "Tailwind CSS v4, shadcn/ui, Radix UI Primitives, CSS Modules, Responsive Design, Design Tokens"
+    },
+    {
+      "category": "State & Data Layer",
+      "items": "TanStack Query v5, TanStack Table v8, Redux Toolkit, React Hook Form, Zod Schema Validation, Axios"
+    },
+    {
+      "category": "Real-Time & Visualization",
+      "items": "Pusher JS (WebSockets), Recharts, Event Streaming, Server-Sent Events (SSE)"
+    },
+    {
+      "category": "Tooling & Build",
+      "items": "Vite, Bun, Prettier (Tailwind plugin), ESLint, Git, GitHub Actions, Docker"
+    }
+  ],
+  "android": [
+    {
+      "category": "Mobile Languages",
+      "items": "Kotlin (Coroutines, Flow), Java, XML Layouts"
+    },
+    {
+      "category": "Android Architecture",
+      "items": "Android Jetpack (ViewModel, LiveData, Navigation, ViewBinding), MVVM, Clean Architecture, Dependency Injection"
+    },
+    {
+      "category": "Storage & Networking",
+      "items": "Room Database, SQLite, Retrofit2, OkHttp3, REST APIs, JSON Parsing (Moshi/Gson)"
+    },
+    {
+      "category": "Security & Optimization",
+      "items": "Certificate Pinning, ProGuard/R8 Obfuscation, App Size Optimization (AAB), Memory Leak Profiling"
+    },
+    {
+      "category": "Tools & Ecosystem",
+      "items": "Android Studio, Gradle, Firebase (FCM, Crashlytics, Analytics), Git, Jira, Play Store Console"
+    }
+  ],
+  "web3": [
+    {
+      "category": "Blockchain & Smart Contracts",
+      "items": "Solidity, Ethereum, EVM, TON Blockchain (FunC/Tact, TON SDK), Smart Contract Integration"
+    },
+    {
+      "category": "Web3 Frontend & SDKs",
+      "items": "Ethers.js, Wagmi, Viem, Web3Modal, TON Connect, Telegram WebApp SDK, Telegram Bot API"
+    },
+    {
+      "category": "Full Stack Tech",
+      "items": "Next.js, React.js, TypeScript, Node.js, Tailwind CSS, PostgreSQL, Prisma ORM, REST/GraphQL"
+    },
+    {
+      "category": "Payments & DeFi",
+      "items": "Multichain Payments (TON, USDT, Telegram Stars), DeFi Interaction, NFT Minting & Gateways"
+    }
+  ]
+}
