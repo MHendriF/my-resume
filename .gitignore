@@ -36,6 +36,4 @@ node_modules/
 **/.env.*.local
 
 # Ignore external code clones in projects (they have their own standalone git repositories)
-projects/**/koda-fe-utama/
-projects/**/koda-fe-client/
-projects/**/koda-api-utama/
+**/code/
