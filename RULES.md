@@ -15,7 +15,7 @@
    - Never hardcode candidate credentials or experiences inside python build scripts or markdown generators.
 3. **Decoupled Architecture:**
    - **Data Layer (`data/`):** JSON structured state.
-   - **Project Vault (`projects/`):** Technical documentation and architecture diagrams.
+   - **Project Vault (`experience/`):** Technical documentation and architecture diagrams.
    - **Build Engine (`scripts/`):** Automated compiler generating `.docx`, `.pdf`, and `.md`.
    - **Distribution Layer (`output/`):** Ready-to-use artifacts.
 
@@ -24,26 +24,26 @@
 ## 📁 2. Directory Structure & File Naming Conventions
 
 ### 2.1 Company Folders
-* Located directly under `projects/` (strictly lowercase `kebab-case`):
-  - `projects/kipley-pte-ltd/`
-  - `projects/pt-lapantiga-solusi-algoritma/`
-  - `projects/pt-qira-teknologi-indonesia/`
-  - `projects/pt-aku-pintar-indonesia/`
+* Located directly under `experience/` (strictly lowercase `kebab-case`):
+  - `experience/kipley-pte-ltd/`
+  - `experience/pt-lapantiga-solusi-algoritma/`
+  - `experience/pt-qira-teknologi-indonesia/`
+  - `experience/pt-aku-pintar-indonesia/`
 * Each company directory must contain:
   - `README.md` — Comprehensive company engineering showcase, subproject catalog table, metrics & STAR story (auto-rendered by GitHub).
   - `overview.md` — Company-level summary and role highlights.
   - `resume_bullets.md` — Polished bullet points curated for resume inclusion.
-  - `overview-projects/` — Vault containing subproject folders.
+  - `overview-experience/` — Vault containing subproject folders.
 
 ### 2.2 Subproject Folders (Mandatory `kebab-case`)
-* Subproject folders inside `overview-projects/` **MUST ALWAYS** use lowercase **`kebab-case`** (hyphen-separated, no spaces, no underscores, no uppercase):
+* Subproject folders inside `overview-experience/` **MUST ALWAYS** use lowercase **`kebab-case`** (hyphen-separated, no spaces, no underscores, no uppercase):
   - ✅ Correct: `koda-fe-utama`, `superior-agents`, `epak-dev`, `digipor-bank-bmpdjatim`
   - ❌ Forbidden: `Koda_FE_Utama`, `superiorAgents`, `Epak_Dev`, `pmp smart backend`
 
 ### 2.3 Subproject Internal Structure
 Each subproject folder must strictly follow this 2-item hierarchy:
 ```text
-projects/<Company Name>/overview-projects/<project-kebab-name>/
+experience/<Company Name>/overview-experience/<project-kebab-name>/
 ├── 📁 code/           <-- Source code repository (ignored by Git)
 └── 📄 README.md     <-- Rich technical documentation & architecture
 ```
@@ -106,7 +106,7 @@ $$\text{"Accomplished [X] as measured by [Y], by doing [Z]"}$$
    - Origin URL: `git@github.com:MHendriF/my-resume.git`
    - Target Branch: `main`
 2. **Git Ignore Protections (`.gitignore`):**
-   - **NEVER** commit source code repositories inside `overview-projects/**/code/`.
+   - **NEVER** commit source code repositories inside `overview-experience/**/code/`.
    - **NEVER** commit `node_modules/`, `vendor/`, `.next/`, `.react-router/`, `build/`, `dist/`, `.venv/`, or `.env*` files.
    - Only markdown documentation, configuration JSONs, build scripts, and official output PDFs/DOCXs should be tracked in Git.
 3. **Commit Conventions:**

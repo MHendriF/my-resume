@@ -6,7 +6,7 @@
 
 ## 🌟 Gambaran Arsitektur Sistem
 
-Pipeline ini dirancang untuk mengorganisir, memperbarui, dan men-generate **Resume profesional & ATS-friendly** secara modular dan otomatis berbasis data (*Single Source of Truth*), lengkap dengan **Project Vault** untuk menyimpan dokumentasi proyek dan bank kalimat *STAR method* untuk interview.
+Pipeline ini dirancang untuk mengorganisir, memperbarui, dan men-generate **Resume profesional & ATS-friendly** secara modular dan otomatis berbasis data (*Single Source of Truth*), lengkap dengan **Experience Vault** untuk menyimpan dokumentasi proyek dan bank kalimat *STAR method* untuk interview.
 
 ```
 Formal CV/
@@ -24,7 +24,7 @@ Formal CV/
 │       ├── android.json                  <-- Target: Senior Android Engineer
 │       └── web3.json                     <-- Target: Full Stack Web3 Engineer
 │
-├── 📂 projects/                          <-- 🗂️ Project Vault (Koleksi Dokumentasi Proyek)
+├── 📂 experience/                          <-- 🗂️ Experience Vault (Koleksi Dokumentasi Proyek)
 │   ├── README.md                         <-- Katalog & indeks seluruh proyek
 │   ├── 01-ntmc-dashboard-utama/          <-- NTMC Korlantas Polri (React 19, Pusher, TanStack)
 │   │   ├── overview.md                   <-- Gambaran arsitektur, tech stack, metrik, peran
@@ -79,7 +79,7 @@ Setiap kali script dijalankan, sistem akan otomatis:
 
 ---
 
-### 2. ➕ Menambahkan Proyek Baru ke Project Vault
+### 2. ➕ Menambahkan Proyek Baru ke Experience Vault
 
 Jalankan perintah berikut:
 ```bash
@@ -90,7 +90,7 @@ Contoh:
 ```bash
 python scripts/new_project.py "E-Commerce Microservices Platform"
 ```
-* Folder `projects/06-e-commerce-microservices-platform/` akan otomatis dibuatkan dari template.
+* Folder `experience/06-e-commerce-microservices-platform/` akan otomatis dibuatkan dari template.
 * Anda tinggal mengisi file `overview.md` dan `resume_bullets.md` di dalam folder tersebut.
 
 ---

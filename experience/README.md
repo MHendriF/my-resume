@@ -1,6 +1,6 @@
-# 🗂️ Direktori Proyek & Portofolio (Project Vault)
+# 🗂️ Direktori Pengalaman Kerja & Portofolio (Experience Vault)
 
-Selamat datang di **Project Vault**. Folder ini adalah repositori dokumentasi mendalam untuk setiap proyek rekayasa perangkat lunak yang pernah dikerjakan oleh **Muhamad Hendri Febriansyah**, terorganisir rapi berdasarkan **Perusahaan / Organisasi**.
+Selamat datang di **Experience Vault**. Folder ini adalah repositori dokumentasi mendalam untuk setiap proyek rekayasa perangkat lunak yang pernah dikerjakan oleh **Muhamad Hendri Febriansyah**, terorganisir rapi berdasarkan **Perusahaan / Organisasi**.
 
 Dokumentasi di sini dirancang untuk 2 tujuan utama:
 1. **Sumber Data Resume:** Kumpulan *bullet points* terukur siap pakai untuk resume.
@@ -23,10 +23,10 @@ Dokumentasi di sini dirancang untuk 2 tujuan utama:
 
 Setiap folder perusahaan memiliki struktur standar:
 ```text
-projects/<company-kebab-name>/
+experience/<company-kebab-name>/
 ├── 📄 overview.md          <-- Ringkasan tingkat perusahaan & peran
 ├── 📄 resume_bullets.md    <-- Bullet points resume pilihan (STAR & Google XYZ)
-└── 📁 overview-projects/   <-- Vault subproyek (masing-masing memiliki README.md & diagram)
+└── 📁 overview-experience/   <-- Vault subproyek (masing-masing memiliki README.md & diagram)
     ├── 📁 <project-kebab-1>/
     │   └── 📄 README.md    <-- Dokumentasi teknis & arsitektur proyek
     └── 📁 <project-kebab-2>/

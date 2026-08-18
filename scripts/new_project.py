@@ -20,8 +20,8 @@ if sys.stdout.encoding != 'utf-8':
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(SCRIPT_DIR)
-PROJECTS_DIR = os.path.join(BASE_DIR, 'projects')
-TEMPLATE_DIR = os.path.join(PROJECTS_DIR, 'template-project')
+EXPERIENCE_DIR = os.path.join(BASE_DIR, 'experience')
+TEMPLATE_DIR = os.path.join(EXPERIENCE_DIR, 'template-project')
 
 
 def slugify(text):
@@ -42,7 +42,7 @@ def main():
         sys.exit(1)
 
     # Find next sequence number
-    existing_dirs = [d for d in os.listdir(PROJECTS_DIR) if os.path.isdir(os.path.join(PROJECTS_DIR, d))]
+    existing_dirs = [d for d in os.listdir(EXPERIENCE_DIR) if os.path.isdir(os.path.join(EXPERIENCE_DIR, d))]
     seq_nums = []
     for d in existing_dirs:
         match = re.match(r'^(\d+)-', d)
@@ -51,7 +51,7 @@ def main():
 
     next_seq = (max(seq_nums) + 1) if seq_nums else 1
     folder_name = f"{next_seq:02d}-{slugify(project_name)}"
-    target_path = os.path.join(PROJECTS_DIR, folder_name)
+    target_path = os.path.join(EXPERIENCE_DIR, folder_name)
 
     if os.path.exists(target_path):
         print(f"Error: Folder {folder_name} sudah ada.")
