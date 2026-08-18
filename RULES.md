@@ -25,10 +25,10 @@
 
 ### 2.1 Company Folders
 * Located directly under `projects/`:
-  - `projects/Kipley Pte Ltd/`
-  - `projects/PT Lapantiga Solusi Algoritma/`
-  - `projects/PT Qira Teknologi Indonesia/`
-  - `projects/PT Aku Pintar Indonesia/`
+  - `projects/kipley-pte-ltd/`
+  - `projects/pt-lapantiga-solusi-algoritma/`
+  - `projects/pt-qira-teknologi-indonesia/`
+  - `projects/pt-aku-pintar-indonesia/`
 * Each company directory must contain:
   - `overview.md` — Company-level summary and role highlights.
   - `resume_bullets.md` — Polished bullet points curated for resume inclusion.
