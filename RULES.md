@@ -24,12 +24,13 @@
 ## 📁 2. Directory Structure & File Naming Conventions
 
 ### 2.1 Company Folders
-* Located directly under `projects/`:
+* Located directly under `projects/` (strictly lowercase `kebab-case`):
   - `projects/kipley-pte-ltd/`
   - `projects/pt-lapantiga-solusi-algoritma/`
   - `projects/pt-qira-teknologi-indonesia/`
   - `projects/pt-aku-pintar-indonesia/`
 * Each company directory must contain:
+  - `README.md` — Comprehensive company engineering showcase, subproject catalog table, metrics & STAR story (auto-rendered by GitHub).
   - `overview.md` — Company-level summary and role highlights.
   - `resume_bullets.md` — Polished bullet points curated for resume inclusion.
   - `overview-projects/` — Vault containing subproject folders.
