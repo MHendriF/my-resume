@@ -11,16 +11,16 @@ Full Stack Web3 Engineer with extensive experience in decentralized application 
 
 ## WORK EXPERIENCE
 
-### Full Stack Developer (Web3 & AI) | Kipley Pte. Ltd.
-*Singapore (Remote)  •  Nov 2024 – Jul 2025*
+### Full Stack Developer (Web3 & AI) | Kipley Pte. Ltd. (Singapore (Remote))
+*Nov 2024 – Jul 2025*
 
 - Built and integrated high-performance REST and GraphQL APIs for 5+ Kipley projects, improving frontend response times by 30% through optimized caching and state management.
 - Integrated Ethereum smart contracts (Solidity) with Web3 frontend architectures (Next.js, Ethers.js/Wagmi), facilitating secure decentralized transactions for DeFi and NFT features.
 - Developed a high-concurrency Telegram AI Assistant supporting multichain transactions (TON, USDT, Telegram Stars), enabling real-time user interaction and automated crypto payments.
 - Collaborated closely with product, UI/UX, and backend teams in an Agile environment to iterate on features, resolve technical blockers, and meet sprint deadlines consistently.
 
-### Freelance Software Engineer | PT Lapantiga Solusi Algoritma
-*Surabaya, Indonesia  •  Jan 2019 – Present*
+### Freelance Software Engineer | PT Lapantiga Solusi Algoritma (Surabaya, Indonesia)
+*Jan 2019 – Present*
 
 - Developed the NTMC Dashboard Utama, a mission-critical operational and traffic monitoring web application leveraging React 19, React Router v7, TypeScript, Tailwind CSS v4, and shadcn/ui.
 - Integrated real-time WebSocket communication using Pusher JS for live incident streaming, instant operational alerts, and dynamic dashboard event updates.
@@ -28,16 +28,16 @@ Full Stack Web3 Engineer with extensive experience in decentralized application 
 - Engineered robust type-safe forms with React Hook Form and Zod schema validation, along with interactive data analytics charts using Recharts.
 - Previously built backend architectures, virtual event platforms, and CMS solutions using Laravel, Node.js, MySQL, and MongoDB, delivering high-concurrency client solutions on schedule.
 
-### Software Developer | PT Qira Teknologi Indonesia
-*Surabaya, Indonesia  •  Nov 2020 – Jan 2024*
+### Software Developer | PT Qira Teknologi Indonesia (Surabaya, Indonesia)
+*Nov 2020 – Jan 2024*
 
 - Developed secure, scalable web-based back-end systems (online assessments, e-commerce, CRM, and CMS) utilizing PHP, Laravel, MySQL, and RESTful APIs.
 - Integrated end-to-end payment gateway workflows (Midtrans, Moota) and Google API services, ensuring 99.9% billing transaction accuracy and seamless automated reconciliation.
 - Engineered companion native Android applications utilizing Java, Kotlin, Android Jetpack, and Firebase for real-time synchronization and intuitive user experiences.
 - Configured deployment pipelines and server environments across Linux/SSH, cPanel, and Plesk, ensuring high availability and zero-downtime releases.
 
-### Android Developer | PT Aku Pintar Indonesia
-*Surabaya, Indonesia  •  Feb 2021 – May 2024*
+### Android Developer | PT Aku Pintar Indonesia (Surabaya, Indonesia)
+*Feb 2021 – May 2024*
 
 - Spearheaded native Android development for a flagship education platform with 1.5M+ active users and a 4.42/5.00 Play Store rating.
 - Architected and refactored the app into a modular MVVM structure using Android Jetpack, reducing the application size by 38.6% (from 69.5 MB to 42.7 MB) and boosting runtime performance.

@@ -115,8 +115,8 @@ def build_docx(profile, skills, template, output_docx_path):
         
         row = table.rows[0]
         c_left, c_right = row.cells[0], row.cells[1]
-        c_left.width = Inches(5.6)
-        c_right.width = Inches(1.9)
+        c_left.width = Inches(5.3)
+        c_right.width = Inches(2.2)
         
         set_cell_margins(c_left, top=0, bottom=0, left=0, right=0)
         set_cell_margins(c_right, top=0, bottom=0, left=0, right=0)
@@ -213,9 +213,8 @@ def build_docx(profile, skills, template, output_docx_path):
     for eid in ordered_ids:
         if eid in exp_map:
             exp = exp_map[eid]
-            role_header = f"{exp['role']} | {exp['company']}"
-            loc_period = f"{exp['location']}  •  {exp['period']}"
-            add_table_header(role_header, loc_period)
+            role_header = f"{exp['role']} | {exp['company']} ({exp['location']})"
+            add_table_header(role_header, exp['period'])
             
             bullets = exp.get('bullets', [])
             for idx, bullet in enumerate(bullets):
@@ -317,8 +316,8 @@ def build_markdown(profile, skills, template, output_md_path):
     for eid in ordered_ids:
         if eid in exp_map:
             exp = exp_map[eid]
-            lines.append(f"### {exp['role']} | {exp['company']}")
-            lines.append(f"*{exp['location']}  •  {exp['period']}*\n")
+            lines.append(f"### {exp['role']} | {exp['company']} ({exp['location']})")
+            lines.append(f"*{exp['period']}*\n")
             for b in exp.get('bullets', []):
                 lines.append(f"- {b}")
             lines.append("")

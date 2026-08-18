@@ -11,8 +11,8 @@ Senior Frontend Engineer dengan pengalaman lebih dari 6 tahun dalam membangun ap
 
 ## PENGALAMAN KERJA
 
-### Freelance Software Engineer | PT Lapantiga Solusi Algoritma
-*Surabaya, Indonesia  •  Jan 2019 – Sekarang*
+### Freelance Software Engineer | PT Lapantiga Solusi Algoritma (Surabaya, Indonesia)
+*Jan 2019 – Sekarang*
 
 - Mengembangkan Dashboard Utama NTMC Korlantas Polri, aplikasi web pemantauan operasional dan lalu lintas real-time menggunakan React 19, React Router v7, TypeScript, Tailwind CSS v4, dan shadcn/ui.
 - Mengintegrasikan komunikasi WebSocket real-time via Pusher JS untuk penyiaran insiden langsung, peringatan operasional instan, dan pembaruan visual dashboard seketika (< 500ms).
@@ -20,24 +20,24 @@ Senior Frontend Engineer dengan pengalaman lebih dari 6 tahun dalam membangun ap
 - Membangun form input type-safe dengan React Hook Form dan validasi skema Zod, serta grafik visual analitik interaktif menggunakan Recharts.
 - Mengembangkan arsitektur backend, platform virtual exhibition (Efosh), sistem e-Bupot pajak, dan solusi klaim asuransi Petrokimia Gresik berbasis Laravel 10/12, Livewire, AWS S3, dan MySQL.
 
-### Full Stack Developer (Web3 & AI) | Kipley Pte. Ltd.
-*Singapura (Remote)  •  Nov 2024 – Jul 2025*
+### Full Stack Developer (Web3 & AI) | Kipley Pte. Ltd. (Singapura (Remote))
+*Nov 2024 – Jul 2025*
 
 - Membangun dan mengintegrasikan REST & GraphQL API berkinerja tinggi untuk 5+ proyek Kipley, meningkatkan kecepatan respons frontend sebesar 30% melalui optimalisasi caching dan manajemen state.
 - Mengintegrasikan smart contract Ethereum (Solidity) dengan arsitektur frontend Web3 (Next.js 15, Ethers.js/Wagmi), memfasilitasi transaksi terdesentralisasi yang aman untuk fitur DeFi dan NFT.
 - Mengembangkan Asisten AI Telegram berkonkurensi tinggi dengan integrasi transaksi multi-chain (TON, USDT, Telegram Stars) dan payment gateway fiat Stripe.
 - Berkolaborasi erat dengan tim produk, UI/UX, dan backend dalam lingkungan Agile untuk merilis fitur secara tepat waktu dengan zero-failure settlement.
 
-### Software Developer | PT Qira Teknologi Indonesia
-*Surabaya, Indonesia  •  Nov 2020 – Jan 2024*
+### Software Developer | PT Qira Teknologi Indonesia (Surabaya, Indonesia)
+*Nov 2020 – Jan 2024*
 
 - Mengembangkan backend sistem informasi pemerintahan Kemdikbudristek RI (EPAK Widyaprada), e-commerce otomotif, CRM, dan sistem psikometri menggunakan PHP Laravel, MySQL, dan AWS S3.
 - Mengintegrasikan alur payment gateway Midtrans Snap dan Moota dengan akurasi transaksi 99,9% serta rekonsiliasi otomatis tanpa kendala keamanan.
 - Mengembangkan aplikasi pendamping native Android menggunakan Java, Kotlin, Android Jetpack, dan Firebase untuk sinkronisasi data real-time.
 - Mengonfigurasi pipeline deployment dan lingkungan server Linux/SSH, cPanel, dan Plesk untuk menjamin ketersediaan tinggi dan rilis tanpa downtime.
 
-### Android Developer | PT Aku Pintar Indonesia
-*Surabaya, Indonesia  •  Feb 2021 – Mei 2024*
+### Android Developer | PT Aku Pintar Indonesia (Surabaya, Indonesia)
+*Feb 2021 – Mei 2024*
 
 - Memimpin pengembangan native Android aplikasi edukasi unggulan dengan 1.500.000+ pengguna aktif dan rating 4.42/5.00 di Google Play Store.
 - Merancang ulang arsitektur aplikasi ke dalam struktur modular MVVM menggunakan Android Jetpack, mereduksi ukuran aplikasi sebesar 38,6% (dari 69,5 MB menjadi 42,7 MB) dan meningkatkan performa runtime.
