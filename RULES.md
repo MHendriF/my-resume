@@ -31,7 +31,6 @@
   - `experience/pt-aku-pintar-indonesia/`
 * Each company directory must contain:
   - `README.md` — Comprehensive company engineering showcase, subproject catalog table, metrics & STAR story (auto-rendered by GitHub).
-  - `overview.md` — Company-level summary and role highlights.
   - `resume_bullets.md` — Polished bullet points curated for resume inclusion.
   - `overview-experience/` — Vault containing subproject folders.
 

@@ -35,6 +35,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated all `project_ref` paths in `data/profile.json`, `scripts/new_project.py`, `experience/README.md`, `README.md`, and `RULES.md`.
 
 ### 🧹 Removed & Cleaned
+- **Cleaned Redundant Files:**
+  - Removed duplicate root resume builds (`Muhamad Hendri Febriansyah - Resume.docx/pdf`) to centralize all outputs strictly under `output/`.
+  - Removed legacy company-level `overview.md` files as their contents have been completely absorbed into the richer, auto-rendered `README.md` showcases.
 - **Disk Footprint Optimization:**
   - Recursively removed 15 `node_modules` and 95 `vendor` folders across subproject codebases.
   - Updated `.gitignore` to prevent vendor artifacts, node modules, and raw source directories from cluttering repository history.
