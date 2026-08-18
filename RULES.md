@@ -44,14 +44,14 @@ Each subproject folder must strictly follow this 2-item hierarchy:
 ```text
 projects/<Company Name>/overview-projects/<project-kebab-name>/
 ├── 📁 code/           <-- Source code repository (ignored by Git)
-└── 📄 OVERVIEW.md     <-- Rich technical documentation & architecture
+└── 📄 README.md     <-- Rich technical documentation & architecture
 ```
 
 ---
 
-## 📝 3. `OVERVIEW.md` Documentation Standard
+## 📝 3. `README.md` Documentation Standard
 
-Every `OVERVIEW.md` file within a subproject folder must contain the following standardized sections:
+Every `README.md` file within a subproject folder must contain the following standardized sections:
 
 1. **# Project Title & Status Badge:** (e.g., Live App, Production, Mission-Critical, Government).
 2. **## 📌 Ringkasan Eksekutif & Identitas Proyek:** Company, Role, System Type.
@@ -67,7 +67,7 @@ Every `OVERVIEW.md` file within a subproject folder must contain the following s
 
 ## ✍️ 4. Resume Writing & Content Rules (Google XYZ Formula)
 
-All bullet points in `data/profile.json`, `resume_bullets.md`, and `OVERVIEW.md` must strictly adhere to **Google's XYZ Formula**:
+All bullet points in `data/profile.json`, `resume_bullets.md`, and `README.md` must strictly adhere to **Google's XYZ Formula**:
 $$\text{"Accomplished [X] as measured by [Y], by doing [Z]"}$$
 
 * **Action Verbs:** Start every bullet point with strong, precise technical action verbs:
@@ -111,7 +111,7 @@ $$\text{"Accomplished [X] as measured by [Y], by doing [Z]"}$$
 3. **Commit Conventions:**
    - Follow standard **Conventional Commits**:
      - `feat:` New resume template, script, or project vault entry.
-     - `docs:` Updates to `OVERVIEW.md`, `README.md`, or `RULES.md`.
+     - `docs:` Updates to `README.md`, `README.md`, or `RULES.md`.
      - `refactor:` Restructuring folders or optimizing build scripts.
      - `fix:` Correcting typos, JSON formatting, or build issues.
      - `build:` Re-compiling output resume variants.
