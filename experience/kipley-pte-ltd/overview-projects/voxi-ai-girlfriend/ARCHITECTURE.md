@@ -47,44 +47,13 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`@chakra-ui/react`** | `^2.10.4` | Production Dependency |
-| `package.json` (`package.json`) | **`@emotion/react`** | `^11.14.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@emotion/styled`** | `^11.14.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@glidejs/glide`** | `^3.7.1` | Production Dependency |
-| `package.json` (`package.json`) | **`@microsoft/fetch-event-source`** | `^2.0.1` | Production Dependency |
-| `package.json` (`package.json`) | **`@next/third-parties`** | `^15.3.1` | Production Dependency |
-| `package.json` (`package.json`) | **`@tanstack/react-query`** | `^5.62.16` | Production Dependency |
-| `package.json` (`package.json`) | **`@telegram-apps/sdk-react`** | `^2.0.5` | Production Dependency |
-| `package.json` (`package.json`) | **`@telegram-apps/telegram-ui`** | `^2.1.5` | Production Dependency |
-| `package.json` (`package.json`) | **`@ton/core`** | `^0.60.1` | Production Dependency |
-| `package.json` (`package.json`) | **`@ton/ton`** | `^15.2.1` | Production Dependency |
-| `package.json` (`package.json`) | **`@tonconnect/ui-react`** | `^2.0.5` | Production Dependency |
-| `package.json` (`package.json`) | **`@twa-dev/sdk`** | `^8.0.2` | Production Dependency |
-| `package.json` (`package.json`) | **`@types/glidejs__glide`** | `^3.6.6` | Production Dependency |
-| `package.json` (`package.json`) | **`@vercel/speed-insights`** | `^1.2.0` | Production Dependency |
-| `package.json` (`package.json`) | **`axios`** | `^1.7.9` | Production Dependency |
-| `package.json` (`package.json`) | **`dayjs`** | `^1.11.13` | Production Dependency |
-| `package.json` (`package.json`) | **`downshift`** | `^9.0.9` | Production Dependency |
-| `package.json` (`package.json`) | **`embla-carousel`** | `^8.6.0` | Production Dependency |
-| `package.json` (`package.json`) | **`embla-carousel-autoplay`** | `^8.6.0` | Production Dependency |
-| `package.json` (`package.json`) | **`embla-carousel-react`** | `^8.6.0` | Production Dependency |
-| `package.json` (`package.json`) | **`eruda`** | `^3.0.1` | Production Dependency |
-| `package.json` (`package.json`) | **`framer-motion`** | `^11.15.0` | Production Dependency |
-| `package.json` (`package.json`) | **`next`** | `14.2.4` | Production Dependency |
-| `package.json` (`package.json`) | **`next-intl`** | `^3.17.6` | Production Dependency |
-| `package.json` (`package.json`) | **`normalize.css`** | `^8.0.1` | Production Dependency |
-| `package.json` (`package.json`) | **`react`** | `^18` | Production Dependency |
-| `package.json` (`package.json`) | **`react-dom`** | `^18` | Production Dependency |
-| `package.json` (`package.json`) | **`react-dropzone`** | `^14.3.5` | Production Dependency |
-| `package.json` (`package.json`) | **`react-icons`** | `^5.4.0` | Production Dependency |
-| `package.json` (`package.json`) | **`react-joyride`** | `^2.9.3` | Production Dependency |
-| `package.json` (`package.json`) | **`react-swipeable`** | `^7.0.2` | Production Dependency |
-| `package.json` (`package.json`) | **`react-use-websocket`** | `^4.13.0` | Production Dependency |
-| `package.json` (`package.json`) | **`uuid`** | `^11.1.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@types/node`** | `^20` | Dev Tool / Bundler |
+| **Frontend Framework** | `next / react` | `v14.x / v18.x` | Telegram Mini App (TMA) Optimized Router |
+| **Telegram Platform SDK** | `@telegram-apps/sdk-react` | `v1.x` | Telegram Native Platform Bridge & Haptics |
+| **Component System** | `@chakra-ui/react + emotion` | `v2.x` | Mobile Viewport UI Components |
+| **Streaming State** | `@tanstack/react-query` | `v5.x` | Conversational State & Voice Cache |
 
 ---
 

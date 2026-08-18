@@ -53,33 +53,13 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`axios`** | `^0.21` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`laravel-mix`** | `^6.0.6` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`lodash`** | `^4.17.19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`postcss`** | `^8.1.14` | Dev Tool / Bundler |
-| `composer.json` (`composer.json`) | **`php`** | `^7.3` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`anhskohbo/no-captcha`** | `^3.4` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`darryldecode/cart`** | `^4.2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`fruitcake/laravel-cors`** | `^2.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`guzzlehttp/guzzle`** | `^7.0.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`jackiedo/dotenv-editor`** | `^2.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/framework`** | `^8.75` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/sanctum`** | `^2.11` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/tinker`** | `^2.5` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravelcollective/html`** | `^6.3` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`maatwebsite/excel`** | `^3.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`spatie/laravel-backup`** | `^6.16` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`spatie/laravel-permission`** | `^5.5` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`yajra/laravel-datatables-oracle`** | `~9.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`facade/ignition`** | `^2.5` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`fakerphp/faker`** | `^1.9.1` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`laravel/sail`** | `^1.0.1` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`mockery/mockery`** | `^1.4.4` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`nunomaduro/collision`** | `^5.10` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`phpunit/phpunit`** | `^9.5.10` | Dev / Testing Tool |
+| **Backend Framework** | `laravel/framework` | `v8.x` | Customer Loyalty Points Redemption Hub |
+| **API Authentication** | `laravel/sanctum` | `v2.x` | Revocable Mobile Bearer Token Guard |
+| **Point Cart Engine** | `darryldecode/cart` | `v4.x` | Atomic Point Balance Deduction Cart |
+| **Store RBAC** | `spatie/laravel-permission` | `v5.x` | Multi-Merchant Access Control |
 
 ---
 

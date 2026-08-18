@@ -49,28 +49,13 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`axios`** | `^0.16.2` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`bootstrap-sass`** | `^3.3.7` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`cross-env`** | `^5.0.1` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`jquery`** | `^3.1.1` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`laravel-mix`** | `^1.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`lodash`** | `^4.17.4` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`vue`** | `^2.1.10` | Dev Tool / Bundler |
-| `composer.json` (`composer.json`) | **`php`** | `>=5.6.4` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`barryvdh/laravel-debugbar`** | `~2.4` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/framework`** | `5.4.*` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/tinker`** | `~1.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravelcollective/html`** | `^5.4.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`simplesoftwareio/simple-qrcode`** | `~2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`yajra/laravel-datatables`** | `1.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`yajra/laravel-datatables-oracle`** | `~8.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`zizaco/entrust`** | `5.2.x-dev` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`fzaninotto/faker`** | `~1.4` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`mockery/mockery`** | `0.9.*` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`phpunit/phpunit`** | `~5.7` | Dev / Testing Tool |
+| **Backend Framework** | `laravel/framework` | `v5.x` | Municipal Budgeting Core Engine |
+| **Large Dataset Tables** | `yajra/laravel-datatables-oracle` | `v8.x` | High-Performance Grid for >50k Line Items |
+| **Hierarchical RBAC** | `zizaco/entrust` | `v5.x` | Government Agency Approval Hierarchy |
+| **Digital Sign-off QR** | `simplesoftwareio/simple-qrcode` | `v2.x` | Dynamic QR Document Validation |
 
 ---
 

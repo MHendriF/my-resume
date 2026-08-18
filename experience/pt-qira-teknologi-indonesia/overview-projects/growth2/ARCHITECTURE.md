@@ -47,28 +47,12 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`growth\package.json`) | **`bootstrap-sass`** | `^3.0.0` | Production Dependency |
-| `package.json` (`growth\package.json`) | **`laravel-elixir`** | `^4.0.0` | Production Dependency |
-| `package.json` (`growth\package.json`) | **`toastr`** | `^2.1.2` | Production Dependency |
-| `package.json` (`growth\package.json`) | **`gulp`** | `^3.9.1` | Dev Tool / Bundler |
-| `package.json` (`growth\package.json`) | **`gulp-rename`** | `^1.2.2` | Dev Tool / Bundler |
-| `package.json` (`growth\package.json`) | **`gulp-replace`** | `^0.6.1` | Dev Tool / Bundler |
-| `composer.json` (`growth\composer.json`) | **`php`** | `>=5.5.9` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`laravel/framework`** | `5.2.*` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`maatwebsite/excel`** | `~2.0.0` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`khill/lavacharts`** | `3.0.*` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`brozot/laravel-fcm`** | `^1.2` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`barryvdh/laravel-ide-helper`** | `v2.4.1` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`intervention/image`** | `^2.4` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`laravelcollective/html`** | `^5.2.0` | Backend Framework Component |
-| `composer.json` (`growth\composer.json`) | **`fzaninotto/faker`** | `~1.4` | Dev / Testing Tool |
-| `composer.json` (`growth\composer.json`) | **`mockery/mockery`** | `0.9.*` | Dev / Testing Tool |
-| `composer.json` (`growth\composer.json`) | **`phpunit/phpunit`** | `~4.0` | Dev / Testing Tool |
-| `composer.json` (`growth\composer.json`) | **`symfony/css-selector`** | `2.8.*|3.0.*` | Dev / Testing Tool |
-| `composer.json` (`growth\composer.json`) | **`symfony/dom-crawler`** | `2.8.*|3.0.*` | Dev / Testing Tool |
+| **Backend Framework** | `laravel/framework` | `v5.x` | Outlet Mapping & Sales Admin Core |
+| **Spreadsheet Exporter** | `maatwebsite/excel` | `v2.x` | Regional Sales Route Excel Exporter |
+| **Interactive Charts** | `khill/lavacharts` | `v3.x` | Sales Performance Google Charts |
 
 ---
 

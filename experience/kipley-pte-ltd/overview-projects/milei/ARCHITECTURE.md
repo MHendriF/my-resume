@@ -53,24 +53,12 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`axios`** | `^1.7.9` | Production Dependency |
-| `package.json` (`package.json`) | **`moment`** | `^2.30.1` | Production Dependency |
-| `package.json` (`package.json`) | **`next`** | `15.1.5` | Production Dependency |
-| `package.json` (`package.json`) | **`react`** | `^19.0.0` | Production Dependency |
-| `package.json` (`package.json`) | **`react-dom`** | `^19.0.0` | Production Dependency |
-| `package.json` (`package.json`) | **`react-use-websocket`** | `^4.11.1` | Production Dependency |
-| `package.json` (`package.json`) | **`uuid`** | `^11.0.5` | Production Dependency |
-| `package.json` (`package.json`) | **`@eslint/eslintrc`** | `^3` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/node`** | `^20` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/react`** | `^19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/react-dom`** | `^19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`eslint`** | `^9` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`eslint-config-next`** | `15.1.5` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`postcss`** | `^8` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`tailwindcss`** | `^3.4.1` | Dev Tool / Bundler |
+| **Frontend Framework** | `next / react` | `v15.x / v19.x` | Real-Time Market Analytics Dashboard |
+| **Persistent WebSockets** | `react-use-websocket` | `v4.x` | Auto-Reconnecting Real-Time Stream Consumer |
+| **State Pipeline** | `@tanstack/react-query` | `v5.x` | Tick Ingestion & Cache Sync |
 
 ---
 

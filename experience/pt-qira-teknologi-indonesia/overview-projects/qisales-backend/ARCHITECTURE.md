@@ -55,37 +55,14 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`axios`** | `^0.19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`bootstrap`** | `^4.0.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`cross-env`** | `^7.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`jquery`** | `^3.2` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`laravel-mix`** | `^5.0.1` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`lodash`** | `^4.17.19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`popper.js`** | `^1.12` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`resolve-url-loader`** | `^2.3.1` | Dev Tool / Bundler |
-| `composer.json` (`composer.json`) | **`php`** | `^7.3` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`anhskohbo/no-captcha`** | `^3.3` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`azishapidin/indoregion`** | `^3.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`brozot/laravel-fcm`** | `^1.3` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`consoletvs/charts`** | `6.*` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`fideloper/proxy`** | `^4.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`intervention/image`** | `^2.5` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`jenssegers/mongodb`** | `^3.6` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/framework`** | `^6.18.35` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/tinker`** | `^2.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/ui`** | `1.2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravelcollective/html`** | `^6.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`maatwebsite/excel`** | `^3.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`mostafamaklad/laravel-permission-mongodb`** | `^3.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`spatie/laravel-backup`** | `^6.16` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`facade/ignition`** | `^1.4` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`fzaninotto/faker`** | `^1.9.1` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`mockery/mockery`** | `^1.0` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`nunomaduro/collision`** | `^3.0` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`phpunit/phpunit`** | `^8.0` | Dev / Testing Tool |
+| **Backend Framework** | `laravel/framework` | `v6.x LTS` | Sales Force Automation Gateway |
+| **Polyglot NoSQL Logging** | `jenssegers/mongodb` | `v3.x` | High-Volume GPS Check-in & Route Telemetry |
+| **Regional Hierarchy** | `azishapidin/indoregion` | `v3.x` | Indonesian Administrative Hierarchy Service |
+| **Push Notifications** | `brozot/laravel-fcm` | `v1.x` | Field Route & Target Push Notifications |
+| **Analytics & Reports** | `consoletvs/charts + excel` | `v6.x / v3.x` | Outlet Coverage & Territory Sales Reports |
 
 ---
 

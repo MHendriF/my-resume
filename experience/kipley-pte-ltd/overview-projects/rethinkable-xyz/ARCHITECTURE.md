@@ -47,44 +47,13 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`tg-profile-app\package.json`) | **`@hookform/resolvers`** | `^3.9.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-avatar`** | `^1.1.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-checkbox`** | `^1.1.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-dialog`** | `^1.1.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-label`** | `^2.1.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-popover`** | `^1.1.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-progress`** | `^1.1.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-radio-group`** | `^1.2.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-select`** | `^2.1.2` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-slot`** | `^1.1.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-tabs`** | `^1.1.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@radix-ui/react-toast`** | `^1.2.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@sentry/react`** | `^8.30.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@sentry/vite-plugin`** | `^2.22.4` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@stripe/react-stripe-js`** | `^3.0.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@stripe/stripe-js`** | `^5.2.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@telegram-apps/sdk`** | `^1.1.3` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`@types/telegram-web-app`** | `^7.8.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`axios`** | `^1.7.7` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`browser-image-compression`** | `^2.0.2` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`class-variance-authority`** | `^0.7.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`clsx`** | `^2.1.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`date-fns`** | `^3.6.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`eruda`** | `^3.3.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`framer-motion`** | `^11.3.28` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`html-to-image`** | `^1.11.11` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`linkify-react`** | `^4.2.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`lodash`** | `^4.17.21` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`lucide-react`** | `^0.428.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`react`** | `^18.3.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`react-copy-to-clipboard`** | `^5.1.0` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`react-day-picker`** | `^8.10.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`react-dnd`** | `^16.0.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`react-dnd-html5-backend`** | `^16.0.1` | Production Dependency |
-| `package.json` (`tg-profile-app\package.json`) | **`react-dom`** | `^18.3.1` | Production Dependency |
+| **Frontend SPA** | `react / react-dom` | `v18.x` | Interactive Identity Dashboard |
+| **Protocol Gateway** | `express` | `v4.x` | Backend REST Gateway for MTProto Workers |
+| **Telegram Cryptography** | `@mtproto/core` | `v3.x` | Direct Telegram Datacenter Cryptographic Client |
+| **Component Primitives** | `@radix-ui/react-dialog + tailwind` | `v1.x / v3.x` | Accessible Identity Verification Modal |
 
 ---
 

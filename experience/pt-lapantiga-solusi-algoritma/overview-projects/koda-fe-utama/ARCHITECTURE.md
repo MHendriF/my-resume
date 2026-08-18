@@ -63,44 +63,17 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`@base-ui/react`** | `^1.5.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@fontsource-variable/geist`** | `^5.2.9` | Production Dependency |
-| `package.json` (`package.json`) | **`@hookform/resolvers`** | `^5.4.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@react-router/node`** | `7.16.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@tanstack/react-query`** | `^5.100.14` | Production Dependency |
-| `package.json` (`package.json`) | **`@tanstack/react-table`** | `^8.21.3` | Production Dependency |
-| `package.json` (`package.json`) | **`axios`** | `^1.16.1` | Production Dependency |
-| `package.json` (`package.json`) | **`class-variance-authority`** | `^0.7.1` | Production Dependency |
-| `package.json` (`package.json`) | **`clsx`** | `^2.1.1` | Production Dependency |
-| `package.json` (`package.json`) | **`cmdk`** | `^1.1.1` | Production Dependency |
-| `package.json` (`package.json`) | **`date-fns`** | `^4.4.0` | Production Dependency |
-| `package.json` (`package.json`) | **`input-otp`** | `^1.4.2` | Production Dependency |
-| `package.json` (`package.json`) | **`isbot`** | `^5.1.36` | Production Dependency |
-| `package.json` (`package.json`) | **`lucide-react`** | `^1.17.0` | Production Dependency |
-| `package.json` (`package.json`) | **`next-themes`** | `^0.4.6` | Production Dependency |
-| `package.json` (`package.json`) | **`pusher-js`** | `^8.5.0` | Production Dependency |
-| `package.json` (`package.json`) | **`react`** | `^19.2.6` | Production Dependency |
-| `package.json` (`package.json`) | **`react-day-picker`** | `^10.0.1` | Production Dependency |
-| `package.json` (`package.json`) | **`react-dom`** | `^19.2.6` | Production Dependency |
-| `package.json` (`package.json`) | **`react-hook-form`** | `^7.77.0` | Production Dependency |
-| `package.json` (`package.json`) | **`react-router`** | `7.16.0` | Production Dependency |
-| `package.json` (`package.json`) | **`recharts`** | `3.8.0` | Production Dependency |
-| `package.json` (`package.json`) | **`shadcn`** | `^4.10.0` | Production Dependency |
-| `package.json` (`package.json`) | **`sonner`** | `^2.0.7` | Production Dependency |
-| `package.json` (`package.json`) | **`tailwind-merge`** | `^3.6.0` | Production Dependency |
-| `package.json` (`package.json`) | **`tw-animate-css`** | `^1.4.0` | Production Dependency |
-| `package.json` (`package.json`) | **`vaul`** | `^1.1.2` | Production Dependency |
-| `package.json` (`package.json`) | **`zod`** | `^4.4.3` | Production Dependency |
-| `package.json` (`package.json`) | **`@react-router/dev`** | `7.16.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@tailwindcss/vite`** | `^4.2.2` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@tanstack/react-query-devtools`** | `^5.100.14` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/bun`** | `^1.3.14` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/node`** | `^22` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/react`** | `^19.2.14` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/react-dom`** | `^19.2.3` | Dev Tool / Bundler |
+| **Routing & Navigation** | `@react-router/node` | `v7.x` | Config-based Route Tree & Loaders |
+| **Frontend Core** | `react / react-dom` | `v19.x` | Modern UI Engine with Server Components |
+| **State & Query Cache** | `@tanstack/react-query` | `v5.x` | Server-State Caching & Mutation Pipelines |
+| **Data Grid & Tables** | `@tanstack/react-table` | `v8.x` | Virtual DataTables for >50k Incident Records |
+| **Real-Time Incident Stream** | `pusher-js` | `v8.x` | WebSocket Client for Live CCTV Alert Broadcasts |
+| **Form Validation** | `react-hook-form + zod` | `v7.x / v3.x` | Type-Safe Client Validation & Schema Parsing |
+| **Design System** | `tailwindcss + class-variance-authority` | `v4.x` | Atomic Component Styles & Dynamic Variants |
+| **HTTP Client** | `axios` | `v1.x` | REST API Transport with Token Interceptors |
 
 ---
 

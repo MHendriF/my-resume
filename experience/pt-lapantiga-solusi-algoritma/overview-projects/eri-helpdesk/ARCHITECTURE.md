@@ -27,7 +27,7 @@ flowchart TD
 
     subgraph LaravelCore ["Backend Framework (Laravel 12.0 + PHP 8.2+)"]
         InertiaAdapter["inertiajs/inertia-laravel v2.0 Protocol Bridge"]
-        ReverbDaemon["laravel/reverb v1.4 Native WebSockets Server (:8080)"]
+        ReverbDaemon["laravel/reverb v1.4 Native WebSockets Server"]
         SanctumAuth["laravel/sanctum API & Session Authenticator"]
         ImageOptimizer["intervention/image Ticket Attachment Pipeline"]
         DocGenerator["knuckleswtf/scribe OpenAPI / Swagger Docs"]
@@ -55,44 +55,17 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`@fullcalendar/core`** | `^6.1.15` | Production Dependency |
-| `package.json` (`package.json`) | **`@fullcalendar/daygrid`** | `^6.1.15` | Production Dependency |
-| `package.json` (`package.json`) | **`@fullcalendar/interaction`** | `^6.1.15` | Production Dependency |
-| `package.json` (`package.json`) | **`@fullcalendar/vue3`** | `^6.1.15` | Production Dependency |
-| `package.json` (`package.json`) | **`@hcaptcha/vue3-hcaptcha`** | `^1.3.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@railway/cli`** | `^4.6.3` | Production Dependency |
-| `package.json` (`package.json`) | **`@vueup/vue-quill`** | `^1.2.0` | Production Dependency |
-| `package.json` (`package.json`) | **`date-fns`** | `^4.1.0` | Production Dependency |
-| `package.json` (`package.json`) | **`flowbite`** | `^3.0.0` | Production Dependency |
-| `package.json` (`package.json`) | **`moment`** | `^2.30.1` | Production Dependency |
-| `package.json` (`package.json`) | **`npm`** | `^11.5.2` | Production Dependency |
-| `package.json` (`package.json`) | **`pdfjs-dist`** | `^5.4.54` | Production Dependency |
-| `package.json` (`package.json`) | **`preline`** | `^2.7.0` | Production Dependency |
-| `package.json` (`package.json`) | **`sweetalert2`** | `^11.15.10` | Production Dependency |
-| `package.json` (`package.json`) | **`trix`** | `^2.1.15` | Production Dependency |
-| `package.json` (`package.json`) | **`vue3-apexcharts`** | `^1.8.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@inertiajs/vue3`** | `^2.0.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@prettier/plugin-php`** | `^0.24.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@tailwindcss/forms`** | `^0.5.3` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@vitejs/plugin-vue`** | `^5.0.0` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`autoprefixer`** | `^10.4.12` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`axios`** | `^1.7.9` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`concurrently`** | `^9.0.1` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`laravel-echo`** | `^2.1.6` | Dev Tool / Bundler |
-| `composer.json` (`composer.json`) | **`php`** | `^8.2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`illuminate/broadcasting`** | `*` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`inertiajs/inertia-laravel`** | `^2.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`intervention/image`** | `^3.11` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`knuckleswtf/scribe`** | `^5.2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`kreait/laravel-firebase`** | `^6.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/framework`** | `^12.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/reverb`** | `^1.4` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/sanctum`** | `^4.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/tinker`** | `^2.9` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`league/flysystem-aws-s3-v3`** | `^3.29` | Backend Framework Component |
+| **Backend Framework** | `laravel/framework` | `v12.x` | Enterprise MVC Framework |
+| **Real-Time WebSockets** | `laravel/reverb` | `v1.x` | High-Concurrency Native WebSockets Server |
+| **Monolithic SPA Bridge** | `inertiajs/inertia-laravel` | `v2.x` | Server-Driven Single Page Application |
+| **Client UI Framework** | `vue` | `v3.x` | Composition API Client Components |
+| **API Authentication** | `laravel/sanctum` | `v4.x` | Token & Cookie-Based Authorization Guard |
+| **Push Notifications** | `kreait/laravel-firebase` | `v5.x` | Mobile Push Alert Dispatcher |
+| **Interactive Schedule** | `fullcalendar` | `v6.x` | Maintenance & Helpdesk Calendar Scheduler |
+| **Rich Text Editor** | `vue-quill` | `v1.x` | WYSIWYG Ticket Description & Attachment Body |
 
 ---
 

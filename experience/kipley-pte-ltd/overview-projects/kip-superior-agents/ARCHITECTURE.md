@@ -47,22 +47,13 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`@tanstack/react-query`** | `^5.66.0` | Production Dependency |
-| `package.json` (`package.json`) | **`axios`** | `^1.7.9` | Production Dependency |
-| `package.json` (`package.json`) | **`next`** | `15.1.6` | Production Dependency |
-| `package.json` (`package.json`) | **`react`** | `^19.0.0` | Production Dependency |
-| `package.json` (`package.json`) | **`react-dom`** | `^19.0.0` | Production Dependency |
-| `package.json` (`package.json`) | **`@eslint/eslintrc`** | `^3` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/node`** | `^20` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/react`** | `^19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`@types/react-dom`** | `^19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`eslint`** | `^9` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`eslint-config-next`** | `15.1.6` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`postcss`** | `^8` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`tailwindcss`** | `^3.4.1` | Dev Tool / Bundler |
+| **Frontend Framework** | `next / react` | `v15.x / v19.x` | App Router & Server Component Architecture |
+| **Web3 Integration** | `@rainbow-me/rainbowkit + wagmi` | `v2.x` | Multi-Chain Non-Custodial Wallet Connection |
+| **Smart Contracts** | `ethers / viem` | `v6.x` | On-Chain Agent Interaction & Settlement |
+| **Styling & Motion** | `tailwindcss + framer-motion` | `v3.x` | Responsive Web3 Portal UI |
 
 ---
 

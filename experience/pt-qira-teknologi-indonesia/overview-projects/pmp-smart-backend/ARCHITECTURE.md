@@ -57,44 +57,14 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`package.json`) | **`axios`** | `^0.21` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`laravel-mix`** | `^6.0.6` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`lodash`** | `^4.17.19` | Dev Tool / Bundler |
-| `package.json` (`package.json`) | **`postcss`** | `^8.1.14` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt`** | `^1.0.1` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-contrib-connect`** | `^1.0.2` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-contrib-copy`** | `^1.0.0` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-contrib-jshint`** | `^1.0.0` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-contrib-sass`** | `^1.0.0` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-contrib-watch`** | `^1.0.0` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-jscs`** | `^3.0.1` | Dev Tool / Bundler |
-| `package.json` (`public\assets\theme\backend\package.json`) | **`grunt-open`** | `^0.2.3` | Dev Tool / Bundler |
-| `composer.json` (`composer.json`) | **`php`** | `^7.3|^8.0.2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`barryvdh/laravel-dompdf`** | `^0.9.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`code-lts/laravel-fcm`** | `^1.7` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`fideloper/proxy`** | `^4.4` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`fruitcake/laravel-cors`** | `^2.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`fx3costa/laravelchartjs`** | `^3.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`guzzlehttp/guzzle`** | `^7.0.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`intervention/image`** | `^2.5` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`josiasmontag/laravel-recaptchav3`** | `^1.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/framework`** | `^8.12` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravel/tinker`** | `^2.5` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`laravelcollective/html`** | `^6.2` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`league/flysystem-aws-s3-v3`** | `^1.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`maatwebsite/excel`** | `^3.1` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`milon/barcode`** | `^8.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`simplesoftwareio/simple-qrcode`** | `~4` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`spatie/laravel-backup`** | `^6.16` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`spatie/laravel-fractal`** | `^5.8` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`spatie/laravel-permission`** | `^4.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`yajra/laravel-datatables-oracle`** | `~9.0` | Backend Framework Component |
-| `composer.json` (`composer.json`) | **`facade/ignition`** | `^2.5` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`fakerphp/faker`** | `^1.9.1` | Dev / Testing Tool |
-| `composer.json` (`composer.json`) | **`laravel/sail`** | `^1.0.1` | Dev / Testing Tool |
+| **Backend Framework** | `laravel/framework` | `v8.x` | Psychometric Examination Engine |
+| **Cloud Object Storage** | `flysystem-aws-s3 (KilatStorage)` | `v1.x` | S3 Storage for Answer Vaults & Assets |
+| **Anti-Cheat Bot Shield** | `josiasmontag/laravel-recaptchav3` | `v1.x` | Automated Test-Taker Verification |
+| **Automated Psychogram PDF** | `barryvdh/laravel-dompdf + chartjs` | `v0.9+` | Psychological Radar & Trait Report Generator |
+| **Digital Signature Verification** | `simplesoftwareio/simple-qrcode` | `v4.x` | Dynamic Result Authenticity Verification |
 
 ---
 

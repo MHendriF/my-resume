@@ -59,36 +59,14 @@ flowchart TD
 
 ---
 
-### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
-| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+### 📦 Komponen & Library Arsitektur Utama (Core Architectural Stack)
+| Kategori Arsitektural | Package / Library | Versi Standar | Peran & Tanggung Jawab Sistem |
 | :--- | :--- | :--- | :--- |
-| `package.json` (`FixCore\package.json`) | **`axios`** | `^0.17` | Dev Tool / Bundler |
-| `package.json` (`FixCore\package.json`) | **`bootstrap-sass`** | `^3.3.7` | Dev Tool / Bundler |
-| `package.json` (`FixCore\package.json`) | **`cross-env`** | `^5.1` | Dev Tool / Bundler |
-| `package.json` (`FixCore\package.json`) | **`jquery`** | `^3.2` | Dev Tool / Bundler |
-| `package.json` (`FixCore\package.json`) | **`laravel-mix`** | `^1.0` | Dev Tool / Bundler |
-| `package.json` (`FixCore\package.json`) | **`lodash`** | `^4.17.4` | Dev Tool / Bundler |
-| `package.json` (`FixCore\package.json`) | **`vue`** | `^2.5.7` | Dev Tool / Bundler |
-| `composer.json` (`FixCore\composer.json`) | **`php`** | `>=7.0.0` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`anhskohbo/no-captcha`** | `^3.2` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`brozot/laravel-fcm`** | `^1.3` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`consoletvs/charts`** | `5.*` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`doctrine/dbal`** | `^2.11` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`fideloper/proxy`** | `~3.3` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`firmantr3/laravel-midtrans`** | `^1.0` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`gloudemans/shoppingcart`** | `^2.6` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`intervention/image`** | `^2.5` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`laravel/framework`** | `5.5.*` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`laravel/tinker`** | `~1.0` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`laravelcollective/html`** | `^5.3.0` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`midtrans/midtrans-php`** | `^2.3` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`milon/barcode`** | `6.0` | Backend Framework Component |
-| `composer.json` (`FixCore\composer.json`) | **`barryvdh/laravel-debugbar`** | `^3.3` | Dev / Testing Tool |
-| `composer.json` (`FixCore\composer.json`) | **`filp/whoops`** | `~2.0` | Dev / Testing Tool |
-| `composer.json` (`FixCore\composer.json`) | **`fzaninotto/faker`** | `~1.4` | Dev / Testing Tool |
-| `composer.json` (`FixCore\composer.json`) | **`mockery/mockery`** | `~1.0` | Dev / Testing Tool |
-| `composer.json` (`FixCore\composer.json`) | **`phpunit/phpunit`** | `~6.0` | Dev / Testing Tool |
-| `composer.json` (`FixCore\composer.json`) | **`symfony/thanks`** | `^1.0` | Dev / Testing Tool |
+| **Backend Framework** | `laravel/framework` | `v5.x LTS` | Automotive E-Commerce Core Engine |
+| **Payment Gateway Bridge** | `firmantr3/laravel-midtrans` | `v1.x` | Midtrans Snap & Core API Integration |
+| **Shopping Cart Engine** | `gloudemans/shoppingcart` | `v2.x` | Session-Based Persistent Multi-Item Cart |
+| **Push Notification** | `brozot/laravel-fcm` | `v1.x` | Automated Order & Settlement Push Alerts |
+| **Shipping Label Engine** | `milon/barcode` | `v6.x` | Automated Barcode Waybill Generator |
 
 ---
 
