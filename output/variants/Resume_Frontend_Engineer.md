@@ -11,7 +11,7 @@ Senior Frontend Engineer with 6+ years of experience building high-performance, 
 
 ## WORK EXPERIENCE
 
-### Frontend Developer / Software Engineer | PT Lapantiga Solusi Algoritma
+### Freelance Software Engineer | PT Lapantiga Solusi Algoritma
 *Jan 2019 – Present*
 
 - Developed the NTMC Dashboard Utama, a mission-critical operational and traffic monitoring web application leveraging React 19, React Router v7, TypeScript, Tailwind CSS v4, and shadcn/ui.

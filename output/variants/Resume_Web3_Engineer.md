@@ -19,7 +19,7 @@ Full Stack Web3 Engineer with extensive experience in decentralized application 
 - Developed a high-concurrency Telegram AI Assistant supporting multichain transactions (TON, USDT, Telegram Stars), enabling real-time user interaction and automated crypto payments.
 - Collaborated closely with product, UI/UX, and backend teams in an Agile environment to iterate on features, resolve technical blockers, and meet sprint deadlines consistently.
 
-### Frontend Developer / Software Engineer | PT Lapantiga Solusi Algoritma
+### Freelance Software Engineer | PT Lapantiga Solusi Algoritma
 *Jan 2019 – Present*
 
 - Developed the NTMC Dashboard Utama, a mission-critical operational and traffic monitoring web application leveraging React 19, React Router v7, TypeScript, Tailwind CSS v4, and shadcn/ui.

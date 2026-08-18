@@ -27,7 +27,7 @@ Senior Android Engineer with 6+ years of experience architecting robust mobile a
 - Engineered companion native Android applications utilizing Java, Kotlin, Android Jetpack, and Firebase for real-time synchronization and intuitive user experiences.
 - Configured deployment pipelines and server environments across Linux/SSH, cPanel, and Plesk, ensuring high availability and zero-downtime releases.
 
-### Frontend Developer / Software Engineer | PT Lapantiga Solusi Algoritma
+### Freelance Software Engineer | PT Lapantiga Solusi Algoritma
 *Jan 2019 – Present*
 
 - Developed the NTMC Dashboard Utama, a mission-critical operational and traffic monitoring web application leveraging React 19, React Router v7, TypeScript, Tailwind CSS v4, and shadcn/ui.

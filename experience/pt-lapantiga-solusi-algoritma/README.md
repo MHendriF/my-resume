@@ -1,15 +1,15 @@
 # 🏢 PT Lapantiga Solusi Algoritma
 
 [![Company Status](https://img.shields.io/badge/Status-Verified_Vault-brightgreen?style=for-the-badge)](#)
-[![Role](https://img.shields.io/badge/Role-Senior_Frontend_%26_Full_Stack_Engineer-blue?style=for-the-badge)](#)
-[![Location](https://img.shields.io/badge/Location-Jakarta,_Indonesia_(Hybrid)-gray?style=for-the-badge)](#)
+[![Role](https://img.shields.io/badge/Role-Freelance_Software_Engineer-blue?style=for-the-badge)](#)
+[![Location](https://img.shields.io/badge/Location-Surabaya,_Indonesia-gray?style=for-the-badge)](#)
 
 ---
 
 ## 📌 Ringkasan Eksekutif & Skala Operasional
 * **Peran Resmi:** Senior Frontend %26 Full Stack Engineer
-* **Periode:** Jun 2024 – Present
-* **Lokasi:** Jakarta, Indonesia (Hybrid)
+* **Periode:** Jan 2019 – Present
+* **Lokasi:** Surabaya, Indonesia (Freelance)
 * **Gambaran Umum:** Perusahaan IT solution provider dan vendor Command Center NTMC Korlantas Polri, BPD Jatim, Petrokimia Gresik, dan instansi enterprise lainnya.
 
 ---
