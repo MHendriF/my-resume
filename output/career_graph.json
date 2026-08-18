@@ -6,7 +6,7 @@
       "group": "root",
       "radius": 26,
       "color": "#38bdf8",
-      "desc": "Senior Software Engineer | ",
+      "desc": "Senior Software Engineer | Results-driven Software Engineer with over 6 years of experience architecting and delivering scalable Web2 and Web3 appl...",
       "meta": {
         "title": "Senior Software Engineer (Frontend, Full Stack & Web3)",
         "email": "hendrifebriansyah28@gmail.com",
@@ -20,7 +20,7 @@
       "group": "domain",
       "radius": 20,
       "color": "#60a5fa",
-      "desc": "React 19, Next.js 15, React Router v7, Tailwind v4, TanStack Query/Table",
+      "desc": "React 19, Next.js 15, React Router v7, Tailwind v4, TanStack Query/Table, Vue.js",
       "meta": {}
     },
     {
@@ -38,7 +38,7 @@
       "group": "domain",
       "radius": 20,
       "color": "#34d399",
-      "desc": "Laravel 12, NestJS, PHP 8.2+, Node.js, WebSockets (Reverb/Pusher), REST/GraphQL",
+      "desc": "Laravel 12, NestJS, PHP 8.2+, Node.js, WebSockets (Reverb/Pusher), Livewire",
       "meta": {}
     },
     {
@@ -56,7 +56,220 @@
       "group": "domain",
       "radius": 20,
       "color": "#fbbf24",
-      "desc": "MySQL, MongoDB, AWS S3, KilatStorage S3, Midtrans Gateway, Strava API",
+      "desc": "MySQL, MongoDB, AWS S3, KilatStorage S3, Midtrans Gateway, Strava API, Redis",
+      "meta": {}
+    },
+    {
+      "id": "comp-pt-lapantiga-solusi-algoritma",
+      "label": "PT Lapantiga Solusi Algoritma",
+      "group": "company",
+      "radius": 18,
+      "color": "#ef4444",
+      "desc": "Role: Frontend Developer / Software Engineer (Jan 2019 – Present) - Surabaya, Indonesia",
+      "meta": {
+        "role": "Frontend Developer / Software Engineer",
+        "period": "Jan 2019 – Present",
+        "location": "Surabaya, Indonesia",
+        "summary": "",
+        "bullets": []
+      }
+    },
+    {
+      "id": "comp-kipley-pte-ltd",
+      "label": "Kipley Pte. Ltd.",
+      "group": "company",
+      "radius": 18,
+      "color": "#a855f7",
+      "desc": "Role: Full Stack Developer (Web3 & AI) (Nov 2024 – Jul 2025) - Singapore (Remote)",
+      "meta": {
+        "role": "Full Stack Developer (Web3 & AI)",
+        "period": "Nov 2024 – Jul 2025",
+        "location": "Singapore (Remote)",
+        "summary": "",
+        "bullets": []
+      }
+    },
+    {
+      "id": "comp-pt-aku-pintar-indonesia",
+      "label": "PT Aku Pintar Indonesia",
+      "group": "company",
+      "radius": 18,
+      "color": "#f59e0b",
+      "desc": "Role: Android Developer (Feb 2021 – May 2024) - Surabaya, Indonesia",
+      "meta": {
+        "role": "Android Developer",
+        "period": "Feb 2021 – May 2024",
+        "location": "Surabaya, Indonesia",
+        "summary": "",
+        "bullets": []
+      }
+    },
+    {
+      "id": "comp-pt-qira-teknologi-indonesia",
+      "label": "PT Qira Teknologi Indonesia",
+      "group": "company",
+      "radius": 18,
+      "color": "#10b981",
+      "desc": "Role: Software Developer (Nov 2020 – Jan 2024) - Surabaya, Indonesia",
+      "meta": {
+        "role": "Software Developer",
+        "period": "Nov 2020 – Jan 2024",
+        "location": "Surabaya, Indonesia",
+        "summary": "",
+        "bullets": []
+      }
+    },
+    {
+      "id": "tech-react19",
+      "label": "React 19.x",
+      "group": "tech",
+      "radius": 11,
+      "color": "#61dafb",
+      "desc": "Modern React UI Engine with Server Components",
+      "meta": {}
+    },
+    {
+      "id": "tech-nextjs15",
+      "label": "Next.js 15.x",
+      "group": "tech",
+      "radius": 11,
+      "color": "#ffffff",
+      "desc": "Next.js App Router & Turbopack bundler",
+      "meta": {}
+    },
+    {
+      "id": "tech-laravel12",
+      "label": "Laravel 12.x / 10.x",
+      "group": "tech",
+      "radius": 11,
+      "color": "#ff2d20",
+      "desc": "Modern PHP Enterprise MVC Framework & Reverb WebSockets",
+      "meta": {}
+    },
+    {
+      "id": "tech-typescript",
+      "label": "TypeScript 5.x",
+      "group": "tech",
+      "radius": 11,
+      "color": "#3178c6",
+      "desc": "Strict static typing with zero 'any' policy",
+      "meta": {}
+    },
+    {
+      "id": "tech-tailwind4",
+      "label": "Tailwind CSS v4 / v3",
+      "group": "tech",
+      "radius": 11,
+      "color": "#38bdf8",
+      "desc": "Next-gen atomic CSS styling engine & Flowbite",
+      "meta": {}
+    },
+    {
+      "id": "tech-tanstack",
+      "label": "TanStack Query / Table",
+      "group": "tech",
+      "radius": 11,
+      "color": "#ff4154",
+      "desc": "Server-state caching & virtualized DataTables",
+      "meta": {}
+    },
+    {
+      "id": "tech-pusher",
+      "label": "Pusher / Reverb WS",
+      "group": "tech",
+      "radius": 11,
+      "color": "#5c42ec",
+      "desc": "Real-time incident event & ticket broadcast channels",
+      "meta": {}
+    },
+    {
+      "id": "tech-telegram-tma",
+      "label": "Telegram TMA SDK",
+      "group": "tech",
+      "radius": 11,
+      "color": "#229ed9",
+      "desc": "@telegram-apps/sdk-react native platform integration",
+      "meta": {}
+    },
+    {
+      "id": "tech-solidity",
+      "label": "Solidity & Ethers",
+      "group": "tech",
+      "radius": 11,
+      "color": "#627eea",
+      "desc": "Ethereum smart contracts & RainbowKit wallets",
+      "meta": {}
+    },
+    {
+      "id": "tech-midtrans",
+      "label": "Midtrans Payment",
+      "group": "tech",
+      "radius": 11,
+      "color": "#002b49",
+      "desc": "Virtual Account, QRIS & GoPay Webhook Gateway",
+      "meta": {}
+    },
+    {
+      "id": "tech-mongodb",
+      "label": "MongoDB / NoSQL",
+      "group": "tech",
+      "radius": 11,
+      "color": "#47a248",
+      "desc": "High-volume GPS coordinate & telemetry logging",
+      "meta": {}
+    },
+    {
+      "id": "tech-kotlin-android",
+      "label": "Android Kotlin / Java",
+      "group": "tech",
+      "radius": 11,
+      "color": "#7f52ff",
+      "desc": "Native Android Jetpack, MVVM, Coroutines, Room DB",
+      "meta": {}
+    },
+    {
+      "id": "tech-strava",
+      "label": "Strava API",
+      "group": "tech",
+      "radius": 11,
+      "color": "#fc4c02",
+      "desc": "Strava OAuth2 & Athlete Activity Synchronization",
+      "meta": {}
+    },
+    {
+      "id": "tech-s3-storage",
+      "label": "AWS S3 / KilatStorage",
+      "group": "tech",
+      "radius": 11,
+      "color": "#eab308",
+      "desc": "Cloud Object Storage & Document Vaults",
+      "meta": {}
+    },
+    {
+      "id": "tech-yajra-datatables",
+      "label": "Yajra DataTables",
+      "group": "tech",
+      "radius": 11,
+      "color": "#06b6d4",
+      "desc": "High-performance server-side SQL paging grid",
+      "meta": {}
+    },
+    {
+      "id": "tech-livewire",
+      "label": "Livewire & Blade",
+      "group": "tech",
+      "radius": 11,
+      "color": "#fb7185",
+      "desc": "Server-driven reactive components without full page reloads",
+      "meta": {}
+    },
+    {
+      "id": "tech-webrtc-liferay",
+      "label": "WebRTC & Java OSGi",
+      "group": "tech",
+      "radius": 11,
+      "color": "#f97316",
+      "desc": "Live video streams & 100+ modular portal services",
       "meta": {}
     },
     {
@@ -539,123 +752,6 @@
         "company": "pt-qira-teknologi-indonesia",
         "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/tmap-telkom/README.md"
       }
-    },
-    {
-      "id": "tech-react19",
-      "label": "React 19.x",
-      "group": "tech",
-      "radius": 11,
-      "color": "#61dafb",
-      "desc": "Bleeding-edge React UI framework with Server Components",
-      "meta": {}
-    },
-    {
-      "id": "tech-nextjs15",
-      "label": "Next.js 15.x",
-      "group": "tech",
-      "radius": 11,
-      "color": "#ffffff",
-      "desc": "Next.js App Router & Turbopack bundler",
-      "meta": {}
-    },
-    {
-      "id": "tech-laravel12",
-      "label": "Laravel 12.x",
-      "group": "tech",
-      "radius": 11,
-      "color": "#ff2d20",
-      "desc": "Modern PHP Enterprise MVC Framework & Reverb WebSockets",
-      "meta": {}
-    },
-    {
-      "id": "tech-typescript",
-      "label": "TypeScript 5.x",
-      "group": "tech",
-      "radius": 11,
-      "color": "#3178c6",
-      "desc": "Strict static typing with zero 'any' policy",
-      "meta": {}
-    },
-    {
-      "id": "tech-tailwind4",
-      "label": "Tailwind CSS v4",
-      "group": "tech",
-      "radius": 11,
-      "color": "#38bdf8",
-      "desc": "Next-gen atomic CSS styling engine",
-      "meta": {}
-    },
-    {
-      "id": "tech-tanstack",
-      "label": "TanStack Query/Table",
-      "group": "tech",
-      "radius": 11,
-      "color": "#ff4154",
-      "desc": "Server-state caching & high-performance DataTables",
-      "meta": {}
-    },
-    {
-      "id": "tech-pusher",
-      "label": "Pusher WebSockets",
-      "group": "tech",
-      "radius": 11,
-      "color": "#5c42ec",
-      "desc": "Real-time incident event broadcast channel",
-      "meta": {}
-    },
-    {
-      "id": "tech-telegram-tma",
-      "label": "Telegram TMA SDK",
-      "group": "tech",
-      "radius": 11,
-      "color": "#229ed9",
-      "desc": "@telegram-apps/sdk-react native platform integration",
-      "meta": {}
-    },
-    {
-      "id": "tech-solidity",
-      "label": "Solidity & Ethers",
-      "group": "tech",
-      "radius": 11,
-      "color": "#627eea",
-      "desc": "Ethereum smart contracts & RainbowKit wallets",
-      "meta": {}
-    },
-    {
-      "id": "tech-midtrans",
-      "label": "Midtrans Payment Gateway",
-      "group": "tech",
-      "radius": 11,
-      "color": "#002b49",
-      "desc": "Virtual Account, QRIS & GoPay Webhook Hub",
-      "meta": {}
-    },
-    {
-      "id": "tech-mongodb",
-      "label": "MongoDB NoSQL",
-      "group": "tech",
-      "radius": 11,
-      "color": "#47a248",
-      "desc": "High-volume GPS coordinate & activity logging",
-      "meta": {}
-    },
-    {
-      "id": "tech-kotlin-android",
-      "label": "Kotlin & MVVM",
-      "group": "tech",
-      "radius": 11,
-      "color": "#7f52ff",
-      "desc": "Native Android Jetpack, Coroutines, Flow & Room DB",
-      "meta": {}
-    },
-    {
-      "id": "tech-strava",
-      "label": "Strava API",
-      "group": "tech",
-      "radius": 11,
-      "color": "#fc4c02",
-      "desc": "Strava OAuth2 & Athlete Activity Synchronization",
-      "meta": {}
     }
   ],
   "links": [
@@ -690,274 +786,88 @@
       "type": "specializes_in"
     },
     {
-      "source": "proj-koda-fe-utama",
-      "target": "tech-react19",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "root-hendri",
+      "target": "comp-pt-lapantiga-solusi-algoritma",
+      "value": 4,
+      "type": "worked_at"
     },
     {
-      "source": "proj-koda-fe-utama",
-      "target": "tech-typescript",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "dom-frontend",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-koda-fe-utama",
-      "target": "tech-tailwind4",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "dom-backend",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-koda-fe-utama",
-      "target": "tech-tanstack",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "root-hendri",
+      "target": "comp-kipley-pte-ltd",
+      "value": 4,
+      "type": "worked_at"
     },
     {
-      "source": "proj-koda-fe-utama",
-      "target": "tech-pusher",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-kipley-pte-ltd",
+      "target": "dom-web3",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-koda-fe-client",
-      "target": "tech-react19",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-kipley-pte-ltd",
+      "target": "dom-frontend",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-koda-fe-client",
-      "target": "tech-typescript",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "root-hendri",
+      "target": "comp-pt-aku-pintar-indonesia",
+      "value": 4,
+      "type": "worked_at"
     },
     {
-      "source": "proj-koda-fe-client",
-      "target": "tech-tailwind4",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-aku-pintar-indonesia",
+      "target": "dom-android",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-eri-helpdesk",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-aku-pintar-indonesia",
+      "target": "dom-frontend",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-eri-helpdesk",
-      "target": "tech-pusher",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-aku-pintar-indonesia",
+      "target": "dom-db",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-eri-helpdesk",
-      "target": "tech-tailwind4",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "root-hendri",
+      "target": "comp-pt-qira-teknologi-indonesia",
+      "value": 4,
+      "type": "worked_at"
     },
     {
-      "source": "proj-digipor-bank-bmpdjatim",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "dom-backend",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-digipor-bank-bmpdjatim",
-      "target": "tech-strava",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "dom-android",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
-      "source": "proj-ebupot",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-ebupot",
-      "target": "tech-tailwind4",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-a3jni-backend",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-petrokimia-asuransi",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-petrokimia-asuransi",
-      "target": "tech-tailwind4",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-flondr",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-miracle-wish-be",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-miracle-wish-fe",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-miracle-wish-android",
-      "target": "tech-kotlin-android",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-superior-agents",
-      "target": "tech-nextjs15",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-superior-agents",
-      "target": "tech-react19",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-superior-agents",
-      "target": "tech-solidity",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-superior-agents",
-      "target": "tech-typescript",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-kip-superior-agents",
-      "target": "tech-nextjs15",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-kip-superior-agents",
-      "target": "tech-react19",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-kip-superior-agents",
-      "target": "tech-solidity",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-voxi-ai-girlfriend",
-      "target": "tech-nextjs15",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-voxi-ai-girlfriend",
-      "target": "tech-telegram-tma",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-voxi-ai-girlfriend",
-      "target": "tech-tanstack",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-kip-telegram-ai-girlfriend",
-      "target": "tech-nextjs15",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-kip-telegram-ai-girlfriend",
-      "target": "tech-telegram-tma",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-rethinkable-xyz",
-      "target": "tech-telegram-tma",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-rethinkable-xyz",
-      "target": "tech-typescript",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-epak-dev",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-fix-automart",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-fix-automart",
-      "target": "tech-midtrans",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-qisales-backend",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-qisales-backend",
-      "target": "tech-mongodb",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-tmap-telkom",
-      "target": "tech-laravel12",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-balai-center-android",
-      "target": "tech-kotlin-android",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-ezbli-android",
-      "target": "tech-kotlin-android",
-      "value": 1,
-      "type": "uses_technology"
-    },
-    {
-      "source": "proj-aku-pintar-mvp-website",
-      "target": "tech-mongodb",
-      "value": 1,
-      "type": "uses_technology"
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "dom-db",
+      "value": 2,
+      "type": "focuses_on"
     },
     {
       "source": "tech-react19",
@@ -979,6 +889,12 @@
     },
     {
       "source": "tech-tanstack",
+      "target": "dom-frontend",
+      "value": 2,
+      "type": "connected"
+    },
+    {
+      "source": "tech-typescript",
       "target": "dom-frontend",
       "value": 2,
       "type": "connected"
@@ -1008,6 +924,12 @@
       "type": "connected"
     },
     {
+      "source": "tech-livewire",
+      "target": "dom-backend",
+      "value": 2,
+      "type": "connected"
+    },
+    {
       "source": "tech-midtrans",
       "target": "dom-db",
       "value": 2,
@@ -1026,10 +948,808 @@
       "type": "connected"
     },
     {
+      "source": "tech-s3-storage",
+      "target": "dom-db",
+      "value": 2,
+      "type": "connected"
+    },
+    {
+      "source": "tech-yajra-datatables",
+      "target": "dom-backend",
+      "value": 2,
+      "type": "connected"
+    },
+    {
       "source": "tech-kotlin-android",
       "target": "dom-android",
       "value": 2,
       "type": "connected"
+    },
+    {
+      "source": "tech-webrtc-liferay",
+      "target": "dom-frontend",
+      "value": 2,
+      "type": "connected"
+    },
+    {
+      "source": "tech-webrtc-liferay",
+      "target": "dom-backend",
+      "value": 2,
+      "type": "connected"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-igroup",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-kb-builder",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-kip-ecosystem-website",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-kip-superior-agents",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-kip-telegram-ai-girlfriend",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-knowledge-fi",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-milei",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-opencampus-university",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-rethinkable-xyz",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-superior-agents",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-kipley-pte-ltd",
+      "target": "proj-voxi-ai-girlfriend",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-aku-pintar-indonesia",
+      "target": "proj-aku-pintar-mvp-website",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-a3jni-backend",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-digipor-bank-bmpdjatim",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-ebupot",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-efosh-v1",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-efosh-v2",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-eri-helpdesk",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-flondr",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-koda-fe-client",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-koda-fe-utama",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-miracle-wish-android",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-miracle-wish-be",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-miracle-wish-fe",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-petrokimia-asuransi",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-lapantiga-solusi-algoritma",
+      "target": "proj-produk-lokal",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-balai-center-android",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-e-budgeting",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-epak-dev",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-ezbli-android",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-fix-automart",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-growth-v2",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-pmp-smart-backend",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-pmp-store",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-qisales-backend",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-samurai-point",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "comp-pt-qira-teknologi-indonesia",
+      "target": "proj-tmap-telkom",
+      "value": 2,
+      "type": "built_project"
+    },
+    {
+      "source": "proj-koda-fe-utama",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-utama",
+      "target": "tech-typescript",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-utama",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-utama",
+      "target": "tech-tanstack",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-utama",
+      "target": "tech-pusher",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-client",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-client",
+      "target": "tech-typescript",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-client",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-koda-fe-client",
+      "target": "tech-tanstack",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-eri-helpdesk",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-eri-helpdesk",
+      "target": "tech-pusher",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-eri-helpdesk",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-petrokimia-asuransi",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-petrokimia-asuransi",
+      "target": "tech-livewire",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-petrokimia-asuransi",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-petrokimia-asuransi",
+      "target": "tech-s3-storage",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ebupot",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ebupot",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ebupot",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ebupot",
+      "target": "tech-s3-storage",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-a3jni-backend",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-a3jni-backend",
+      "target": "tech-s3-storage",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-a3jni-backend",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-digipor-bank-bmpdjatim",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-digipor-bank-bmpdjatim",
+      "target": "tech-strava",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-efosh-v1",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-efosh-v1",
+      "target": "tech-mongodb",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-efosh-v2",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-efosh-v2",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-be",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-fe",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-fe",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-android",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-flondr",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-flondr",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-produk-lokal",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-superior-agents",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-superior-agents",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-superior-agents",
+      "target": "tech-solidity",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-superior-agents",
+      "target": "tech-typescript",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-superior-agents",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-superior-agents",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-superior-agents",
+      "target": "tech-solidity",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-voxi-ai-girlfriend",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-voxi-ai-girlfriend",
+      "target": "tech-telegram-tma",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-voxi-ai-girlfriend",
+      "target": "tech-tanstack",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-telegram-ai-girlfriend",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-telegram-ai-girlfriend",
+      "target": "tech-telegram-tma",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-rethinkable-xyz",
+      "target": "tech-telegram-tma",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-rethinkable-xyz",
+      "target": "tech-typescript",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-rethinkable-xyz",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-knowledge-fi",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-knowledge-fi",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-knowledge-fi",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-opencampus-university",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-opencampus-university",
+      "target": "tech-solidity",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-opencampus-university",
+      "target": "tech-typescript",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kb-builder",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kb-builder",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kb-builder",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-igroup",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-igroup",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-igroup",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-milei",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-milei",
+      "target": "tech-react19",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-milei",
+      "target": "tech-pusher",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-ecosystem-website",
+      "target": "tech-nextjs15",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-kip-ecosystem-website",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-epak-dev",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-epak-dev",
+      "target": "tech-s3-storage",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-epak-dev",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-fix-automart",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-fix-automart",
+      "target": "tech-midtrans",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-tmap-telkom",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-tmap-telkom",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-qisales-backend",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-qisales-backend",
+      "target": "tech-mongodb",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-pmp-smart-backend",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-pmp-smart-backend",
+      "target": "tech-s3-storage",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-e-budgeting",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-e-budgeting",
+      "target": "tech-yajra-datatables",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-samurai-point",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-samurai-point",
+      "target": "tech-midtrans",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-pmp-store",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-pmp-store",
+      "target": "tech-s3-storage",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-growth-v2",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-growth-v2",
+      "target": "tech-mongodb",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-balai-center-android",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ezbli-android",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-aku-pintar-mvp-website",
+      "target": "tech-webrtc-liferay",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-aku-pintar-mvp-website",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-aku-pintar-mvp-website",
+      "target": "tech-mongodb",
+      "value": 1,
+      "type": "uses_technology"
     }
   ]
 }

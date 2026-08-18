@@ -47,44 +47,52 @@ def add_link(source, target, value=1, type_name="connected"):
             "value": value,
             "type": type_name
         })
+    else:
+        missing = []
+        if source not in node_ids: missing.append(f"source '{source}'")
+        if target not in node_ids: missing.append(f"target '{target}'")
+        # Debugging aid
+        # print(f"⚠️ Link skipped: missing {', '.join(missing)}")
 
-# Root Candidate Node
+# 1. Root Candidate Node
 root_id = "root-hendri"
-add_node(root_id, profile.get("name", "Muhamad Hendri Febriansyah"), "root", 26, "#38bdf8", 
-         f"Senior Software Engineer | {profile.get('bio', '')}", {
+add_node(root_id, profile.get("name", "MUHAMAD HENDRI FEBRIANSYAH"), "root", 26, "#38bdf8", 
+         f"Senior Software Engineer | {profile.get('summaries', {}).get('general', '')[:120]}...", {
              "title": profile.get("title", "Senior Software Engineer"),
              "email": profile.get("contact", {}).get("email", ""),
              "github": profile.get("contact", {}).get("github", ""),
              "linkedin": profile.get("contact", {}).get("linkedin", "")
          })
 
-# Domain Categories
+# 2. Domain Core Clusters
 domains = [
-    ("dom-frontend", "Frontend Engineering", "domain", 20, "#60a5fa", "React 19, Next.js 15, React Router v7, Tailwind v4, TanStack Query/Table"),
+    ("dom-frontend", "Frontend Engineering", "domain", 20, "#60a5fa", "React 19, Next.js 15, React Router v7, Tailwind v4, TanStack Query/Table, Vue.js"),
     ("dom-web3", "Web3 & AI Agents", "domain", 20, "#c084fc", "Smart Contracts (Solidity), Telegram Mini Apps SDK, SSE Streaming, RainbowKit, TON"),
-    ("dom-backend", "Backend & APIs", "domain", 20, "#34d399", "Laravel 12, NestJS, PHP 8.2+, Node.js, WebSockets (Reverb/Pusher), REST/GraphQL"),
+    ("dom-backend", "Backend & APIs", "domain", 20, "#34d399", "Laravel 12, NestJS, PHP 8.2+, Node.js, WebSockets (Reverb/Pusher), Livewire"),
     ("dom-android", "Native Android", "domain", 20, "#a3e635", "Kotlin, Android Jetpack, MVVM, Coroutines, Room DB, Retrofit 2, 1.5M+ Users"),
-    ("dom-db", "Databases & Cloud", "domain", 20, "#fbbf24", "MySQL, MongoDB, AWS S3, KilatStorage S3, Midtrans Gateway, Strava API")
+    ("dom-db", "Databases & Cloud", "domain", 20, "#fbbf24", "MySQL, MongoDB, AWS S3, KilatStorage S3, Midtrans Gateway, Strava API, Redis")
 ]
 
 for d_id, d_label, d_grp, d_rad, d_col, d_desc in domains:
     add_node(d_id, d_label, d_grp, d_rad, d_col, d_desc)
     add_link(root_id, d_id, 3, "specializes_in")
 
-# Company Nodes
-company_colors = {
-    "pt-lapantiga-solusi-algoritma": "#ef4444",
-    "kipley-pte-ltd": "#a855f7",
-    "pt-qira-teknologi-indonesia": "#10b981",
-    "pt-aku-pintar-indonesia": "#f59e0b"
+# 3. Company Nodes
+company_map = {
+    "pt-lapantiga-solusi-algoritma": ("PT Lapantiga Solusi Algoritma", "#ef4444", ["dom-frontend", "dom-backend"]),
+    "kipley-pte-ltd": ("Kipley Pte. Ltd.", "#a855f7", ["dom-web3", "dom-frontend"]),
+    "pt-qira-teknologi-indonesia": ("PT Qira Teknologi Indonesia", "#10b981", ["dom-backend", "dom-android", "dom-db"]),
+    "pt-aku-pintar-indonesia": ("PT Aku Pintar Indonesia", "#f59e0b", ["dom-android", "dom-frontend", "dom-db"])
 }
 
-for exp in profile.get("experience", []):
+for exp in profile.get("experiences", []):
     pref = exp.get("project_ref", "")
-    comp_slug = os.path.basename(pref)
+    comp_slug = os.path.basename(pref.replace("\\", "/"))
+    comp_info = company_map.get(comp_slug)
+    
     comp_name = exp.get("company", comp_slug)
+    comp_color = comp_info[1] if comp_info else "#64748b"
     comp_id = f"comp-{comp_slug}"
-    comp_color = company_colors.get(comp_slug, "#64748b")
     
     add_node(comp_id, comp_name, "company", 18, comp_color, 
              f"Role: {exp.get('role')} ({exp.get('period')}) - {exp.get('location')}", {
@@ -96,23 +104,115 @@ for exp in profile.get("experience", []):
              })
     add_link(root_id, comp_id, 4, "worked_at")
     
-    if "lapantiga" in comp_slug:
-        add_link(comp_id, "dom-frontend", 2)
-        add_link(comp_id, "dom-backend", 2)
-    elif "kipley" in comp_slug:
-        add_link(comp_id, "dom-web3", 2)
-        add_link(comp_id, "dom-frontend", 2)
-    elif "qira" in comp_slug:
-        add_link(comp_id, "dom-backend", 2)
-        add_link(comp_id, "dom-db", 2)
-    elif "aku-pintar" in comp_slug:
-        add_link(comp_id, "dom-android", 2)
+    if comp_info:
+        for dom_id in comp_info[2]:
+            add_link(comp_id, dom_id, 2, "focuses_on")
 
-# Subprojects
+# 4. Technologies & Libraries
+tech_nodes = [
+    ("tech-react19", "React 19.x", "tech", 11, "#61dafb", "Modern React UI Engine with Server Components"),
+    ("tech-nextjs15", "Next.js 15.x", "tech", 11, "#ffffff", "Next.js App Router & Turbopack bundler"),
+    ("tech-laravel12", "Laravel 12.x / 10.x", "tech", 11, "#ff2d20", "Modern PHP Enterprise MVC Framework & Reverb WebSockets"),
+    ("tech-typescript", "TypeScript 5.x", "tech", 11, "#3178c6", "Strict static typing with zero 'any' policy"),
+    ("tech-tailwind4", "Tailwind CSS v4 / v3", "tech", 11, "#38bdf8", "Next-gen atomic CSS styling engine & Flowbite"),
+    ("tech-tanstack", "TanStack Query / Table", "tech", 11, "#ff4154", "Server-state caching & virtualized DataTables"),
+    ("tech-pusher", "Pusher / Reverb WS", "tech", 11, "#5c42ec", "Real-time incident event & ticket broadcast channels"),
+    ("tech-telegram-tma", "Telegram TMA SDK", "tech", 11, "#229ed9", "@telegram-apps/sdk-react native platform integration"),
+    ("tech-solidity", "Solidity & Ethers", "tech", 11, "#627eea", "Ethereum smart contracts & RainbowKit wallets"),
+    ("tech-midtrans", "Midtrans Payment", "tech", 11, "#002b49", "Virtual Account, QRIS & GoPay Webhook Gateway"),
+    ("tech-mongodb", "MongoDB / NoSQL", "tech", 11, "#47a248", "High-volume GPS coordinate & telemetry logging"),
+    ("tech-kotlin-android", "Android Kotlin / Java", "tech", 11, "#7f52ff", "Native Android Jetpack, MVVM, Coroutines, Room DB"),
+    ("tech-strava", "Strava API", "tech", 11, "#fc4c02", "Strava OAuth2 & Athlete Activity Synchronization"),
+    ("tech-s3-storage", "AWS S3 / KilatStorage", "tech", 11, "#eab308", "Cloud Object Storage & Document Vaults"),
+    ("tech-yajra-datatables", "Yajra DataTables", "tech", 11, "#06b6d4", "High-performance server-side SQL paging grid"),
+    ("tech-livewire", "Livewire & Blade", "tech", 11, "#fb7185", "Server-driven reactive components without full page reloads"),
+    ("tech-webrtc-liferay", "WebRTC & Java OSGi", "tech", 11, "#f97316", "Live video streams & 100+ modular portal services")
+]
+
+for t_id, t_lbl, t_grp, t_rad, t_col, t_desc in tech_nodes:
+    add_node(t_id, t_lbl, t_grp, t_rad, t_col, t_desc)
+
+# Link Techs to Domains
+add_link("tech-react19", "dom-frontend", 2)
+add_link("tech-nextjs15", "dom-frontend", 2)
+add_link("tech-tailwind4", "dom-frontend", 2)
+add_link("tech-tanstack", "dom-frontend", 2)
+add_link("tech-typescript", "dom-frontend", 2)
+add_link("tech-solidity", "dom-web3", 2)
+add_link("tech-telegram-tma", "dom-web3", 2)
+add_link("tech-laravel12", "dom-backend", 2)
+add_link("tech-pusher", "dom-backend", 2)
+add_link("tech-livewire", "dom-backend", 2)
+add_link("tech-midtrans", "dom-db", 2)
+add_link("tech-mongodb", "dom-db", 2)
+add_link("tech-strava", "dom-db", 2)
+add_link("tech-s3-storage", "dom-db", 2)
+add_link("tech-yajra-datatables", "dom-backend", 2)
+add_link("tech-kotlin-android", "dom-android", 2)
+add_link("tech-webrtc-liferay", "dom-frontend", 2)
+add_link("tech-webrtc-liferay", "dom-backend", 2)
+
+# 5. Full 37 Subprojects & Detailed Tech Mappings
+project_tech_map = {
+    # PT Lapantiga Solusi Algoritma (14 projects)
+    "proj-koda-fe-utama": ["tech-react19", "tech-typescript", "tech-tailwind4", "tech-tanstack", "tech-pusher"],
+    "proj-koda-fe-client": ["tech-react19", "tech-typescript", "tech-tailwind4", "tech-tanstack"],
+    "proj-eri-helpdesk": ["tech-laravel12", "tech-pusher", "tech-tailwind4"],
+    "proj-petrokimia-asuransi": ["tech-laravel12", "tech-livewire", "tech-tailwind4", "tech-s3-storage"],
+    "proj-ebupot": ["tech-laravel12", "tech-yajra-datatables", "tech-tailwind4", "tech-s3-storage"],
+    "proj-a3jni-backend": ["tech-laravel12", "tech-s3-storage", "tech-yajra-datatables"],
+    "proj-digipor-bank-bmpdjatim": ["tech-laravel12", "tech-strava"],
+    "proj-efosh-v1": ["tech-laravel12", "tech-mongodb"],
+    "proj-efosh-v2": ["tech-laravel12", "tech-yajra-datatables"],
+    "proj-miracle-wish-be": ["tech-laravel12"],
+    "proj-miracle-wish-fe": ["tech-laravel12", "tech-tailwind4"],
+    "proj-miracle-wish-android": ["tech-kotlin-android"],
+    "proj-flondr": ["tech-laravel12", "tech-yajra-datatables"],
+    "proj-produk-lokal": ["tech-laravel12"],
+
+    # Kipley Pte. Ltd. (11 projects)
+    "proj-superior-agents": ["tech-nextjs15", "tech-react19", "tech-solidity", "tech-typescript"],
+    "proj-kip-superior-agents": ["tech-nextjs15", "tech-react19", "tech-solidity"],
+    "proj-voxi-ai-girlfriend": ["tech-nextjs15", "tech-telegram-tma", "tech-tanstack"],
+    "proj-kip-telegram-ai-girlfriend": ["tech-nextjs15", "tech-telegram-tma"],
+    "proj-rethinkable-xyz": ["tech-telegram-tma", "tech-typescript", "tech-react19"],
+    "proj-knowledge-fi": ["tech-nextjs15", "tech-react19", "tech-tailwind4"],
+    "proj-opencampus-university": ["tech-nextjs15", "tech-solidity", "tech-typescript"],
+    "proj-kb-builder": ["tech-nextjs15", "tech-react19", "tech-tailwind4"],
+    "proj-igroup": ["tech-nextjs15", "tech-react19", "tech-tailwind4"],
+    "proj-milei": ["tech-nextjs15", "tech-react19", "tech-pusher"],
+    "proj-kip-ecosystem-website": ["tech-nextjs15", "tech-tailwind4"],
+
+    # PT Qira Teknologi Indonesia (11 projects)
+    "proj-epak-dev": ["tech-laravel12", "tech-s3-storage", "tech-yajra-datatables"],
+    "proj-fix-automart": ["tech-laravel12", "tech-midtrans"],
+    "proj-tmap-telkom": ["tech-laravel12", "tech-yajra-datatables"],
+    "proj-qisales-backend": ["tech-laravel12", "tech-mongodb"],
+    "proj-pmp-smart-backend": ["tech-laravel12", "tech-s3-storage"],
+    "proj-e-budgeting": ["tech-laravel12", "tech-yajra-datatables"],
+    "proj-samurai-point": ["tech-laravel12", "tech-midtrans"],
+    "proj-pmp-store": ["tech-laravel12", "tech-s3-storage"],
+    "proj-growth-v2": ["tech-laravel12", "tech-mongodb"],
+    "proj-balai-center-android": ["tech-kotlin-android"],
+    "proj-ezbli-android": ["tech-kotlin-android"],
+
+    # PT Aku Pintar Indonesia (1 project)
+    "proj-aku-pintar-mvp-website": ["tech-webrtc-liferay", "tech-kotlin-android", "tech-mongodb"]
+}
+
+# Scan subprojects from directory to guarantee node creation and company linking
+company_colors = {
+    "pt-lapantiga-solusi-algoritma": "#ef4444",
+    "kipley-pte-ltd": "#a855f7",
+    "pt-qira-teknologi-indonesia": "#10b981",
+    "pt-aku-pintar-indonesia": "#f59e0b"
+}
+
 if os.path.exists(EXP_DIR):
     for comp in sorted(os.listdir(EXP_DIR)):
         comp_dir = os.path.join(EXP_DIR, comp)
-        if not os.path.isdir(comp_dir): continue
+        if not os.path.isdir(comp_dir) or comp == 'template-project': continue
+        
         comp_id = f"comp-{comp}"
         op_dir = os.path.join(comp_dir, 'overview-projects')
         
@@ -142,72 +242,13 @@ if os.path.exists(EXP_DIR):
                     "company": comp,
                     "readme_link": f"experience/{comp}/overview-projects/{sub}/README.md"
                 })
+                # Link Company -> Subproject
                 add_link(comp_id, sub_id, 2, "built_project")
 
-# Key Tech Nodes
-tech_nodes = [
-    ("tech-react19", "React 19.x", "tech", 11, "#61dafb", "Bleeding-edge React UI framework with Server Components"),
-    ("tech-nextjs15", "Next.js 15.x", "tech", 11, "#ffffff", "Next.js App Router & Turbopack bundler"),
-    ("tech-laravel12", "Laravel 12.x", "tech", 11, "#ff2d20", "Modern PHP Enterprise MVC Framework & Reverb WebSockets"),
-    ("tech-typescript", "TypeScript 5.x", "tech", 11, "#3178c6", "Strict static typing with zero 'any' policy"),
-    ("tech-tailwind4", "Tailwind CSS v4", "tech", 11, "#38bdf8", "Next-gen atomic CSS styling engine"),
-    ("tech-tanstack", "TanStack Query/Table", "tech", 11, "#ff4154", "Server-state caching & high-performance DataTables"),
-    ("tech-pusher", "Pusher WebSockets", "tech", 11, "#5c42ec", "Real-time incident event broadcast channel"),
-    ("tech-telegram-tma", "Telegram TMA SDK", "tech", 11, "#229ed9", "@telegram-apps/sdk-react native platform integration"),
-    ("tech-solidity", "Solidity & Ethers", "tech", 11, "#627eea", "Ethereum smart contracts & RainbowKit wallets"),
-    ("tech-midtrans", "Midtrans Payment Gateway", "tech", 11, "#002b49", "Virtual Account, QRIS & GoPay Webhook Hub"),
-    ("tech-mongodb", "MongoDB NoSQL", "tech", 11, "#47a248", "High-volume GPS coordinate & activity logging"),
-    ("tech-kotlin-android", "Kotlin & MVVM", "tech", 11, "#7f52ff", "Native Android Jetpack, Coroutines, Flow & Room DB"),
-    ("tech-strava", "Strava API", "tech", 11, "#fc4c02", "Strava OAuth2 & Athlete Activity Synchronization")
-]
-
-for t_id, t_lbl, t_grp, t_rad, t_col, t_desc in tech_nodes:
-    add_node(t_id, t_lbl, t_grp, t_rad, t_col, t_desc)
-
-project_tech_map = {
-    "proj-koda-fe-utama": ["tech-react19", "tech-typescript", "tech-tailwind4", "tech-tanstack", "tech-pusher"],
-    "proj-koda-fe-client": ["tech-react19", "tech-typescript", "tech-tailwind4"],
-    "proj-eri-helpdesk": ["tech-laravel12", "tech-pusher", "tech-tailwind4"],
-    "proj-digipor-bank-bmpdjatim": ["tech-laravel12", "tech-strava"],
-    "proj-ebupot": ["tech-laravel12", "tech-tailwind4"],
-    "proj-a3jni-backend": ["tech-laravel12"],
-    "proj-petrokimia-asuransi": ["tech-laravel12", "tech-tailwind4"],
-    "proj-flondr": ["tech-laravel12"],
-    "proj-miracle-wish-be": ["tech-laravel12"],
-    "proj-miracle-wish-fe": ["tech-laravel12"],
-    "proj-miracle-wish-android": ["tech-kotlin-android"],
-    "proj-superior-agents": ["tech-nextjs15", "tech-react19", "tech-solidity", "tech-typescript"],
-    "proj-kip-superior-agents": ["tech-nextjs15", "tech-react19", "tech-solidity"],
-    "proj-voxi-ai-girlfriend": ["tech-nextjs15", "tech-telegram-tma", "tech-tanstack"],
-    "proj-kip-telegram-ai-girlfriend": ["tech-nextjs15", "tech-telegram-tma"],
-    "proj-rethinkable-xyz": ["tech-telegram-tma", "tech-typescript"],
-    "proj-epak-dev": ["tech-laravel12"],
-    "proj-fix-automart": ["tech-laravel12", "tech-midtrans"],
-    "proj-fixautomart": ["tech-laravel12", "tech-midtrans"],
-    "proj-qisales-backend": ["tech-laravel12", "tech-mongodb"],
-    "proj-tmap-telkom": ["tech-laravel12"],
-    "proj-balai-center-android": ["tech-kotlin-android"],
-    "proj-ezbli-android": ["tech-kotlin-android"],
-    "proj-aku-pintar-mvp-website": ["tech-mongodb"],
-    "comp-pt-aku-pintar-indonesia": ["tech-kotlin-android"]
-}
-
+# Link all subprojects to their respective technologies
 for proj_key, t_list in project_tech_map.items():
     for t_id in t_list:
         add_link(proj_key, t_id, 1, "uses_technology")
-
-add_link("tech-react19", "dom-frontend", 2)
-add_link("tech-nextjs15", "dom-frontend", 2)
-add_link("tech-tailwind4", "dom-frontend", 2)
-add_link("tech-tanstack", "dom-frontend", 2)
-add_link("tech-solidity", "dom-web3", 2)
-add_link("tech-telegram-tma", "dom-web3", 2)
-add_link("tech-laravel12", "dom-backend", 2)
-add_link("tech-pusher", "dom-backend", 2)
-add_link("tech-midtrans", "dom-db", 2)
-add_link("tech-mongodb", "dom-db", 2)
-add_link("tech-strava", "dom-db", 2)
-add_link("tech-kotlin-android", "dom-android", 2)
 
 print(f"Total Nodes: {len(nodes)}, Total Links: {len(links)}")
 
@@ -644,7 +685,8 @@ html_template = """<!DOCTYPE html>
     svg.call(zoom.transform, d3.zoomIdentity.translate(0, 0).scale(0.95));
   </script>
 </body>
-</html>"""
+</html>
+"""
 
 html_content = html_template.replace("GRAPH_DATA_PLACEHOLDER", json.dumps(graph_data))
 
