@@ -79,7 +79,7 @@ def main():
     os.makedirs(target_path, exist_ok=True)
     print(f"🚀 Membuat subproyek baru: {target_path}")
 
-    # Copy template files (README.md, ARCHITECTURE.md, resume_bullets.md)
+    # Copy template files (README.md, ARCHITECTURE.md)
     for fname in os.listdir(TEMPLATE_DIR):
         src = os.path.join(TEMPLATE_DIR, fname)
         dst = os.path.join(target_path, fname)
