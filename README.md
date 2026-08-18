@@ -15,6 +15,25 @@
 
 ---
 
+## ⏳ Peta Perjalanan Karier (Career Journey Roadmap)
+
+```mermaid
+gantt
+    title 🚀 Muhamad Hendri Febriansyah — Engineering Evolution (2019 – Present)
+    dateFormat YYYY-MM
+    axisFormat %Y
+
+    section Enterprise & Gov
+    PT Qira (Kemdikbud, Telkom, Laravel, Android) :active, 2019-11, 2021-02
+    PT Aku Pintar (Android MVVM, 1.5M Users, EdTech Portal) :active, 2021-02, 2024-05
+
+    section Command Center & Web3
+    PT Lapantiga (NTMC Polri Command Center, Laravel, React 19) :active, 2024-06, 2026-08
+    Kipley Pte. Ltd. (Autonomous AI Agents, Next.js 15, Web3 dApps) :active, 2024-08, 2026-08
+```
+
+---
+
 ## 🌟 Rekayasa Unggulan & Proyek Flagship (Executive Highlights)
 
 Untuk kemudahan peninjauan cepat (*Quick 30-Second Overview*), berikut adalah 4 proyek rekayasa perangkat lunak terpilih:

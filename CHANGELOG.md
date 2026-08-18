@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **Interactive Category Filter Pills & OpenGraph Meta Tags (`index.html` & `graphify.html`):**
+  - Added one-click domain filters (Frontend, Backend, Web3/AI, Android, Companies) for instant focus in the D3.js career graph.
+  - Added comprehensive OpenGraph and Twitter card metadata for professional link sharing.
+- **Visual Career Journey Roadmap (Mermaid Gantt Timeline):**
+  - Embedded Gantt timeline in root `README.md` showcasing career progression from 2019 to Present.
+- **Repository Diagnostic & Health Check Tool (`scripts/verify.py`):**
+  - Built diagnostic test suite auditing Markdown link integrity, JSON schemas, blueprints, and build artifacts.
 - **Executive Flagship Highlights Section (`README.md`):**
   - Added dedicated 30-second executive summary table showcasing top enterprise systems (KODA NTMC Polri, Superior Agents Web3, Aku Pintar, EPAK Kemdikbudristek).
 - **Canonicalized Data References (`data/profile.json`):**
@@ -65,6 +72,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **Interactive Category Filter Pills & OpenGraph Meta Tags (`index.html` & `graphify.html`):**
+  - Added one-click domain filters (Frontend, Backend, Web3/AI, Android, Companies) for instant focus in the D3.js career graph.
+  - Added comprehensive OpenGraph and Twitter card metadata for professional link sharing.
+- **Visual Career Journey Roadmap (Mermaid Gantt Timeline):**
+  - Embedded Gantt timeline in root `README.md` showcasing career progression from 2019 to Present.
+- **Repository Diagnostic & Health Check Tool (`scripts/verify.py`):**
+  - Built diagnostic test suite auditing Markdown link integrity, JSON schemas, blueprints, and build artifacts.
 - **Executive Flagship Highlights Section (`README.md`):**
   - Added dedicated 30-second executive summary table showcasing top enterprise systems (KODA NTMC Polri, Superior Agents Web3, Aku Pintar, EPAK Kemdikbudristek).
 - **Canonicalized Data References (`data/profile.json`):**
@@ -97,6 +111,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **Interactive Category Filter Pills & OpenGraph Meta Tags (`index.html` & `graphify.html`):**
+  - Added one-click domain filters (Frontend, Backend, Web3/AI, Android, Companies) for instant focus in the D3.js career graph.
+  - Added comprehensive OpenGraph and Twitter card metadata for professional link sharing.
+- **Visual Career Journey Roadmap (Mermaid Gantt Timeline):**
+  - Embedded Gantt timeline in root `README.md` showcasing career progression from 2019 to Present.
+- **Repository Diagnostic & Health Check Tool (`scripts/verify.py`):**
+  - Built diagnostic test suite auditing Markdown link integrity, JSON schemas, blueprints, and build artifacts.
 - **Executive Flagship Highlights Section (`README.md`):**
   - Added dedicated 30-second executive summary table showcasing top enterprise systems (KODA NTMC Polri, Superior Agents Web3, Aku Pintar, EPAK Kemdikbudristek).
 - **Canonicalized Data References (`data/profile.json`):**

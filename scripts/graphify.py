@@ -223,7 +223,19 @@ html_template = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graphify — Interactive Career & Engineering Knowledge Graph</title>
+  <title>Muhamad Hendri Febriansyah — Interactive Career Knowledge Graph</title>
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta name="description" content="Jelajahi graf pengetahuan interaktif, arsitektur sistem teknis, dan portofolio proyek rekayasa perangkat lunak Muhamad Hendri Febriansyah (Senior Software Engineer).">
+  <meta property="og:title" content="Muhamad Hendri Febriansyah — Career Knowledge Graph">
+  <meta property="og:description" content="Visualisasi interaktif D3.js 56+ Node & Relasi: Next.js 15, React 19, Laravel 12, Android Kotlin, Web3 & NTMC Polri Command Center.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mhendrif.github.io/my-resume/">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhamad Hendri Febriansyah — Interactive Career Knowledge Graph">
+  <meta name="twitter:description" content="Interactive D3.js Knowledge Graph connecting Experience, 37 Production Projects, Frameworks & Tech Stacks.">
+
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -241,12 +253,12 @@ html_template = """<!DOCTYPE html>
     .header {
       position: absolute;
       top: 0; left: 0; right: 0;
-      padding: 16px 24px;
+      padding: 14px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       z-index: 20;
     }
@@ -260,14 +272,33 @@ html_template = """<!DOCTYPE html>
       border-radius: 6px;
       letter-spacing: 0.5px;
     }
-    h1 { font-size: 18px; font-weight: 600; }
+    h1 { font-size: 17px; font-weight: 600; }
     .subtitle { font-size: 12px; color: #94a3b8; }
-    .controls { display: flex; align-items: center; gap: 12px; }
+    .controls { display: flex; align-items: center; gap: 10px; }
+    .filter-group { display: flex; align-items: center; gap: 6px; }
+    .filter-btn {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      padding: 6px 11px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #38bdf8;
+      color: #000;
+      font-weight: 600;
+      border-color: #38bdf8;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    }
     .search-box {
       background: rgba(30, 41, 59, 0.8);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 8px;
-      padding: 8px 14px;
+      padding: 7px 12px;
       color: #fff;
       font-size: 13px;
       outline: none;
@@ -278,7 +309,7 @@ html_template = """<!DOCTYPE html>
       background: rgba(30, 41, 59, 0.9);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: #e2e8f0;
-      padding: 8px 14px;
+      padding: 7px 12px;
       border-radius: 8px;
       font-size: 13px;
       cursor: pointer;
@@ -289,10 +320,10 @@ html_template = """<!DOCTYPE html>
     .legend-bar {
       position: absolute;
       bottom: 20px; left: 24px;
-      display: flex; gap: 16px;
+      display: flex; gap: 14px;
       background: rgba(15, 23, 42, 0.85);
       backdrop-filter: blur(10px);
-      padding: 10px 18px;
+      padding: 8px 16px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.08);
       z-index: 10;
@@ -302,9 +333,9 @@ html_template = """<!DOCTYPE html>
     .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
     .drawer {
       position: absolute;
-      top: 75px; right: -420px;
-      width: 400px; bottom: 20px;
-      background: rgba(15, 23, 42, 0.94);
+      top: 75px; right: -430px;
+      width: 410px; bottom: 20px;
+      background: rgba(15, 23, 42, 0.95);
       backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 16px;
@@ -353,8 +384,8 @@ html_template = """<!DOCTYPE html>
     .node circle { stroke-width: 2.5px; cursor: pointer; transition: transform 0.2s, filter 0.2s; }
     .node circle:hover { transform: scale(1.15); filter: drop-shadow(0 0 12px currentColor); }
     .node text { font-size: 11px; font-weight: 500; fill: #e2e8f0; pointer-events: none; text-shadow: 0 1px 4px rgba(0,0,0,0.9); }
-    .node.dimmed circle, .node.dimmed text { opacity: 0.15; }
-    .link.dimmed { opacity: 0.05; }
+    .node.dimmed circle, .node.dimmed text { opacity: 0.12; }
+    .link.dimmed { opacity: 0.04; }
   </style>
 </head>
 <body>
@@ -363,12 +394,20 @@ html_template = """<!DOCTYPE html>
       <span class="logo-badge">GRAPHIFY</span>
       <div>
         <h1>Muhamad Hendri Febriansyah — Career Knowledge Graph</h1>
-        <div class="subtitle">Interactive Knowledge Graph connecting Experience, Projects, Frameworks & Tech Stacks</div>
+        <div class="subtitle">Interactive Knowledge Graph connecting Experience, 37 Production Projects & Tech Stacks</div>
       </div>
     </div>
     <div class="controls">
+      <div class="filter-group">
+        <button class="filter-btn active" onclick="filterCluster('all', this)">Semua</button>
+        <button class="filter-btn" onclick="filterCluster('frontend', this)">🎨 Frontend</button>
+        <button class="filter-btn" onclick="filterCluster('backend', this)">⚙️ Backend</button>
+        <button class="filter-btn" onclick="filterCluster('web3', this)">🌐 Web3/AI</button>
+        <button class="filter-btn" onclick="filterCluster('android', this)">📱 Android</button>
+        <button class="filter-btn" onclick="filterCluster('company', this)">🏢 Perusahaan</button>
+      </div>
       <input type="text" id="searchInput" class="search-box" placeholder="Cari Proyek, Tech, Skill...">
-      <button class="btn" onclick="resetGraph()">Reset View</button>
+      <button class="btn" onclick="resetGraph()">Reset</button>
     </div>
   </div>
 
@@ -505,6 +544,41 @@ html_template = """<!DOCTYPE html>
       link.classed("highlighted", false).classed("dimmed", false);
     }
 
+    function filterCluster(category, btnElement) {
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      if (btnElement) btnElement.classList.add('active');
+
+      if (category === 'all') {
+        resetGraph();
+        return;
+      }
+
+      let targetDomainId = '';
+      if (category === 'frontend') targetDomainId = 'dom-frontend';
+      else if (category === 'backend') targetDomainId = 'dom-backend';
+      else if (category === 'web3') targetDomainId = 'dom-web3';
+      else if (category === 'android') targetDomainId = 'dom-android';
+      else if (category === 'company') {
+        node.each(function(n) {
+          if (n.group === 'company' || n.group === 'root') {
+            d3.select(this).classed('dimmed', false);
+          } else {
+            d3.select(this).classed('dimmed', true);
+          }
+        });
+        return;
+      }
+
+      const matchDomain = graphData.nodes.find(function(n) { return n.id === targetDomainId; });
+      if (matchDomain) {
+        highlightConnections(matchDomain);
+        svg.transition().duration(600).call(
+          zoom.transform,
+          d3.zoomIdentity.translate(width / 2 - matchDomain.x * 1.3, height / 2 - matchDomain.y * 1.3).scale(1.3)
+        );
+      }
+    }
+
     function showDrawer(d) {
       const drawer = document.getElementById("drawer");
       const tag = document.getElementById("drawerTag");
@@ -539,6 +613,8 @@ html_template = """<!DOCTYPE html>
     }
 
     function resetGraph() {
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      document.querySelector('.filter-btn').classList.add('active');
       svg.transition().duration(750).call(
         zoom.transform,
         d3.zoomIdentity.translate(0, 0).scale(1)
@@ -568,8 +644,7 @@ html_template = """<!DOCTYPE html>
     svg.call(zoom.transform, d3.zoomIdentity.translate(0, 0).scale(0.95));
   </script>
 </body>
-</html>
-"""
+</html>"""
 
 html_content = html_template.replace("GRAPH_DATA_PLACEHOLDER", json.dumps(graph_data))
 
