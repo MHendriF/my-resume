@@ -48,7 +48,7 @@ def add_link(source, target, value=1, type_name="connected"):
             "type": type_name
         })
 
-# Root Node
+# Root Candidate Node
 root_id = "root-hendri"
 add_node(root_id, profile.get("name", "Muhamad Hendri Febriansyah"), "root", 26, "#38bdf8", 
          f"Senior Software Engineer | {profile.get('bio', '')}", {
@@ -146,10 +146,10 @@ if os.path.exists(EXP_DIR):
 
 # Key Tech Nodes
 tech_nodes = [
-    ("tech-react19", "React 19.2", "tech", 11, "#61dafb", "Bleeding-edge React UI framework with Server Components"),
-    ("tech-nextjs15", "Next.js 15.3", "tech", 11, "#ffffff", "Next.js App Router & Turbopack bundler"),
-    ("tech-laravel12", "Laravel 12", "tech", 11, "#ff2d20", "Modern PHP Enterprise MVC Framework & Reverb WebSockets"),
-    ("tech-typescript", "TypeScript 5.9", "tech", 11, "#3178c6", "Strict static typing with zero 'any' policy"),
+    ("tech-react19", "React 19.x", "tech", 11, "#61dafb", "Bleeding-edge React UI framework with Server Components"),
+    ("tech-nextjs15", "Next.js 15.x", "tech", 11, "#ffffff", "Next.js App Router & Turbopack bundler"),
+    ("tech-laravel12", "Laravel 12.x", "tech", 11, "#ff2d20", "Modern PHP Enterprise MVC Framework & Reverb WebSockets"),
+    ("tech-typescript", "TypeScript 5.x", "tech", 11, "#3178c6", "Strict static typing with zero 'any' policy"),
     ("tech-tailwind4", "Tailwind CSS v4", "tech", 11, "#38bdf8", "Next-gen atomic CSS styling engine"),
     ("tech-tanstack", "TanStack Query/Table", "tech", 11, "#ff4154", "Server-state caching & high-performance DataTables"),
     ("tech-pusher", "Pusher WebSockets", "tech", 11, "#5c42ec", "Real-time incident event broadcast channel"),
@@ -233,7 +233,7 @@ html_template = """<!DOCTYPE html>
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(15, 23, 42, 0.8);
+      background: rgba(15, 23, 42, 0.85);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       z-index: 20;
@@ -392,13 +392,13 @@ html_template = """<!DOCTYPE html>
 
     const zoom = d3.zoom()
       .scaleExtent([0.2, 4])
-      .on("zoom", (event) => {
+      .on("zoom", function(event) {
         container.attr("transform", event.transform);
       });
     svg.call(zoom);
 
     const simulation = d3.forceSimulation(graphData.nodes)
-      .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(d => {
+      .force("link", d3.forceLink(graphData.links).id(function(d) { return d.id; }).distance(function(d) {
         if (d.type === "specializes_in") return 110;
         if (d.type === "worked_at") return 140;
         if (d.type === "built_project") return 90;
@@ -406,7 +406,7 @@ html_template = """<!DOCTYPE html>
       }))
       .force("charge", d3.forceManyBody().strength(-380))
       .force("center", d3.forceCenter(width / 2, height / 2 + 20))
-      .force("collision", d3.forceCollide().radius(d => d.radius + 18));
+      .force("collision", d3.forceCollide().radius(function(d) { return d.radius + 18; }));
 
     const link = container.append("g")
       .attr("class", "links")
@@ -425,29 +425,29 @@ html_template = """<!DOCTYPE html>
         .on("start", dragstarted)
         .on("drag", dragged)
         .on("end", dragended))
-      .on("click", (event, d) => showDrawer(d))
-      .on("mouseover", (event, d) => highlightConnections(d))
+      .on("click", function(event, d) { showDrawer(d); })
+      .on("mouseover", function(event, d) { highlightConnections(d); })
       .on("mouseout", resetHighlight);
 
     node.append("circle")
-      .attr("r", d => d.radius)
-      .attr("fill", d => d.color)
-      .attr("stroke", d => d3.color(d.color).brighter(0.8))
-      .attr("stroke-width", d => d.group === "root" ? 4 : 2);
+      .attr("r", function(d) { return d.radius; })
+      .attr("fill", function(d) { return d.color; })
+      .attr("stroke", function(d) { return d3.color(d.color).brighter(0.8); })
+      .attr("stroke-width", function(d) { return d.group === "root" ? 4 : 2; });
 
     node.append("text")
-      .attr("dx", d => d.radius + 6)
+      .attr("dx", function(d) { return d.radius + 6; })
       .attr("dy", 4)
-      .text(d => d.label);
+      .text(function(d) { return d.label; });
 
-    simulation.on("tick", () => {
+    simulation.on("tick", function() {
       link
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
 
-      node.attr("transform", d => `translate(${d.x},${d.y})`);
+      node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
     });
 
     function dragstarted(event, d) {
@@ -509,13 +509,13 @@ html_template = """<!DOCTYPE html>
       let metaHtml = "";
       if (d.meta) {
         if (d.meta.role) {
-          metaHtml += `<div class="meta-box"><div class="meta-label">Peran & Periode</div><div class="meta-val">${d.meta.role} (${d.meta.period}) - ${d.meta.location}</div></div>`;
+          metaHtml += '<div class="meta-box"><div class="meta-label">Peran & Periode</div><div class="meta-val">' + d.meta.role + ' (' + d.meta.period + ') - ' + d.meta.location + '</div></div>';
         }
         if (d.meta.bullets && d.meta.bullets.length > 0) {
-          metaHtml += `<div class="meta-box"><div class="meta-label">Pencapaian Kunci</div><ul class="bullet-list">${d.meta.bullets.map(b => `<li>${b}</li>`).join('')}</ul></div>`;
+          metaHtml += '<div class="meta-box"><div class="meta-label">Pencapaian Kunci</div><ul class="bullet-list">' + d.meta.bullets.map(function(b) { return '<li>' + b + '</li>'; }).join('') + '</ul></div>';
         }
         if (d.meta.readme_link) {
-          metaHtml += `<div class="meta-box"><div class="meta-label">Dokumentasi Teknis</div><div class="meta-val"><code>${d.meta.readme_link}</code></div></div>`;
+          metaHtml += '<div class="meta-box"><div class="meta-label">Dokumentasi Teknis</div><div class="meta-val"><code>' + d.meta.readme_link + '</code></div></div>';
         }
       }
       meta.innerHTML = metaHtml;
@@ -540,8 +540,10 @@ html_template = """<!DOCTYPE html>
       if (!q) {
         resetHighlight();
         return;
-      }}
-      const match = graphData.nodes.find(n => n.label.toLowerCase().includes(q) || (n.desc && n.desc.toLowerCase().includes(q)));
+      }
+      const match = graphData.nodes.find(function(n) {
+        return n.label.toLowerCase().indexOf(q) !== -1 || (n.desc && n.desc.toLowerCase().indexOf(q) !== -1);
+      });
       if (match) {
         highlightConnections(match);
         svg.transition().duration(500).call(

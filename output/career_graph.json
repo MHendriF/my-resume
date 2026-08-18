@@ -425,7 +425,7 @@
     },
     {
       "id": "tech-react19",
-      "label": "React 19.2",
+      "label": "React 19.x",
       "group": "tech",
       "radius": 11,
       "color": "#61dafb",
@@ -434,7 +434,7 @@
     },
     {
       "id": "tech-nextjs15",
-      "label": "Next.js 15.3",
+      "label": "Next.js 15.x",
       "group": "tech",
       "radius": 11,
       "color": "#ffffff",
@@ -443,7 +443,7 @@
     },
     {
       "id": "tech-laravel12",
-      "label": "Laravel 12",
+      "label": "Laravel 12.x",
       "group": "tech",
       "radius": 11,
       "color": "#ff2d20",
@@ -452,7 +452,7 @@
     },
     {
       "id": "tech-typescript",
-      "label": "TypeScript 5.9",
+      "label": "TypeScript 5.x",
       "group": "tech",
       "radius": 11,
       "color": "#3178c6",
