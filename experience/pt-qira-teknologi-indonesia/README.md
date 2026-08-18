@@ -1,47 +1,37 @@
-# 🏢 PT Qira Teknologi Indonesia — Career Portfolio & Engineering Showcase
+# 🏢 PT Qira Teknologi Indonesia
 
-[![Company](https://img.shields.io/badge/Company-PT_Qira_Teknologi_Indonesia-blue?style=for-the-badge&logo=indonesia)](https://qiratek.com)
-[![Role](https://img.shields.io/badge/Role-Software_Developer-purple?style=for-the-badge)](https://github.com/MHendriF)
-[![Period](https://img.shields.io/badge/Period-Nov_2020_--_Jan_2024-orange?style=for-the-badge)](https://github.com/MHendriF)
-[![Key Clients](https://img.shields.io/badge/Clients-Kemdikbudristek_RI_/_Gov_/_Retail-darkblue?style=for-the-badge)](https://kemdikbud.go.id)
-
----
-
-## 📌 Ringkasan Eksekutif & Lingkup Tanggung Jawab
-Di **PT Qira Teknologi Indonesia**, saya bertindak sebagai **Software Developer** yang bertanggung jawab atas pengembangan sistem penilaian aparatur sipil negara untuk **Kemdikbudristek RI**, sistem penganggaran daerah, integrasi *payment gateway* e-commerce (**Midtrans, Moota**), dan *Sales Force Automation* berbasis MongoDB.
-
-* **Domain Keahlian:** Government Credit Assessment, Payment Gateways & Webhooks, Multi-Tier Approval Workflows, SFA & Geo-Tagging, Polyglot Persistence.
-* **Tech Stack Utama:** Laravel (5.x/6.x/8.x), PHP (7.x/8.x), MySQL, MongoDB, Midtrans Gateway, DomPDF, Yajra DataTables, Firebase FCM.
+[![Company Status](https://img.shields.io/badge/Status-Verified_Vault-brightgreen?style=for-the-badge)](#)
+[![Role](https://img.shields.io/badge/Role-Full_Stack_Laravel_&_Android_Developer-darkgreen?style=for-the-badge)](#)
+[![Location](https://img.shields.io/badge/Location-Surabaya,_Indonesia-gray?style=for-the-badge)](#)
 
 ---
 
-## 🗂️ Katalog Subproyek (`overview-projects/`)
+## 📌 Ringkasan Eksekutif & Skala Operasional
+* **Peran Resmi:** Full Stack Laravel & Android Developer
+* **Periode:** Nov 2019 – Feb 2021
+* **Lokasi:** Surabaya, Indonesia
+* **Gambaran Umum:** Software development agency enterprise yang menangani sistem informasi pemerintahan (Kemdikbudristek RI, Pemkot), korporasi telekomunikasi (PT Telkom Indonesia), e-commerce otomotif, dan platform asesmen psikologi.
 
-Berikut adalah daftar 8 subproyek yang telah dibangun di PT Qira Teknologi Indonesia:
+---
 
-| Subproyek & Tautan | Versi Framework Utama | Fokus Teknis & Arsitektur | Tipe Sistem |
+## 📂 Katalog Rekam Jejak Subproyek (Subprojects Catalog)
+| Nama Subproyek | Tipe & Fokus Rekayasa Sistem | Tech Stack Utama | Blueprint Arsitektur |
 | :--- | :--- | :--- | :---: |
-| **[`epak-dev`](./overview-projects/epak-dev/)** | Laravel 8.0, PHP ^7.3/8.0, DomPDF | Sistem Penilaian Angka Kredit Widyaprada (Kemdikbudristek RI) & Official PAK PDF Generator | Government SaaS |
-| **[`e-budgeting`](./overview-projects/e-budgeting/)** | Laravel 5.4, Yajra Oracle, Entrust | Regional Government Budgeting Platform with >50K Rows Table & Dynamic QR Sign-off | Gov Fintech |
-| **[`pmp-smart-backend`](./overview-projects/pmp-smart-backend/)** | Laravel 8.12, KilatStorage S3, DomPDF | Online Psychometric Assessment Engine (DISC, MBTI, IQ) with Instant Psychograms | Psychometrics API |
-| **[`fixautomart`](./overview-projects/fixautomart/)** | Laravel 5.5 LTS, Midtrans Gateway, FCM | Automotive Marketplace with Midtrans Payment Hub (VA, QRIS, GoPay) & Signature Verification | Fintech E-Commerce |
-| **[`qisales-backend`](./overview-projects/qisales-backend/)** | Laravel 6.18, MongoDB 3.6, IndoRegion | Sales Force Automation (SFA) with GPS Radius Geo-tagging & MongoDB Activity Logs | SFA & Mobile Backend |
-| **[`samurai-point`](./overview-projects/samurai-point/)** | Laravel 8.75, Laravel Sanctum, Cart | Customer Loyalty Points Redemption Hub with Tamper-Proof Ledger System | Loyalty Hub |
-| **[`pmp-store`](./overview-projects/pmp-store/)** | Laravel 8.0, PHP ^7.3, File Manager | Licensed Assessment Kit Storefront with Encrypted Time-Expiring Download Tokens | Digital Storefront |
-| **[`growth2`](./overview-projects/growth2/)** | Laravel 5.2, Maatwebsite Excel, Charts | Retail Outlet Mapping with Google Maps Coordinate Picker & Excel Exporter | SFA Admin |
+| [**Epak Dev**](./overview-projects/epak-dev/README.md) | Sistem Penilaian Angka Kredit Widyaprada Kemdikbudristek RI | `Laravel 8, Alexusmai File Manager, S3, Yajra DataTables, DomPDF, Milon Barcode` | [🏛️ Blueprints](./overview-projects/epak-dev/ARCHITECTURE.md) |
+| [**Fix Automart**](./overview-projects/fix-automart/README.md) | Automotive Parts Marketplace & Midtrans Payment Bridge | `Laravel 5 LTS, Midtrans Gateway, ShoppingCart, FCM, Barcode` | [🏛️ Blueprints](./overview-projects/fix-automart/ARCHITECTURE.md) |
+| [**Tmap Telkom**](./overview-projects/tmap-telkom/README.md) | Telkom Market Analytics Platform (PT Telkom Indonesia) | `Laravel 8, Spatie Analytics, Yajra DataTables, Maatwebsite Excel` | [🏛️ Blueprints](./overview-projects/tmap-telkom/ARCHITECTURE.md) |
+| [**Qisales Backend**](./overview-projects/qisales-backend/README.md) | Sales Force Automation & Field GPS Telemetry Hub | `Laravel 6 LTS, MongoDB Telemetry, IndoRegion, FCM Push` | [🏛️ Blueprints](./overview-projects/qisales-backend/ARCHITECTURE.md) |
+| [**Pmp Smart Backend**](./overview-projects/pmp-smart-backend/README.md) | Platform Tes Psikometri & Asesmen Psikologi Online | `Laravel 8, KilatStorage S3, Recaptcha v3, DomPDF, SimpleQRCode` | [🏛️ Blueprints](./overview-projects/pmp-smart-backend/ARCHITECTURE.md) |
+| [**E Budgeting**](./overview-projects/e-budgeting/README.md) | Sistem Penganggaran Keuangan Daerah Terpadu | `Laravel 5, Yajra DataTables, Entrust RBAC, QR Sign-off` | [🏛️ Blueprints](./overview-projects/e-budgeting/ARCHITECTURE.md) |
+| [**Samurai Point**](./overview-projects/samurai-point/README.md) | Customer Loyalty Points & Merchant Redemption Engine | `Laravel 8, Sanctum, Point Cart, Spatie Permissions` | [🏛️ Blueprints](./overview-projects/samurai-point/ARCHITECTURE.md) |
+| [**Pmp Store**](./overview-projects/pmp-store/README.md) | Digital Assessment Kit E-Store & Secure Download Hub | `Laravel 8, Alexusmai S3 Vault, DomPDF Invoicing` | [🏛️ Blueprints](./overview-projects/pmp-store/ARCHITECTURE.md) |
+| [**Growth V2**](./overview-projects/growth-v2/README.md) | Outlet Mapping & Sales Distribution Territory Manager | `Laravel 5, Excel Exporter, LavaCharts` | [🏛️ Blueprints](./overview-projects/growth-v2/ARCHITECTURE.md) |
+| [**Balai Center Android**](./overview-projects/balai-center-android/README.md) | Aplikasi Mobile Balai Dikmas Paud Jatim Kemdikbud | `Native Android, Firebase Crashlytics, AndroidX, Material Design` | [🏛️ Blueprints](./overview-projects/balai-center-android/ARCHITECTURE.md) |
+| [**Ezbli Android**](./overview-projects/ezbli-android/README.md) | Aplikasi Mobile Belanja Marketplace Ezbli | `Native Android, Custom Navigation Bar, CircleImageView, REST API` | [🏛️ Blueprints](./overview-projects/ezbli-android/ARCHITECTURE.md) |
 
 ---
 
-## 📈 Metrik Dampak & Pencapaian Terukur (Google XYZ Formula)
-* **Efisiensi Penilaian Nasional:** Memangkas waktu proses verifikasi angka kredit tenaga pendidik nasional dari **3 bulan menjadi < 2 minggu** dengan akurasi formula 100%.
-* **Akurasi Transaksi Payment Gateway:** Mencapai **99.9%** billing accuracy dan memangkas waktu rekonsiliasi transaksi dari 15 menit menjadi **< 3 detik** via webhook signature validation.
-* **Pemrosesan Data Skala Besar:** Memproses dataset anggaran daerah **>50.000 baris belanja** secara instan menggunakan Yajra DataTables sisi server.
-* **Skalabilitas Geo-Tracking:** Menyimpan jutaan log koordinat check-in sales lapangan ke MongoDB tanpa degradasi performa pada database operasional.
+## 📈 Metrik Dampak Terukur (Google XYZ Formula)
 
----
-
-## 🌟 Pilihan Bullet Point Resume Siap Pakai (English)
-* *Architected the official national credit scoring platform (Epak Widyaprada) for Kemdikbudristek RI using Laravel and MySQL, reducing educator promotion processing times by over 80%.*
-* *Integrated Midtrans Payment Gateway (Virtual Account, QRIS, GoPay) with automated SHA-512 cryptographic webhook signature validation for instant order fulfillment.*
-* *Developed municipal budgeting and approval system supporting 50,000+ line items with Yajra DataTables and QR-code digital sign-offs.*
-* *Engineered Sales Force Automation (SFA) backend combining MySQL with MongoDB to reliably store high-volume GPS check-in logs and sales routes.*
+* **Mendigitalkan 100% proses penilaian angka kredit ribuan pejabat fungsional Widyaprada se-Indonesia.**
+* **Mengintegrasikan payment gateway Midtrans dan payment gateway multipoint dengan zero security breach.**

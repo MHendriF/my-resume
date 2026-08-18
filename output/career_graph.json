@@ -203,6 +203,32 @@
       }
     },
     {
+      "id": "proj-aku-pintar-mvp-website",
+      "label": "🎓 Aku Pintar MVP Web Platform",
+      "group": "project",
+      "radius": 13,
+      "color": "#f59e0b",
+      "desc": "Platform Aku Pintar membutuhkan arsitektur portal web skala besar yang mampu mengintegrasikan puluhan layanan pendidikan sekaligus—mulai dari tes minat bakat psikometri (RIASEC & M...",
+      "meta": {
+        "slug": "aku-pintar-mvp-website",
+        "company": "pt-aku-pintar-indonesia",
+        "readme_link": "experience/pt-aku-pintar-indonesia/overview-projects/aku-pintar-mvp-website/README.md"
+      }
+    },
+    {
+      "id": "proj-a3jni-backend",
+      "label": "🚚 A3 JNI Logistics & Supply Chain Backend",
+      "group": "project",
+      "radius": 13,
+      "color": "#ef4444",
+      "desc": "Operasional armada logistik membutuhkan gateway backend yang tangguh untuk memantau status pengiriman kargo, memvalidasi bukti serah terima barang (POD), dan mengamankan endpoint d...",
+      "meta": {
+        "slug": "a3jni-backend",
+        "company": "pt-lapantiga-solusi-algoritma",
+        "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/a3jni-backend/README.md"
+      }
+    },
+    {
       "id": "proj-digipor-bank-bmpdjatim",
       "label": "Digipor Bank BMPD Jatim",
       "group": "project",
@@ -213,6 +239,19 @@
         "slug": "digipor-bank-bmpdjatim",
         "company": "pt-lapantiga-solusi-algoritma",
         "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/digipor-bank-bmpdjatim/README.md"
+      }
+    },
+    {
+      "id": "proj-ebupot",
+      "label": "📑 Sistem e-Bupot (Elektronik Bukti Potong Pajak)",
+      "group": "project",
+      "radius": 13,
+      "color": "#ef4444",
+      "desc": "Pengelolaan bukti pemotongan pajak penghasilan (PPh 23/26/Final) perusahaan membutuhkan kepatuhan regulasi perpajakan yang ketat, verifikasi NPWP otomatis, serta pengelolaan dokume...",
+      "meta": {
+        "slug": "ebupot",
+        "company": "pt-lapantiga-solusi-algoritma",
+        "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/ebupot/README.md"
       }
     },
     {
@@ -255,6 +294,19 @@
       }
     },
     {
+      "id": "proj-flondr",
+      "label": "🧺 Flondr On-Demand Marketplace Platform",
+      "group": "project",
+      "radius": 13,
+      "color": "#ef4444",
+      "desc": "Penyedia jasa on-demand membutuhkan platform terpusat untuk memanajemen pesanan penjemputan, penugasan kurir, integrasi notifikasi push status pencucian, dan analitik pendapatan ve...",
+      "meta": {
+        "slug": "flondr",
+        "company": "pt-lapantiga-solusi-algoritma",
+        "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/flondr/README.md"
+      }
+    },
+    {
       "id": "proj-koda-fe-client",
       "label": "NTMC Client App",
       "group": "project",
@@ -278,6 +330,19 @@
         "slug": "koda-fe-utama",
         "company": "pt-lapantiga-solusi-algoritma",
         "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/koda-fe-utama/README.md"
+      }
+    },
+    {
+      "id": "proj-miracle-wish-android",
+      "label": "📱 Miracle Wish E-Commerce Android Mobile Client",
+      "group": "project",
+      "radius": 13,
+      "color": "#ef4444",
+      "desc": "Memberikan pengalaman belanja mobile yang intuitif bagi pelanggan Miracle Wish untuk memilih produk kado kustom, menyematkan pesan ucapan personal, dan melacak pengiriman paket sec...",
+      "meta": {
+        "slug": "miracle-wish-android",
+        "company": "pt-lapantiga-solusi-algoritma",
+        "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/miracle-wish-android/README.md"
       }
     },
     {
@@ -307,6 +372,19 @@
       }
     },
     {
+      "id": "proj-petrokimia-asuransi",
+      "label": "🏥 Sistem Asuransi & Klaim Kesehatan PT Petrokimia Gresik",
+      "group": "project",
+      "radius": 13,
+      "color": "#ef4444",
+      "desc": "Pengelolaan klaim asuransi kesehatan ribuan karyawan dan keluarga PT Petrokimia Gresik membutuhkan alur verifikasi klaim multi-tahap yang cepat, validasi dokumen medis, serta integ...",
+      "meta": {
+        "slug": "petrokimia-asuransi",
+        "company": "pt-lapantiga-solusi-algoritma",
+        "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/petrokimia-asuransi/README.md"
+      }
+    },
+    {
       "id": "proj-produk-lokal",
       "label": "Produk Lokal",
       "group": "project",
@@ -317,6 +395,19 @@
         "slug": "produk-lokal",
         "company": "pt-lapantiga-solusi-algoritma",
         "readme_link": "experience/pt-lapantiga-solusi-algoritma/overview-projects/produk-lokal/README.md"
+      }
+    },
+    {
+      "id": "proj-balai-center-android",
+      "label": "📱 Balai Center Paud Dikmas Jatim Android Client",
+      "group": "project",
+      "radius": 13,
+      "color": "#10b981",
+      "desc": "Balai Pengembangan Pendidikan Anak Usia Dini dan Pendidikan Masyarakat (BP-PAUD dan Dikmas) Jawa Timur membutuhkan media informasi dan konsultasi mobile terpadu bagi para tenaga pe...",
+      "meta": {
+        "slug": "balai-center-android",
+        "company": "pt-qira-teknologi-indonesia",
+        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/balai-center-android/README.md"
       }
     },
     {
@@ -346,29 +437,42 @@
       }
     },
     {
-      "id": "proj-fixautomart",
+      "id": "proj-ezbli-android",
+      "label": "📱 Ezbli Marketplace Android Mobile Client",
+      "group": "project",
+      "radius": 13,
+      "color": "#10b981",
+      "desc": "Platform belanja online Ezbli membutuhkan aplikasi mobile Android yang ringan, interaktif, dan mudah digunakan untuk menjelajahi katalog merchant, mengelola keranjang belanja, sert...",
+      "meta": {
+        "slug": "ezbli-android",
+        "company": "pt-qira-teknologi-indonesia",
+        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/ezbli-android/README.md"
+      }
+    },
+    {
+      "id": "proj-fix-automart",
       "label": "FixAutoMart",
       "group": "project",
       "radius": 13,
       "color": "#10b981",
       "desc": "Toko suku cadang otomotif membutuhkan platform e-commerce dengan integrasi payment gateway multi-channel instan (Virtual Account, QRIS, E-Wallet) dan push notifikasi pesanan....",
       "meta": {
-        "slug": "fixautomart",
+        "slug": "fix-automart",
         "company": "pt-qira-teknologi-indonesia",
-        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/fixautomart/README.md"
+        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/fix-automart/README.md"
       }
     },
     {
-      "id": "proj-growth2",
+      "id": "proj-growth-v2",
       "label": "Growth SFA & Outlet Map Geotagging System",
       "group": "project",
       "radius": 13,
       "color": "#10b981",
       "desc": "Manajemen memerlukan sistem pemetaan visual outlet toko ritel pada peta digital dan pemantauan kinerja sales terpadu....",
       "meta": {
-        "slug": "growth2",
+        "slug": "growth-v2",
         "company": "pt-qira-teknologi-indonesia",
-        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/growth2/README.md"
+        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/growth-v2/README.md"
       }
     },
     {
@@ -421,6 +525,19 @@
         "slug": "samurai-point",
         "company": "pt-qira-teknologi-indonesia",
         "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/samurai-point/README.md"
+      }
+    },
+    {
+      "id": "proj-tmap-telkom",
+      "label": "📊 Telkom Market Analytics Platform (TMAP)",
+      "group": "project",
+      "radius": 13,
+      "color": "#10b981",
+      "desc": "PT Telkom Indonesia membutuhkan platform terpadu untuk memantau performa penjualan produk digital, menganalisis penetrasi pasar regional, serta merekonsiliasi performa kanal penjua...",
+      "meta": {
+        "slug": "tmap-telkom",
+        "company": "pt-qira-teknologi-indonesia",
+        "readme_link": "experience/pt-qira-teknologi-indonesia/overview-projects/tmap-telkom/README.md"
       }
     },
     {
@@ -651,6 +768,60 @@
       "type": "uses_technology"
     },
     {
+      "source": "proj-ebupot",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ebupot",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-a3jni-backend",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-petrokimia-asuransi",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-petrokimia-asuransi",
+      "target": "tech-tailwind4",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-flondr",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-be",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-fe",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-miracle-wish-android",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
       "source": "proj-superior-agents",
       "target": "tech-nextjs15",
       "value": 1,
@@ -741,13 +912,13 @@
       "type": "uses_technology"
     },
     {
-      "source": "proj-fixautomart",
+      "source": "proj-fix-automart",
       "target": "tech-laravel12",
       "value": 1,
       "type": "uses_technology"
     },
     {
-      "source": "proj-fixautomart",
+      "source": "proj-fix-automart",
       "target": "tech-midtrans",
       "value": 1,
       "type": "uses_technology"
@@ -760,6 +931,30 @@
     },
     {
       "source": "proj-qisales-backend",
+      "target": "tech-mongodb",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-tmap-telkom",
+      "target": "tech-laravel12",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-balai-center-android",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-ezbli-android",
+      "target": "tech-kotlin-android",
+      "value": 1,
+      "type": "uses_technology"
+    },
+    {
+      "source": "proj-aku-pintar-mvp-website",
       "target": "tech-mongodb",
       "value": 1,
       "type": "uses_technology"

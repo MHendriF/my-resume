@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **Expanded Experience Vault with 9 New Production Subprojects (Total: 37 Projects):**
+  - **PT Aku Pintar Indonesia:** `aku-pintar-mvp-website` (100+ Liferay/OSGi Micro-Modules, RIASEC, WebRTC, OVO/BCA Payment).
+  - **PT Lapantiga Solusi Algoritma:** `ebupot` (Tax Compliance e-Bupot), `a3jni-backend` (Logistics Fleet API), `petrokimia-asuransi` (Petrokimia Gresik Claim Portal), `flondr` (On-Demand Service), `miracle-wish-android` (Native Android Client).
+  - **PT Qira Teknologi Indonesia:** `balai-center-android` (Kemdikbud Paud Dikmas Jatim Android), `ezbli-android` (Ezbli Marketplace Android), `tmap-telkom` (PT Telkom Market Analytics).
+- **Knowledge Graph Scale Expansion (Graphify):**
+  - Expanded graph network to **56 nodes** and **62 links**, dynamically connecting newly integrated subprojects and technology stacks.
 - **GitHub Pages Deployment Pipeline (`index.html` & `.github/workflows/deploy-pages.yml`):**
   - Automated CI/CD deployment hosting the interactive D3.js Knowledge Graph publicly at `https://mhendrif.github.io/my-resume/`.
 - **Quick-Access Resume Download Badges:**
@@ -55,6 +61,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **Expanded Experience Vault with 9 New Production Subprojects (Total: 37 Projects):**
+  - **PT Aku Pintar Indonesia:** `aku-pintar-mvp-website` (100+ Liferay/OSGi Micro-Modules, RIASEC, WebRTC, OVO/BCA Payment).
+  - **PT Lapantiga Solusi Algoritma:** `ebupot` (Tax Compliance e-Bupot), `a3jni-backend` (Logistics Fleet API), `petrokimia-asuransi` (Petrokimia Gresik Claim Portal), `flondr` (On-Demand Service), `miracle-wish-android` (Native Android Client).
+  - **PT Qira Teknologi Indonesia:** `balai-center-android` (Kemdikbud Paud Dikmas Jatim Android), `ezbli-android` (Ezbli Marketplace Android), `tmap-telkom` (PT Telkom Market Analytics).
+- **Knowledge Graph Scale Expansion (Graphify):**
+  - Expanded graph network to **56 nodes** and **62 links**, dynamically connecting newly integrated subprojects and technology stacks.
 - **GitHub Pages Deployment Pipeline (`index.html` & `.github/workflows/deploy-pages.yml`):**
   - Automated CI/CD deployment hosting the interactive D3.js Knowledge Graph publicly at `https://mhendrif.github.io/my-resume/`.
 - **Quick-Access Resume Download Badges:**
@@ -77,6 +89,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **Expanded Experience Vault with 9 New Production Subprojects (Total: 37 Projects):**
+  - **PT Aku Pintar Indonesia:** `aku-pintar-mvp-website` (100+ Liferay/OSGi Micro-Modules, RIASEC, WebRTC, OVO/BCA Payment).
+  - **PT Lapantiga Solusi Algoritma:** `ebupot` (Tax Compliance e-Bupot), `a3jni-backend` (Logistics Fleet API), `petrokimia-asuransi` (Petrokimia Gresik Claim Portal), `flondr` (On-Demand Service), `miracle-wish-android` (Native Android Client).
+  - **PT Qira Teknologi Indonesia:** `balai-center-android` (Kemdikbud Paud Dikmas Jatim Android), `ezbli-android` (Ezbli Marketplace Android), `tmap-telkom` (PT Telkom Market Analytics).
+- **Knowledge Graph Scale Expansion (Graphify):**
+  - Expanded graph network to **56 nodes** and **62 links**, dynamically connecting newly integrated subprojects and technology stacks.
 - **GitHub Pages Deployment Pipeline (`index.html` & `.github/workflows/deploy-pages.yml`):**
   - Automated CI/CD deployment hosting the interactive D3.js Knowledge Graph publicly at `https://mhendrif.github.io/my-resume/`.
 - **Quick-Access Resume Download Badges:**
