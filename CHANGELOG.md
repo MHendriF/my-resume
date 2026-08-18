@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **Dedicated ARCHITECTURE.md in Every Subproject:**
+  - Authored deep system design blueprints (`ARCHITECTURE.md`) across all 28 subprojects with Mermaid component flowcharts, data transmission lifecycles, and security models.
 - **Graphify Interactive Career Knowledge Graph:**
   - Interactive D3.js Force-Directed Network Graph visualizer ([`graphify.html`](./graphify.html) & `output/career_graph.html`).
   - Graph generator engine (`scripts/graphify.py`) mapping **47 Nodes & 49 Relations** across Candidate, Core Domains, Companies, 28 Subprojects, and Framework Technologies.
@@ -42,6 +44,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **Dedicated ARCHITECTURE.md in Every Subproject:**
+  - Authored deep system design blueprints (`ARCHITECTURE.md`) across all 28 subprojects with Mermaid component flowcharts, data transmission lifecycles, and security models.
 - **Mermaid Architecture Diagrams:**
   - Embedded Mermaid.js system flowcharts, database architecture diagrams, and sequence flows across flagship subproject documentations (NTMC Polri Command Center, Voxi AI Girlfriend, Epak Kemdikbudristek, ERI Helpdesk Reverb, etc.).
 - **Subproject Scaffolding Tool:**
@@ -56,6 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **Dedicated ARCHITECTURE.md in Every Subproject:**
+  - Authored deep system design blueprints (`ARCHITECTURE.md`) across all 28 subprojects with Mermaid component flowcharts, data transmission lifecycles, and security models.
 - **Multi-Variant Resume Generation Engine:**
   - Automated Python build script (`scripts/build_resume.py`) with support for targeted role compilation via `--target` CLI parameter.
   - Supported variants:
