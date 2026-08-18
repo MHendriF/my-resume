@@ -15,28 +15,27 @@
 
 ---
 
-## ⏳ Peta Perjalanan Karier (Career Journey Roadmap)
+## 💼 Ikhtisar Rekam Jejak Karier (Career Trajectory & Impact)
 
-```mermaid
-gantt
-    title 🚀 Muhamad Hendri Febriansyah — Engineering Evolution (2019 – Present)
-    dateFormat YYYY-MM
-    axisFormat %Y
+Ringkasan evolusi profesional, peran, dan dampak terukur (*Google XYZ Standard*) yang telah dicapai sepanjang **5+ tahun pengalaman rekayasa perangkat lunak**:
 
-    section Enterprise & Gov
-    PT Qira (Kemdikbud, Telkom, Laravel, Android) :active, 2019-11, 2021-02
-    PT Aku Pintar (Android MVVM, 1.5M Users, EdTech Portal) :active, 2021-02, 2024-05
-
-    section Command Center & Web3
-    PT Lapantiga (NTMC Polri Command Center, Laravel, React 19) :active, 2024-06, 2026-08
-    Kipley Pte. Ltd. (Autonomous AI Agents, Next.js 15, Web3 dApps) :active, 2024-08, 2026-08
 ```
+2019 ──[ Full Stack & Mobile ]──► 2021 ──[ Scale & Native Mobile ]──► 2024 ──[ Command Center & Web3 ]──► Present
+     PT Qira Teknologi               PT Aku Pintar (1.5M Users)          PT Lapantiga & Kipley Pte. Ltd.
+```
+
+| Periode & Peran | Perusahaan & Lingkup | Fokus Rekayasa & Tech Stack Kunci | Dampak Kuantitatif & Pencapaian Bisnis | Showcase & Vault |
+| :--- | :--- | :--- | :--- | :---: |
+| **Aug 2024 – Present**<br/>`Senior Full Stack & Web3 Engineer` | **Kipley Pte. Ltd.**<br/>*Singapore (Remote)* | • Next.js 15 (App Router, Turbopack)<br/>• Web3 dApps & Solidity Contracts<br/>• Telegram Mini App (TMA) SDK<br/>• SSE Streaming & Radix UI | • Membangun portal multi-agent otonom Web3 & AI.<br/>• Integrasi wallet non-custodial (RainbowKit/Ethers) dan payment fiat Stripe dengan zero-failure settlement.<br/>• Optimalisasi bundle size TMA hingga 38.6%. | [🏢 Showcase](./experience/kipley-pte-ltd/README.md) |
+| **Jun 2024 – Present**<br/>`Senior Frontend & Web Lead` | **PT Lapantiga Solusi Algoritma**<br/>*Jakarta, Indonesia (Hybrid)* | • React 19 & React Router v7<br/>• Tailwind CSS v4 & TanStack Grid<br/>• Pusher / Laravel Reverb WS<br/>• Laravel 12 & Livewire 2 | • Merancang Command Center Traffic NTMC Polri dengan latensi stream real-time < 500ms.<br/>• Memproses ribuan data pajak (e-Bupot) dan klaim asuransi Petrokimia Gresik tanpa kesalahan hitung. | [🏢 Showcase](./experience/pt-lapantiga-solusi-algoritma/README.md) |
+| **Feb 2021 – May 2024**<br/>`Software Developer` | **PT Aku Pintar Indonesia**<br/>*Surabaya, Indonesia* | • Android Native (Kotlin & Java)<br/>• Android Jetpack, MVVM, Coroutines<br/>• Liferay OSGi (100+ Micro-Modules)<br/>• WebRTC Stream & BCA/OVO Payment | • Mengembangkan aplikasi mobile dengan **1.500.000+ pengguna aktif** dan crash rate < 0.2%.<br/>• Mengotomatisasi sistem tes minat bakat RIASEC & psikometri nasional untuk ratusan ribu siswa. | [🏢 Showcase](./experience/pt-aku-pintar-indonesia/README.md) |
+| **Nov 2019 – Feb 2021**<br/>`Full Stack & Mobile Developer` | **PT Qira Teknologi Indonesia**<br/>*Surabaya, Indonesia* | • Laravel 8 / 6 LTS & S3 Storage<br/>• Android Native (AndroidX)<br/>• Midtrans Payment Gateway Bridge<br/>• Yajra DataTables & Milon Barcode | • Mendigitalkan 100% proses penilaian angka kredit ribuan pejabat Kemdikbudristek RI (EPAK).<br/>• Integrasi payment gateway Midtrans Snap & e-commerce otomotif dengan zero security incident. | [🏢 Showcase](./experience/pt-qira-teknologi-indonesia/README.md) |
 
 ---
 
 ## 🌟 Rekayasa Unggulan & Proyek Flagship (Executive Highlights)
 
-Untuk kemudahan peninjauan cepat (*Quick 30-Second Overview*), berikut adalah 4 proyek rekayasa perangkat lunak terpilih:
+Untuk peninjauan teknis mendalam (*Technical Deep-Dive*), berikut adalah 4 sistem skala enterprise terpilih:
 
 | Proyek Unggulan | Institusi / Klien | Peran & Skala Sistem | Tech Stack Kunci | Arsitektur & Showcase |
 | :--- | :--- | :--- | :--- | :---: |
@@ -47,9 +46,7 @@ Untuk kemudahan peninjauan cepat (*Quick 30-Second Overview*), berikut adalah 4 
 
 ---
 
-## 🌟 Gambaran Arsitektur Sistem
-
-Repositori ini adalah **Resume Generation Pipeline & Career Knowledge Vault** modular yang dikelola secara profesional berbasis data (*Single Source of Truth*). Sistem ini mengintegrasikan otomasi kompilasi dokumen multi-varian (`.docx`, `.pdf`, `.md`), lemari arsip rekam jejak teknis per perusahaan (**Experience Vault**), dan **Interactive Knowledge Graph Engine (Graphify)**.
+## 🏛️ Arsitektur Direktori Repositori
 
 ```text
 My Resume/
@@ -59,27 +56,27 @@ My Resume/
 ├── 📁 data/                             <-- Single Source of Truth
 │   ├── profile.json                     <-- Data profil, pengalaman kerja, kontak, edukasi
 │   ├── skills.json                      <-- Taksonomi keahlian teknis (Web3, Frontend, Backend, Mobile)
-│   └── templates/                       <-- Template resume DOCX & Markdown
+│   └── templates/                       <-- Template resume DOCX & Markdown (General, Frontend, Android, Web3)
 │
-├── 📁 experience/                       <-- Experience Vault (Rekam Jejak per Perusahaan)
+├── 📁 experience/                       <-- Experience Vault (Rekam Jejak 37 Subproyek)
 │   ├── 📄 README.md                     <-- Katalog seluruh perusahaan & panduan
-│   ├── 📁 kipley-pte-ltd/               <-- Kipley Pte. Ltd. (Web3 & AI dApps)
-│   ├── 📁 pt-lapantiga-solusi-algoritma/<-- PT Lapantiga Solusi Algoritma (NTMC Polri Command Center)
-│   ├── 📁 pt-qira-teknologi-indonesia/  <-- PT Qira Teknologi Indonesia (Kemdikbudristek, Fintech, SFA)
-│   ├── 📁 pt-aku-pintar-indonesia/      <-- PT Aku Pintar Indonesia (Android Native MVVM 1.5M Users)
+│   ├── 📁 kipley-pte-ltd/               <-- Kipley Pte. Ltd. (Web3 & AI dApps, 11 Proyek)
+│   ├── 📁 pt-lapantiga-solusi-algoritma/<-- PT Lapantiga (NTMC Polri Command Center, 14 Proyek)
+│   ├── 📁 pt-qira-teknologi-indonesia/  <-- PT Qira Teknologi (Kemdikbudristek, Telkom, 11 Proyek)
+│   ├── 📁 pt-aku-pintar-indonesia/      <-- PT Aku Pintar (Android Native MVVM & Web Portal)
 │   └── 📁 template-project/             <-- Template scaffolding subproyek baru (README & ARCHITECTURE)
 │
 ├── 📁 output/                           <-- Production Output (Hasil Build Terkompilasi)
 │   ├── 📄 Muhamad_Hendri_Febriansyah_Resume.pdf
 │   ├── 📄 Muhamad_Hendri_Febriansyah_Resume.docx
-│   ├── 📄 Muhamad_Hendri_Febriansyah_Resume.md
 │   ├── 📄 career_graph.html             <-- Standalone D3.js Knowledge Graph Visualizer
 │   └── 📁 variants/                     <-- Varian resume tertarget (Frontend, Android, Web3)
 │
 ├── 📁 scripts/                          <-- Automation Engine
 │   ├── build_resume.py                  <-- Generator multi-format (.docx, .pdf via MS Word COM, .md)
 │   ├── graphify.py                      <-- D3.js interactive career knowledge graph generator
-│   └── new_project.py                   <-- Scaffolding otomatis dokumentasi proyek baru
+│   ├── new_project.py                   <-- Scaffolding otomatis dokumentasi proyek baru
+│   └── verify.py                        <-- Diagnostic & health-check suite (Grade A+ 100/100)
 │
 ├── 📄 CHANGELOG.md                      <-- Riwayat rilis & Semantic Versioning (SemVer)
 ├── 📄 graphify.html / index.html        <-- Web App Knowledge Graph (GitHub Pages Entrypoint)
@@ -92,7 +89,7 @@ My Resume/
 ## 🌐 Graphify — Interactive Career & Code Knowledge Graph
 
 Repositori ini dilengkapi dengan **Graphify Engine** (D3.js Force-Directed Interactive Network Graph & Tree-Sitter AST Skill):
-* 🕸️ **Live Web Demo:** Kunjungi [**`https://mhendrif.github.io/my-resume/`**](https://mhendrif.github.io/my-resume/) untuk menjelajahi graf hubungan interaktif antara **Perusahaan ➔ Proyek ➔ Framework & Versi ➔ Kategori Keahlian**.
+* 🕸️ **Live Web Demo:** Kunjungi [**`https://mhendrif.github.io/my-resume/`**](https://mhendrif.github.io/my-resume/) untuk menjelajahi graf hubungan interaktif antara **Perusahaan ➔ Proyek ➔ Framework & Versi ➔ Kategori Keahlian** *(64 Nodes & 166 Relasi Aktif)*.
 * 🤖 **AI AST Skill:** Tersedia di [`.agents/skills/graphify/SKILL.md`](./.agents/skills/graphify/SKILL.md) untuk pemetaan dependensi codebase lintas-proyek secara deterministik.
 * ⚡ **Regenerate Graph:** Jalankan `python scripts/graphify.py` kapan saja untuk memperbarui visualisasi graf.
 
@@ -100,23 +97,23 @@ Repositori ini dilengkapi dengan **Graphify Engine** (D3.js Force-Directed Inter
 
 ## 🚀 Quick Start / Cara Penggunaan
 
-### 1. Build Semua Varian Resume (DOCX, PDF & Markdown)
+### 1. Jalankan Health Check Repositori
+```powershell
+python scripts/verify.py
+```
+
+### 2. Build Semua Varian Resume (DOCX, PDF & Markdown)
 ```powershell
 # Generate semua 4 target peran sekaligus
 python scripts/build_resume.py --target all
 ```
 
-### 2. Build Varian Peran Tertentu
+### 3. Build Varian Peran Tertentu
 ```powershell
 python scripts/build_resume.py --target frontend    # Senior Frontend Engineer
 python scripts/build_resume.py --target android     # Senior Android Engineer
 python scripts/build_resume.py --target web3        # Full Stack Web3 Engineer
 python scripts/build_resume.py --target general     # Senior Software Engineer (Master)
-```
-
-### 3. Generate Interactive Knowledge Graph
-```powershell
-python scripts/graphify.py
 ```
 
 ### 4. Tambah Proyek Baru dari Template
