@@ -12,7 +12,7 @@ Senior Frontend Engineer with 6+ years of experience building high-performance, 
 ## WORK EXPERIENCE
 
 ### Freelance Software Engineer | PT Lapantiga Solusi Algoritma
-*Jan 2019 – Present*
+*Surabaya, Indonesia  •  Jan 2019 – Present*
 
 - Developed the NTMC Dashboard Utama, a mission-critical operational and traffic monitoring web application leveraging React 19, React Router v7, TypeScript, Tailwind CSS v4, and shadcn/ui.
 - Integrated real-time WebSocket communication using Pusher JS for live incident streaming, instant operational alerts, and dynamic dashboard event updates.
@@ -21,7 +21,7 @@ Senior Frontend Engineer with 6+ years of experience building high-performance, 
 - Previously built backend architectures, virtual event platforms, and CMS solutions using Laravel, Node.js, MySQL, and MongoDB, delivering high-concurrency client solutions on schedule.
 
 ### Full Stack Developer (Web3 & AI) | Kipley Pte. Ltd.
-*Nov 2024 – Jul 2025*
+*Singapore (Remote)  •  Nov 2024 – Jul 2025*
 
 - Built and integrated high-performance REST and GraphQL APIs for 5+ Kipley projects, improving frontend response times by 30% through optimized caching and state management.
 - Integrated Ethereum smart contracts (Solidity) with Web3 frontend architectures (Next.js, Ethers.js/Wagmi), facilitating secure decentralized transactions for DeFi and NFT features.
@@ -29,7 +29,7 @@ Senior Frontend Engineer with 6+ years of experience building high-performance, 
 - Collaborated closely with product, UI/UX, and backend teams in an Agile environment to iterate on features, resolve technical blockers, and meet sprint deadlines consistently.
 
 ### Software Developer | PT Qira Teknologi Indonesia
-*Nov 2020 – Jan 2024*
+*Surabaya, Indonesia  •  Nov 2020 – Jan 2024*
 
 - Developed secure, scalable web-based back-end systems (online assessments, e-commerce, CRM, and CMS) utilizing PHP, Laravel, MySQL, and RESTful APIs.
 - Integrated end-to-end payment gateway workflows (Midtrans, Moota) and Google API services, ensuring 99.9% billing transaction accuracy and seamless automated reconciliation.
@@ -37,7 +37,7 @@ Senior Frontend Engineer with 6+ years of experience building high-performance, 
 - Configured deployment pipelines and server environments across Linux/SSH, cPanel, and Plesk, ensuring high availability and zero-downtime releases.
 
 ### Android Developer | PT Aku Pintar Indonesia
-*Feb 2021 – May 2024*
+*Surabaya, Indonesia  •  Feb 2021 – May 2024*
 
 - Spearheaded native Android development for a flagship education platform with 1.5M+ active users and a 4.42/5.00 Play Store rating.
 - Architected and refactored the app into a modular MVVM structure using Android Jetpack, reducing the application size by 38.6% (from 69.5 MB to 42.7 MB) and boosting runtime performance.
@@ -68,13 +68,13 @@ Senior Frontend Engineer with 6+ years of experience building high-performance, 
 ## CERTIFICATIONS
 
 - **Belajar Fundamental Aplikasi Web dengan React** – Dicoding Indonesia *(Apr 2024 – Apr 2027)*
-  *Focus: Single Page Application (SPA), React.js, Tailwind CSS, Vite*
+  *Core Focus: Single Page Application (SPA), React.js, Tailwind CSS, Vite*
 - **Belajar Analisis Data dengan Python** – Dicoding Indonesia *(Jan 2024 – Jan 2027)*
-  *Focus: Data Wrangling, Exploratory Data Analysis, Visualization*
+  *Core Focus: Data Wrangling, Exploratory Data Analysis, Visualization*
 - **Menjadi Android Developer Expert (MADE)** – Dicoding Indonesia *(Jan 2021 – Jan 2024)*
-  *Focus: Clean Architecture, MVVM Design Pattern, Room Database, App Security & Certificate Pinning*
+  *Core Focus: Clean Architecture, MVVM Design Pattern, Room Database, App Security & Certificate Pinning*
 - **Belajar Android Jetpack Pro** – Dicoding Indonesia *(Dec 2020 – Dec 2023)*
-  *Focus: Android Architecture Components, LiveData, ViewModel, Room Library*
+  *Core Focus: Android Architecture Components, LiveData, ViewModel, Room Library*
 
 ---
 

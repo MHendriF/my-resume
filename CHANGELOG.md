@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **Full Multilingual Pipeline & Indonesian Resume Variants:**
+  - Added dedicated Indonesian profile (`data/profile_id.json`) and skills taxonomy (`data/skills_id.json`).
+  - Added 4 Indonesian ATS-compliant resume templates (`general_id`, `frontend_id`, `android_id`, `web3_id`).
+  - Upgraded `scripts/build_resume.py` to compile all 8 multi-role variants (DOCX, PDF, MD) seamlessly.
 - **Interactive Category Filter Pills & OpenGraph Meta Tags (`index.html` & `graphify.html`):**
   - Added one-click domain filters (Frontend, Backend, Web3/AI, Android, Companies) for instant focus in the D3.js career graph.
   - Added comprehensive OpenGraph and Twitter card metadata for professional link sharing.
@@ -72,6 +76,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **Full Multilingual Pipeline & Indonesian Resume Variants:**
+  - Added dedicated Indonesian profile (`data/profile_id.json`) and skills taxonomy (`data/skills_id.json`).
+  - Added 4 Indonesian ATS-compliant resume templates (`general_id`, `frontend_id`, `android_id`, `web3_id`).
+  - Upgraded `scripts/build_resume.py` to compile all 8 multi-role variants (DOCX, PDF, MD) seamlessly.
 - **Interactive Category Filter Pills & OpenGraph Meta Tags (`index.html` & `graphify.html`):**
   - Added one-click domain filters (Frontend, Backend, Web3/AI, Android, Companies) for instant focus in the D3.js career graph.
   - Added comprehensive OpenGraph and Twitter card metadata for professional link sharing.
@@ -111,6 +119,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **Full Multilingual Pipeline & Indonesian Resume Variants:**
+  - Added dedicated Indonesian profile (`data/profile_id.json`) and skills taxonomy (`data/skills_id.json`).
+  - Added 4 Indonesian ATS-compliant resume templates (`general_id`, `frontend_id`, `android_id`, `web3_id`).
+  - Upgraded `scripts/build_resume.py` to compile all 8 multi-role variants (DOCX, PDF, MD) seamlessly.
 - **Interactive Category Filter Pills & OpenGraph Meta Tags (`index.html` & `graphify.html`):**
   - Added one-click domain filters (Frontend, Backend, Web3/AI, Android, Companies) for instant focus in the D3.js career graph.
   - Added comprehensive OpenGraph and Twitter card metadata for professional link sharing.

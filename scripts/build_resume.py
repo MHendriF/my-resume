@@ -1,26 +1,26 @@
-#!/usr/bin/env python3
 """
-Resume Build Pipeline Engine
-============================
-Author: Muhamad Hendri Febriansyah & AI Assistant
+Professional Resume Generator Pipeline (DOCX, PDF & Markdown)
+Supports Multi-Target Role Variants in both English & Indonesian.
+
 Usage:
-    python scripts/build_resume.py                 # Builds default (general)
-    python scripts/build_resume.py --target all    # Builds all variants (general, frontend, android, web3)
-    python scripts/build_resume.py --target frontend
-    python scripts/build_resume.py --target android
-    python scripts/build_resume.py --target web3
+    python scripts/build_resume.py --target all          # Build all 8 variants (EN + ID)
+    python scripts/build_resume.py --target general      # Build Master Resume (EN)
+    python scripts/build_resume.py --target general_id   # Build Master Resume (ID)
+    python scripts/build_resume.py --target frontend     # Build Frontend Resume (EN)
+    python scripts/build_resume.py --target android      # Build Android Resume (EN)
+    python scripts/build_resume.py --target web3         # Build Web3 Resume (EN)
 """
 
 import os
 import sys
 import json
 import argparse
-import docx
+from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.oxml import OxmlElement, parse_xml
-from docx.oxml.ns import qn
+from docx.oxml import parse_xml, OxmlElement
+from docx.oxml.ns import nsdecls, qn
 
 # Fix Windows console UTF-8 output
 if sys.stdout.encoding != 'utf-8':
@@ -29,21 +29,45 @@ if sys.stdout.encoding != 'utf-8':
     except Exception:
         pass
 
-# Root workspace directory
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SCRIPT_DIR)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 TEMPLATES_DIR = os.path.join(DATA_DIR, 'templates')
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
 VARIANTS_DIR = os.path.join(OUTPUT_DIR, 'variants')
 
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(VARIANTS_DIR, exist_ok=True)
+
+# Elegant Color Palette
+PRIMARY_COLOR = RGBColor(15, 23, 42)      # Deep Slate #0F172A
+SECONDARY_COLOR = RGBColor(37, 99, 235)  # Professional Blue #2563EB
+TEXT_COLOR = RGBColor(30, 41, 59)        # Slate Charcoal #1E293B
+MUTED_COLOR = RGBColor(71, 85, 105)      # Slate Muted #475569
+
+SECTION_TITLES = {
+    "en": {
+        "summary": "PROFESSIONAL SUMMARY",
+        "experience": "WORK EXPERIENCE",
+        "skills": "TECHNICAL SKILLS",
+        "education": "EDUCATION",
+        "certifications": "CERTIFICATIONS",
+        "languages": "LANGUAGES"
+    },
+    "id": {
+        "summary": "RINGKASAN PROFESIONAL",
+        "experience": "PENGALAMAN KERJA",
+        "skills": "KEAHLIAN TEKNIS",
+        "education": "PENDIDIKAN",
+        "certifications": "SERTIFIKASI",
+        "languages": "KEMAMPUAN BAHASA"
+    }
+}
 
 def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
-def set_cell_margins(cell, top=20, bottom=20, left=0, right=0):
+def set_cell_margins(cell, top=0, bottom=0, left=0, right=0):
     tc = cell._tc
     tcPr = tc.get_or_add_tcPr()
     tcMar = OxmlElement('w:tcMar')
@@ -54,241 +78,286 @@ def set_cell_margins(cell, top=20, bottom=20, left=0, right=0):
         tcMar.append(node)
     tcPr.append(tcMar)
 
-
 def build_docx(profile, skills, template, output_docx_path):
-    doc = docx.Document()
+    lang = template.get('lang', 'en')
+    titles = SECTION_TITLES.get(lang, SECTION_TITLES['en'])
     
-    # Page setup - Margins 0.55 inch
-    section = doc.sections[0]
-    section.top_margin = Inches(0.55)
-    section.bottom_margin = Inches(0.55)
-    section.left_margin = Inches(0.6)
-    section.right_margin = Inches(0.6)
-    section.page_width = Inches(8.5)
-    section.page_height = Inches(11.0)
+    doc = Document()
     
-    PRIMARY_COLOR = RGBColor(24, 33, 47)      # Dark Slate #18212F
-    TEXT_COLOR = RGBColor(33, 37, 41)         # Off-black #212529
-    MUTED_COLOR = RGBColor(71, 85, 105)       # Slate #475569
-    
-    # Base typography
-    style = doc.styles['Normal']
-    font = style.font
-    font.name = 'Times New Roman'
-    font.size = Pt(10.5)
-    font.color.rgb = TEXT_COLOR
-    
-    def add_heading(title):
+    # 0.5 Inch Standard ATS Margins
+    for section in doc.sections:
+        section.top_margin = Inches(0.48)
+        section.bottom_margin = Inches(0.48)
+        section.left_margin = Inches(0.5)
+        section.right_margin = Inches(0.5)
+
+    def add_heading(text):
         p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(8)
-        p.paragraph_format.space_after = Pt(3)
+        p.paragraph_format.space_before = Pt(7)
+        p.paragraph_format.space_after = Pt(2)
         p.paragraph_format.keep_with_next = True
-        run = p.add_run(title.upper())
+        run = p.add_run(text.upper())
         run.bold = True
-        run.font.size = Pt(11.5)
-        run.font.color.rgb = PRIMARY_COLOR
+        run.font.size = Pt(10.5)
+        run.font.color.rgb = SECONDARY_COLOR
+        run.font.name = 'Calibri'
         
-        pPr = p._element.get_or_add_pPr()
-        border_xml = parse_xml(
-            '<w:pBdr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
-            '<w:bottom w:val="single" w:sz="6" w:space="2" w:color="18212F"/>'
-            '</w:pBdr>'
-        )
-        pPr.append(border_xml)
+        # Bottom Accent Border
+        pBdr = parse_xml(r'<w:pBdr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
+                         r'<w:bottom w:val="single" w:sz="6" w:space="1" w:color="2563EB"/>'
+                         r'</w:pBdr>')
+        p._p.get_or_add_pPr().append(pBdr)
+
+    def add_table_header(left_text, right_text, is_sub=False):
+        table = doc.add_table(rows=1, cols=2)
+        table.alignment = WD_TABLE_ALIGNMENT.CENTER
+        table.autofit = False
+        
+        row = table.rows[0]
+        c_left, c_right = row.cells[0], row.cells[1]
+        c_left.width = Inches(5.6)
+        c_right.width = Inches(1.9)
+        
+        set_cell_margins(c_left, top=0, bottom=0, left=0, right=0)
+        set_cell_margins(c_right, top=0, bottom=0, left=0, right=0)
+        
+        # Left Text
+        p_left = c_left.paragraphs[0]
+        p_left.paragraph_format.space_before = Pt(2 if not is_sub else 0)
+        p_left.paragraph_format.space_after = Pt(1)
+        p_left.paragraph_format.line_spacing = 1.05
+        
+        r_left = p_left.add_run(left_text)
+        r_left.font.name = 'Calibri'
+        r_left.font.size = Pt(10)
+        r_left.bold = not is_sub
+        r_left.font.color.rgb = PRIMARY_COLOR if not is_sub else TEXT_COLOR
+        
+        # Right Text (Date / Location)
+        p_right = c_right.paragraphs[0]
+        p_right.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        p_right.paragraph_format.space_before = Pt(2 if not is_sub else 0)
+        p_right.paragraph_format.space_after = Pt(1)
+        p_right.paragraph_format.line_spacing = 1.05
+        
+        r_right = p_right.add_run(right_text)
+        r_right.font.name = 'Calibri'
+        r_right.font.size = Pt(9.5)
+        r_right.italic = True
+        r_right.font.color.rgb = MUTED_COLOR
+
+    def add_bullet(text, is_first=False, is_last=False):
+        p = doc.add_paragraph(style='List Bullet')
+        p.paragraph_format.left_indent = Inches(0.2)
+        p.paragraph_format.space_before = Pt(1 if is_first else 0)
+        p.paragraph_format.space_after = Pt(2 if is_last else 0.5)
+        p.paragraph_format.line_spacing = 1.08
+        
+        run = p.add_run(text)
+        run.font.name = 'Calibri'
+        run.font.size = Pt(9.5)
+        run.font.color.rgb = TEXT_COLOR
 
     # 1. Header (Name & Contact)
     p_name = doc.add_paragraph()
     p_name.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_name.paragraph_format.space_before = Pt(0)
-    p_name.paragraph_format.space_after = Pt(2)
-    r_name = p_name.add_run(profile['name'])
-    r_name.bold = True
-    r_name.font.size = Pt(16)
-    r_name.font.color.rgb = PRIMARY_COLOR
+    p_name.paragraph_format.space_after = Pt(1)
     
+    r_name = p_name.add_run(profile['name'].upper())
+    r_name.bold = True
+    r_name.font.size = Pt(18)
+    r_name.font.color.rgb = PRIMARY_COLOR
+    r_name.font.name = 'Calibri'
+
+    # Contact Line
     c = profile['contact']
-    contact_line = f"{c['location']}  |  {c['email']}  |  {c['phone']}  |  {c['linkedin']}  |  {c['portfolio']}"
     p_contact = doc.add_paragraph()
     p_contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_contact.paragraph_format.space_before = Pt(0)
-    p_contact.paragraph_format.space_after = Pt(6)
-    r_contact = p_contact.add_run(contact_line)
-    r_contact.font.size = Pt(9.5)
+    p_contact.paragraph_format.space_after = Pt(4)
+    
+    contact_parts = [
+        c.get('location', ''),
+        c.get('email', ''),
+        c.get('phone', ''),
+        f"LinkedIn: {c.get('linkedin', '')}",
+        f"GitHub: {c.get('github', '')}",
+        f"Portfolio: {c.get('portfolio', '')}"
+    ]
+    contact_text = "  •  ".join([cp for cp in contact_parts if cp])
+    r_contact = p_contact.add_run(contact_text)
+    r_contact.font.size = Pt(9)
     r_contact.font.color.rgb = MUTED_COLOR
+    r_contact.font.name = 'Calibri'
 
-    # 2. Professional Summary
-    add_heading('Summary')
-    summary_text = profile['summaries'].get(template['summary_key'], profile['summaries']['general'])
+    # 2. Summary
+    summary_key = template.get('summary_key', 'general')
+    summary_text = profile.get('summaries', {}).get(summary_key, profile.get('summaries', {}).get('general', ''))
+    
+    add_heading(titles['summary'])
     p_sum = doc.add_paragraph()
-    p_sum.paragraph_format.space_before = Pt(2)
+    p_sum.paragraph_format.space_before = Pt(1)
     p_sum.paragraph_format.space_after = Pt(4)
-    p_sum.paragraph_format.line_spacing = 1.15
+    p_sum.paragraph_format.line_spacing = 1.12
     r_sum = p_sum.add_run(summary_text)
-    r_sum.font.size = Pt(10)
-
-    # Helper for job headers
-    def add_table_header(col1_text, col2_text):
-        table = doc.add_table(rows=1, cols=2)
-        table.alignment = WD_TABLE_ALIGNMENT.CENTER
-        table.autofit = False
-        table.columns[0].width = Inches(5.4)
-        table.columns[1].width = Inches(1.9)
-        
-        c0, c1 = table.cell(0, 0), table.cell(0, 1)
-        set_cell_margins(c0, top=20, bottom=5, left=0, right=0)
-        set_cell_margins(c1, top=20, bottom=5, left=0, right=0)
-        
-        p0 = c0.paragraphs[0]
-        p0.paragraph_format.space_before = Pt(3)
-        p0.paragraph_format.space_after = Pt(1)
-        r0 = p0.add_run(col1_text)
-        r0.bold = True
-        r0.font.size = Pt(10.5)
-        r0.font.color.rgb = PRIMARY_COLOR
-        
-        p1 = c1.paragraphs[0]
-        p1.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-        p1.paragraph_format.space_before = Pt(3)
-        p1.paragraph_format.space_after = Pt(1)
-        r1 = p1.add_run(col2_text)
-        r1.font.size = Pt(9.5)
-        r1.font.color.rgb = MUTED_COLOR
-
-    def add_bullet(text, is_first=False, is_last=False):
-        p = doc.add_paragraph(style='List Bullet')
-        p.paragraph_format.space_before = Pt(1 if not is_first else 2)
-        p.paragraph_format.space_after = Pt(3 if is_last else 1)
-        p.paragraph_format.line_spacing = 1.12
-        r = p.add_run(text)
-        r.font.size = Pt(10)
+    r_sum.font.size = Pt(9.5)
+    r_sum.font.color.rgb = TEXT_COLOR
+    r_sum.font.name = 'Calibri'
 
     # 3. Work Experience
-    add_heading('Experience')
-    exp_map = {exp['id']: exp for exp in profile['experiences']}
-    ordered_ids = template.get('experience_order', [exp['id'] for exp in profile['experiences']])
+    add_heading(titles['experience'])
+    exp_map = {exp['id']: exp for exp in profile.get('experiences', [])}
+    ordered_ids = template.get('experience_order', [exp['id'] for exp in profile.get('experiences', [])])
     
     for eid in ordered_ids:
         if eid in exp_map:
             exp = exp_map[eid]
             role_header = f"{exp['role']} | {exp['company']}"
-            add_table_header(role_header, exp['period'])
-            for idx, bullet in enumerate(exp['bullets']):
-                add_bullet(bullet, is_first=(idx == 0), is_last=(idx == len(exp['bullets']) - 1))
+            loc_period = f"{exp['location']}  •  {exp['period']}"
+            add_table_header(role_header, loc_period)
+            
+            bullets = exp.get('bullets', [])
+            for idx, bullet in enumerate(bullets):
+                add_bullet(bullet, is_first=(idx == 0), is_last=(idx == len(bullets) - 1))
 
     # 4. Technical Skills
-    add_heading('Skills')
-    target_skills = skills.get(template['skills_key'], skills['general'])
+    add_heading(titles['skills'])
+    skills_key = template.get('skills_key', 'general')
+    target_skills = skills.get(skills_key, skills.get('general', []))
+    
     for cat in target_skills:
         p_skill = doc.add_paragraph()
-        p_skill.paragraph_format.space_before = Pt(1)
-        p_skill.paragraph_format.space_after = Pt(2)
-        p_skill.paragraph_format.line_spacing = 1.1
+        p_skill.paragraph_format.space_before = Pt(0)
+        p_skill.paragraph_format.space_after = Pt(1.5)
+        p_skill.paragraph_format.line_spacing = 1.08
+        
         r_cat = p_skill.add_run(f"{cat['category']}: ")
         r_cat.bold = True
-        r_cat.font.size = Pt(10)
+        r_cat.font.size = Pt(9.5)
+        r_cat.font.color.rgb = PRIMARY_COLOR
+        r_cat.font.name = 'Calibri'
+        
         r_items = p_skill.add_run(cat['items'])
-        r_items.font.size = Pt(10)
+        r_items.font.size = Pt(9.5)
+        r_items.font.color.rgb = TEXT_COLOR
+        r_items.font.name = 'Calibri'
 
     # 5. Education
-    add_heading('Education')
-    for edu in profile['education']:
-        add_table_header(f"{edu['institution']} | {edu['degree'].split('in')[0].strip()}", edu['period'])
+    add_heading(titles['education'])
+    for edu in profile.get('education', []):
+        add_table_header(f"{edu['institution']} | {edu['degree']}", edu['period'])
         p_edu = doc.add_paragraph()
         p_edu.paragraph_format.space_before = Pt(0)
-        p_edu.paragraph_format.space_after = Pt(4)
-        r_edu = p_edu.add_run(f"Bachelor of Computer Science (S.Kom.) | GPA: {edu['gpa']} | Focus: {edu['focus']}")
-        r_edu.font.size = Pt(9.5)
+        p_edu.paragraph_format.space_after = Pt(3)
+        gpa_label = "IPK" if lang == 'id' else "GPA"
+        focus_label = "Fokus Keahlian" if lang == 'id' else "Focus Area"
+        r_edu = p_edu.add_run(f"{gpa_label}: {edu['gpa']}  |  {focus_label}: {edu['focus']}")
+        r_edu.font.size = Pt(9)
         r_edu.font.color.rgb = MUTED_COLOR
+        r_edu.font.name = 'Calibri'
 
     # 6. Certifications
-    add_heading('Certifications')
-    for cert in profile['certifications']:
+    add_heading(titles['certifications'])
+    for cert in profile.get('certifications', []):
         add_table_header(f"{cert['title']} | {cert['issuer']}", cert['period'])
         if 'focus' in cert:
             p_cert_det = doc.add_paragraph()
             p_cert_det.paragraph_format.space_before = Pt(0)
-            p_cert_det.paragraph_format.space_after = Pt(3)
-            p_cert_det.paragraph_format.left_indent = Inches(0.2)
-            r_det = p_cert_det.add_run(f"Focus: {cert['focus']}")
-            r_det.font.size = Pt(9.5)
+            p_cert_det.paragraph_format.space_after = Pt(2)
+            p_cert_det.paragraph_format.left_indent = Inches(0.15)
+            focus_label = "Kompetensi Kunci" if lang == 'id' else "Core Focus"
+            r_det = p_cert_det.add_run(f"{focus_label}: {cert['focus']}")
+            r_det.font.size = Pt(9)
             r_det.font.color.rgb = MUTED_COLOR
+            r_det.font.name = 'Calibri'
 
     # 7. Languages
-    add_heading('Languages')
+    add_heading(titles['languages'])
     p_lang = doc.add_paragraph()
-    p_lang.paragraph_format.space_before = Pt(2)
+    p_lang.paragraph_format.space_before = Pt(1)
     p_lang.paragraph_format.space_after = Pt(4)
-    lang_parts = []
-    for lang in profile['languages']:
-        r_l = p_lang.add_run(f"{lang['language']}: ")
+    for lang_item in profile.get('languages', []):
+        r_l = p_lang.add_run(f"{lang_item['language']}: ")
         r_l.bold = True
-        r_l.font.size = Pt(10)
-        p_lang.add_run(f"{lang['proficiency']}    ")
+        r_l.font.size = Pt(9.5)
+        r_l.font.color.rgb = PRIMARY_COLOR
+        r_l.font.name = 'Calibri'
+        
+        r_lp = p_lang.add_run(f"{lang_item['proficiency']}    ")
+        r_lp.font.size = Pt(9.5)
+        r_lp.font.color.rgb = TEXT_COLOR
+        r_lp.font.name = 'Calibri'
 
     os.makedirs(os.path.dirname(output_docx_path), exist_ok=True)
     doc.save(output_docx_path)
     print(f"  [DOCX] -> {output_docx_path}")
 
-
 def build_markdown(profile, skills, template, output_md_path):
+    lang = template.get('lang', 'en')
+    titles = SECTION_TITLES.get(lang, SECTION_TITLES['en'])
     c = profile['contact']
-    summary_text = profile['summaries'].get(template['summary_key'], profile['summaries']['general'])
-    target_skills = skills.get(template['skills_key'], skills['general'])
-    exp_map = {exp['id']: exp for exp in profile['experiences']}
-    ordered_ids = template.get('experience_order', [exp['id'] for exp in profile['experiences']])
+    summary_key = template.get('summary_key', 'general')
+    summary_text = profile.get('summaries', {}).get(summary_key, profile.get('summaries', {}).get('general', ''))
+    skills_key = template.get('skills_key', 'general')
+    target_skills = skills.get(skills_key, skills.get('general', []))
+    exp_map = {exp['id']: exp for exp in profile.get('experiences', [])}
+    ordered_ids = template.get('experience_order', [exp['id'] for exp in profile.get('experiences', [])])
 
     lines = []
     lines.append(f"# {profile['name']}")
     lines.append(f"{c['location']} | {c['email']} | {c['phone']}")
     lines.append(f"[LinkedIn: {c['linkedin']}]({c['linkedin_url']}) | [Portfolio: {c['portfolio']}]({c['portfolio_url']}) | [GitHub: {c['github']}]({c['github_url']})\n")
     lines.append("---\n")
-    lines.append("## PROFESSIONAL SUMMARY")
+    lines.append(f"## {titles['summary']}")
     lines.append(summary_text + "\n")
     lines.append("---\n")
-    lines.append("## WORK EXPERIENCE\n")
+    lines.append(f"## {titles['experience']}\n")
 
     for eid in ordered_ids:
         if eid in exp_map:
             exp = exp_map[eid]
             lines.append(f"### {exp['role']} | {exp['company']}")
-            lines.append(f"*{exp['period']}*\n")
-            for b in exp['bullets']:
+            lines.append(f"*{exp['location']}  •  {exp['period']}*\n")
+            for b in exp.get('bullets', []):
                 lines.append(f"- {b}")
             lines.append("")
 
     lines.append("---\n")
-    lines.append("## TECHNICAL SKILLS\n")
+    lines.append(f"## {titles['skills']}\n")
     for cat in target_skills:
         lines.append(f"- **{cat['category']}:** {cat['items']}")
     lines.append("")
 
     lines.append("---\n")
-    lines.append("## EDUCATION\n")
-    for edu in profile['education']:
+    lines.append(f"## {titles['education']}\n")
+    for edu in profile.get('education', []):
         lines.append(f"### {edu['institution']}")
         lines.append(f"**{edu['degree']}** | *{edu['period']}*")
-        lines.append(f"- **GPA:** {edu['gpa']}")
-        lines.append(f"- **Focus Area:** {edu['focus']}\n")
+        gpa_label = "IPK" if lang == 'id' else "GPA"
+        focus_label = "Fokus Keahlian" if lang == 'id' else "Focus Area"
+        lines.append(f"- **{gpa_label}:** {edu['gpa']}")
+        lines.append(f"- **{focus_label}:** {edu['focus']}\n")
 
     lines.append("---\n")
-    lines.append("## CERTIFICATIONS\n")
-    for cert in profile['certifications']:
+    lines.append(f"## {titles['certifications']}\n")
+    for cert in profile.get('certifications', []):
         lines.append(f"- **{cert['title']}** – {cert['issuer']} *({cert['period']})*")
         if 'focus' in cert:
-            lines.append(f"  *Focus: {cert['focus']}*")
+            focus_label = "Kompetensi Kunci" if lang == 'id' else "Core Focus"
+            lines.append(f"  *{focus_label}: {cert['focus']}*")
     lines.append("")
 
     lines.append("---\n")
-    lines.append("## LANGUAGES")
-    for lang in profile['languages']:
-        lines.append(f"- **{lang['language']}:** {lang['proficiency']}")
+    lines.append(f"## {titles['languages']}")
+    for lang_item in profile.get('languages', []):
+        lines.append(f"- **{lang_item['language']}:** {lang_item['proficiency']}")
 
     content = "\n".join(lines) + "\n"
     os.makedirs(os.path.dirname(output_md_path), exist_ok=True)
     with open(output_md_path, 'w', encoding='utf-8') as f:
         f.write(content)
     print(f"  [MD]   -> {output_md_path}")
-
 
 def convert_to_pdf(docx_path, pdf_path):
     try:
@@ -303,67 +372,66 @@ def convert_to_pdf(docx_path, pdf_path):
         finally:
             word.Quit()
     except Exception as e:
-        print(f"  [PDF Warning] Could not convert via Word COM: {e}")
+        print(f"  [PDF Warning] Word COM conversion notice: {e}")
 
-
-def process_target(target_name, profile, skills):
+def process_target(target_name, profiles, all_skills):
     template_path = os.path.join(TEMPLATES_DIR, f"{target_name}.json")
     if not os.path.exists(template_path):
         print(f"Error: Template {template_path} not found.")
         return
 
     template = load_json(template_path)
+    lang = template.get('lang', 'en')
+    profile = profiles.get(lang, profiles['en'])
+    skills = all_skills.get(lang, all_skills['en'])
+    
     base_name = template.get('output_filename', f"Resume_{target_name.capitalize()}")
     
-    # Paths
-    if target_name == 'general':
+    # Destination Paths
+    if target_name in ['general', 'general_id']:
         docx_path = os.path.join(OUTPUT_DIR, f"{base_name}.docx")
         pdf_path = os.path.join(OUTPUT_DIR, f"{base_name}.pdf")
         md_path = os.path.join(OUTPUT_DIR, f"{base_name}.md")
-        
-        # Also mirror to root workspace for immediate convenience
-        root_docx = os.path.join(BASE_DIR, "Muhamad Hendri Febriansyah - Resume.docx")
-        root_pdf = os.path.join(BASE_DIR, "Muhamad Hendri Febriansyah - Resume.pdf")
     else:
         docx_path = os.path.join(VARIANTS_DIR, f"{base_name}.docx")
         pdf_path = os.path.join(VARIANTS_DIR, f"{base_name}.pdf")
         md_path = os.path.join(VARIANTS_DIR, f"{base_name}.md")
 
-    print(f"\n🚀 Generating [{template.get('display_title', target_name)}]...")
+    display_title = template.get('display_title', target_name)
+    print(f"\n🚀 Generating [{display_title}] ({lang.upper()})...")
     build_docx(profile, skills, template, docx_path)
     build_markdown(profile, skills, template, md_path)
     convert_to_pdf(docx_path, pdf_path)
-    
-    if target_name == 'general':
-        import shutil
-        shutil.copy2(docx_path, root_docx)
-        shutil.copy2(pdf_path, root_pdf)
-
 
 def main():
     parser = argparse.ArgumentParser(description="Resume Build Pipeline")
-    parser.add_argument('--target', default='general', help="Target template: general, frontend, android, web3, all")
+    parser.add_argument('--target', default='all', help="Target template: general, general_id, frontend, frontend_id, android, android_id, web3, web3_id, all")
+    parser.add_argument('--lang', default='all', choices=['en', 'id', 'all'], help="Language filter")
     args = parser.parse_args()
 
-    profile_path = os.path.join(DATA_DIR, 'profile.json')
-    skills_path = os.path.join(DATA_DIR, 'skills.json')
-
-    if not os.path.exists(profile_path) or not os.path.exists(skills_path):
-        print("Error: profile.json or skills.json not found in data/ folder.")
-        sys.exit(1)
-
-    profile = load_json(profile_path)
-    skills = load_json(skills_path)
+    # Load English and Indonesian Profile & Skills
+    profiles = {
+        'en': load_json(os.path.join(DATA_DIR, 'profile.json')),
+        'id': load_json(os.path.join(DATA_DIR, 'profile_id.json'))
+    }
+    all_skills = {
+        'en': load_json(os.path.join(DATA_DIR, 'skills.json')),
+        'id': load_json(os.path.join(DATA_DIR, 'skills_id.json'))
+    }
 
     if args.target == 'all':
-        targets = ['general', 'frontend', 'android', 'web3']
+        targets = []
+        if args.lang in ['en', 'all']:
+            targets.extend(['general', 'frontend', 'android', 'web3'])
+        if args.lang in ['id', 'all']:
+            targets.extend(['general_id', 'frontend_id', 'android_id', 'web3_id'])
+            
         for t in targets:
-            process_target(t, profile, skills)
+            process_target(t, profiles, all_skills)
     else:
-        process_target(args.target, profile, skills)
+        process_target(args.target, profiles, all_skills)
 
     print("\n✅ All target builds completed successfully!")
-
 
 if __name__ == '__main__':
     main()

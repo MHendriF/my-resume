@@ -1,0 +1,90 @@
+{
+  "general": [
+    {
+      "category": "Frontend & Antarmuka",
+      "items": "React 19, React Router v7, Next.js 15, TypeScript, Tailwind CSS v4, shadcn/ui, TanStack Query v5, TanStack Table v8, Vue.js, Vite"
+    },
+    {
+      "category": "Backend & API Architecture",
+      "items": "Laravel 12 / 10, PHP 8.2+, Livewire, NestJS, Node.js, RESTful APIs, GraphQL, WebSockets (Pusher JS, Laravel Reverb)"
+    },
+    {
+      "category": "Pengembangan Mobile",
+      "items": "Android Native (Kotlin & Java), Android Jetpack, MVVM, Clean Architecture, Coroutines, Flow, Room DB, Retrofit 2"
+    },
+    {
+      "category": "Web3 & Blockchain",
+      "items": "Solidity Smart Contracts, Ethers.js, Wagmi, RainbowKit, TON Blockchain SDK, Telegram Mini Apps (TMA) SDK, Viem"
+    },
+    {
+      "category": "Basis Data & Cloud Storage",
+      "items": "MySQL, PostgreSQL, MongoDB, Redis, AWS S3, KilatStorage S3 Flysystem, Eloquent ORM"
+    },
+    {
+      "category": "Alat & Metodologi Rekayasa",
+      "items": "Git, Docker, CI/CD GitHub Actions, Linux/SSH, Postman, Jest, Agile Scrum, System Design, Google XYZ/STAR Method"
+    }
+  ],
+  "frontend": [
+    {
+      "category": "Ekosistem Frontend Utama",
+      "items": "React 19, React Router v7, Next.js 15 (App Router, Turbopack), TypeScript 5, Vue.js 3, Vite, SSR/SSG"
+    },
+    {
+      "category": "State & Manajemen Data",
+      "items": "TanStack Query v5 (React Query), TanStack Table v8, Zustand, Redux Toolkit, Context API, Optimistic Updates"
+    },
+    {
+      "category": "Styling & Komponen UI",
+      "items": "Tailwind CSS v4/v3, shadcn/ui, Radix UI Primitives, Flowbite, Framer Motion, CSS Modules, Responsive Design"
+    },
+    {
+      "category": "Komunikasi Real-Time",
+      "items": "WebSockets (Pusher JS, Laravel Reverb), Server-Sent Events (SSE), RESTful APIs, Axios, GraphQL"
+    },
+    {
+      "category": "Kualitas & Performa Web",
+      "items": "Zod Schema Validation, React Hook Form, ESLint, TypeScript Strict Typing, Web Vitals Optimization"
+    }
+  ],
+  "android": [
+    {
+      "category": "Bahasa & Platform Inti",
+      "items": "Kotlin, Java, Android SDK, Android Studio, Gradle Multi-Module, Java OSGi"
+    },
+    {
+      "category": "Arsitektur & Pola Desain",
+      "items": "Clean Architecture, MVVM (Model-View-ViewModel), Repository Pattern, Single Activity Architecture"
+    },
+    {
+      "category": "Android Jetpack Components",
+      "items": "ViewModel, LiveData, StateFlow, Navigation Component, Room Database, WorkManager, ViewBinding / DataBinding"
+    },
+    {
+      "category": "Asinkron & Jaringan",
+      "items": "Kotlin Coroutines, Flow, Retrofit 2, OkHttp 3, GSON, Moshi, RESTful API Integration"
+    },
+    {
+      "category": "Pengujian & Optimasi APK",
+      "items": "JUnit, Mockito, Espresso, ProGuard/R8 Code Shrinking, Memory Profiling, Bundle Size Optimization"
+    }
+  ],
+  "web3": [
+    {
+      "category": "Web3 & Ekosistem Blockchain",
+      "items": "Ethereum, EVM, TON Blockchain, Solidity Smart Contracts, OpenZeppelin Standards, Telegram Mini Apps (TMA)"
+    },
+    {
+      "category": "Frontend Web3 & Integrasi Wallet",
+      "items": "Next.js 15, React 19, TypeScript, RainbowKit, Wagmi v2, Viem, Ethers.js v6, TON SDK, Web3Modal"
+    },
+    {
+      "category": "Protokol & Streaming Data",
+      "items": "Server-Sent Events (SSE) AI Streaming, WebSockets, IPFS, The Graph, REST & GraphQL APIs"
+    },
+    {
+      "category": "Smart Contract Tooling",
+      "items": "Hardhat, Remix, Web3.js, Etherscan API, MetaMask, Tonkeeper, Telegram Stars / USDT Payments"
+    }
+  ]
+}

@@ -3,13 +3,22 @@
 <div align="center">
 
 [![Live Interactive Career Graph](https://img.shields.io/badge/🌐_Live_Career_Graph-GitHub_Pages-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mhendrif.github.io/my-resume/)
-[![Download Master Resume (PDF)](https://img.shields.io/badge/📄_Download_Master_Resume-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./output/Muhamad_Hendri_Febriansyah_Resume.pdf)
+[![Download Master Resume (English PDF)](https://img.shields.io/badge/📄_Master_Resume_(EN)-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./output/Muhamad_Hendri_Febriansyah_Resume.pdf)
+[![Download Master Resume (Bahasa Indonesia PDF)](https://img.shields.io/badge/🇮🇩_Resume_Master_(ID)-PDF-b91c1c?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./output/Muhamad_Hendri_Febriansyah_Resume_ID.pdf)
 
 <br/>
 
-[![Frontend Resume](https://img.shields.io/badge/🎨_Frontend_Resume-PDF-0284c7?style=for-the-badge&logo=react&logoColor=white)](./output/variants/Resume_Frontend_Engineer.pdf)
-[![Android Resume](https://img.shields.io/badge/📱_Android_Resume-PDF-16a34a?style=for-the-badge&logo=android&logoColor=white)](./output/variants/Resume_Android_Engineer.pdf)
-[![Web3 Resume](https://img.shields.io/badge/🌐_Web3_Resume-PDF-7c3aed?style=for-the-badge&logo=ethereum&logoColor=white)](./output/variants/Resume_Web3_Engineer.pdf)
+**Varian Bahasa Inggris (English Tracks):**  
+[![Frontend Resume](https://img.shields.io/badge/🎨_Frontend_Resume-PDF-0284c7?style=flat-square&logo=react&logoColor=white)](./output/variants/Resume_Frontend_Engineer.pdf)
+[![Android Resume](https://img.shields.io/badge/📱_Android_Resume-PDF-16a34a?style=flat-square&logo=android&logoColor=white)](./output/variants/Resume_Android_Engineer.pdf)
+[![Web3 Resume](https://img.shields.io/badge/🌐_Web3_Resume-PDF-7c3aed?style=flat-square&logo=ethereum&logoColor=white)](./output/variants/Resume_Web3_Engineer.pdf)
+
+<br/>
+
+**Varian Bahasa Indonesia (Indonesian Tracks):**  
+[![Resume Frontend ID](https://img.shields.io/badge/🎨_Frontend_ID-PDF-0284c7?style=flat-square&logo=react&logoColor=white)](./output/variants/Resume_Frontend_Engineer_ID.pdf)
+[![Resume Android ID](https://img.shields.io/badge/📱_Android_ID-PDF-16a34a?style=flat-square&logo=android&logoColor=white)](./output/variants/Resume_Android_Engineer_ID.pdf)
+[![Resume Web3 ID](https://img.shields.io/badge/🌐_Web3_ID-PDF-7c3aed?style=flat-square&logo=ethereum&logoColor=white)](./output/variants/Resume_Web3_Engineer_ID.pdf)
 
 </div>
 
@@ -123,16 +132,23 @@ python scripts/new_project.py --company "pt-lapantiga-solusi-algoritma" --name "
 
 ---
 
-## 📋 Varian Resume yang Tersedia
+## 📋 Varian Resume yang Tersedia (Available Multi-Role Resumes)
 
+### 🇬🇧 English Resumes (Standar Global & Remote ATS)
 | Varian Resume | Target Posisi | Highlight Proyek & Stack Utama | Output File |
 | :--- | :--- | :--- | :--- |
-| **Master / General** | Senior Software Engineer | Full Stack (React 19, Laravel 12, Android Kotlin, Web3, NTMC Polri) | [`Resume.pdf`](./output/Muhamad_Hendri_Febriansyah_Resume.pdf) |
-| **Frontend Track** | Senior Frontend / Web Lead | React 19, React Router v7, Next.js 15, Tailwind v4, Pusher WS | [`Frontend.pdf`](./output/variants/Resume_Frontend_Engineer.pdf) |
-| **Android Track** | Senior Android Engineer | Kotlin, MVVM, Clean Architecture, Jetpack, Coroutines, Room DB | [`Android.pdf`](./output/variants/Resume_Android_Engineer.pdf) |
-| **Web3 & AI Track** | Full Stack Web3 / AI Engineer | Next.js 15, Telegram TMA SDK, Solidity, Ethers, SSE Streaming | [`Web3.pdf`](./output/variants/Resume_Web3_Engineer.pdf) |
+| **Master / General** | Senior Software Engineer | Full Stack (React 19, Laravel 12, Android Kotlin, Web3, NTMC Polri) | [`Resume.pdf`](./output/Muhamad_Hendri_Febriansyah_Resume.pdf) • [`DOCX`](./output/Muhamad_Hendri_Febriansyah_Resume.docx) |
+| **Frontend Track** | Senior Frontend / Web Lead | React 19, React Router v7, Next.js 15, Tailwind v4, Pusher WS | [`Frontend.pdf`](./output/variants/Resume_Frontend_Engineer.pdf) • [`DOCX`](./output/variants/Resume_Frontend_Engineer.docx) |
+| **Android Track** | Senior Android Engineer | Kotlin, MVVM, Clean Architecture, Jetpack, Coroutines, Room DB | [`Android.pdf`](./output/variants/Resume_Android_Engineer.pdf) • [`DOCX`](./output/variants/Resume_Android_Engineer.docx) |
+| **Web3 & AI Track** | Full Stack Web3 / AI Engineer | Next.js 15, Telegram TMA SDK, Solidity, Ethers, SSE Streaming | [`Web3.pdf`](./output/variants/Resume_Web3_Engineer.pdf) • [`DOCX`](./output/variants/Resume_Web3_Engineer.docx) |
 
----
+### 🇮🇩 Resumes Bahasa Indonesia (Standar Domestik & Perusahaan Indonesia)
+| Varian Resume | Target Posisi | Ringkasan Kompetensi | Output File |
+| :--- | :--- | :--- | :--- |
+| **Master / Umum** | Senior Software Engineer | Rekayasa Full Stack, Arsitektur Sistem, Command Center & Web3 | [`Resume_ID.pdf`](./output/Muhamad_Hendri_Febriansyah_Resume_ID.pdf) • [`DOCX`](./output/Muhamad_Hendri_Febriansyah_Resume_ID.docx) |
+| **Jalur Frontend** | Senior Frontend Engineer | React 19, Next.js 15, Tailwind v4, TanStack Query/Table, TypeScript | [`Frontend_ID.pdf`](./output/variants/Resume_Frontend_Engineer_ID.pdf) • [`DOCX`](./output/variants/Resume_Frontend_Engineer_ID.docx) |
+| **Jalur Android** | Senior Android Engineer | Native Android Kotlin/Java, MVVM, Clean Architecture, 1.5M+ Siswa | [`Android_ID.pdf`](./output/variants/Resume_Android_Engineer_ID.pdf) • [`DOCX`](./output/variants/Resume_Android_Engineer_ID.docx) |
+| **Jalur Web3 & AI** | Full Stack Web3 Engineer | Next.js 15, Smart Contract Solidity, Bot AI Telegram, Payment Multi-Chain | [`Web3_ID.pdf`](./output/variants/Resume_Web3_Engineer_ID.pdf) • [`DOCX`](./output/variants/Resume_Web3_Engineer_ID.docx) |
 
 ## 📝 Format Penulisan Resume (Standar Google XYZ & STAR Method)
 
