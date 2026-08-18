@@ -20,6 +20,14 @@ Membangun backend Laravel berkinerja tinggi yang terhubung dengan cloud storage 
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.12.x` | Online Psychometric Examination Engine |
+| **PHP Runtime** | `v7.3 / v8.0.2+` | Anti-Cheat Timer & Scoring Algorithmic Pipeline |
+| **Object Storage** | `KilatStorage S3 (AWS S3 Protocol)` | Cloud Storage for Answer Vaults & Assets |
+| **DomPDF Engine** | `barryvdh/laravel-dompdf v0.9+` | Instant Radar Chart & Psychogram PDF Generator |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

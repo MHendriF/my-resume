@@ -16,6 +16,16 @@ Membangun portal Next.js teroptimasi dengan integrasi wallet connection, dashboa
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v15.1.6` | App Router & Server Component Architecture |
+| **React.js** | `v19.0.0` | Modern UI Engine with Optimistic State Updates |
+| **TypeScript** | `v5.x` | Type-safe Web3 Contract Interaction Layer |
+| **Tailwind CSS** | `v3.4.1` | Atomic CSS & Framer Motion UI Transitions |
+| **Node.js Runtime** | `>= 18.x LTS` | Build & Production Execution Layer |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Framework** | `Next.js 14, React.js, TypeScript` | Implementasi arsitektural |

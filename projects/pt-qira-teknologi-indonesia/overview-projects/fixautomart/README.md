@@ -20,6 +20,15 @@ Membangun platform e-commerce berbasis Laravel (`FixCore`) dengan integrasi resm
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v5.5.x LTS` | Automotive E-Commerce Core (FixCore) |
+| **PHP Runtime** | `>= 7.0.0 / 7.2+` | Order & Webhook Transaction Controller |
+| **Payment Gateway** | `firmantr3/laravel-midtrans v1.x` | Midtrans Snap & Core API (VA, QRIS, GoPay) |
+| **Shopping Cart** | `gloudemans/shoppingcart v2.4+` | Persistent Session-Based Cart Engine |
+| **Push Alerts** | `brozot/laravel-fcm v1.x` | Mobile Payment Confirmation Notifications |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart LR

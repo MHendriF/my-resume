@@ -16,6 +16,16 @@ Membangun platform KnowledgeFi berbasis Next.js, Material UI, dan AWS S3 untuk u
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v13.4.4` | App Router & Dynamic Server Rendering |
+| **React.js** | `v18.2.0` | Core UI Layer for Knowledge Graph Visualization |
+| **TypeScript** | `v5.0.4` | Static Typing for AWS S3 Presigned Workflows |
+| **Tailwind CSS** | `v3.3.2` | Material UI (MUI) & Emotion Styling |
+| **Node.js Runtime** | `>= 18.x LTS` | Cloud Deployment Layer |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Framework** | `Next.js, React, TypeScript` | Implementasi arsitektural |

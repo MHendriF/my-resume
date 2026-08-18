@@ -20,6 +20,16 @@ Membangun dan mengoptimasi aplikasi Voxi AI yang berjalan di environment live (`
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v14.2.4` | Production App Router Deployment on voxi.vip |
+| **React.js** | `v18.x` | Low-latency Component Rendering & Streaming State |
+| **Telegram SDK** | `@telegram-apps/sdk-react v1.x` | Telegram Native Platform Integration |
+| **TypeScript** | `v5.x` | Strict Mode Type Verification |
+| **Tailwind CSS** | `v3.4.1` | High-performance Mobile Viewport Styling |
+| **Node.js Runtime** | `>= 18.x LTS` | Production Serverless Infrastructure |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart LR

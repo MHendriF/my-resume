@@ -20,6 +20,16 @@ Membangun platform Next.js modular yang terhubung dengan smart contract Ethereum
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v15.1.6` | React Framework with App Router & Turbopack |
+| **React.js** | `v19.0.0` | Core UI Library with Server Actions & Concurrent Mode |
+| **NestJS** | `v10.0.0` | Enterprise Backend Node.js Framework (@nestjs/core) |
+| **TypeScript** | `v5.1.3` | Strict Type Checking & Interface Contracts |
+| **Tailwind CSS** | `v3.4.1` | Utility-First Styling & Responsive Design |
+| **Node.js Runtime** | `>= 18.x / 20.x LTS` | Server Runtime Environment |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

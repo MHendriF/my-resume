@@ -20,6 +20,16 @@ Membangun sistem full-stack menggunakan Laravel dengan official WebSocket server
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v12.0.x (Latest)` | Modern Enterprise Full-Stack PHP Framework |
+| **PHP Runtime** | `v8.2 / v8.3+` | High-Performance Type-Hinted PHP Engine |
+| **Laravel Reverb** | `v1.4.x` | Official Laravel Native High-Concurrency WebSockets Server |
+| **Inertia.js** | `v2.0.x` | Monolithic SPA Protocol connecting Laravel with Vue 3 |
+| **Vue.js** | `v3.4.0` | Composition API Client UI with FullCalendar & VueQuill |
+| **Tailwind CSS** | `v3.2.1` | Modern Dashboard & Ticketing Design System |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart LR

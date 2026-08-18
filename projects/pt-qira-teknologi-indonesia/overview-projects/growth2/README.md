@@ -16,6 +16,15 @@ Mengembangkan sistem admin Laravel dengan integrasi Google Maps picker, export l
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v5.2.x` | Outlet Map & Performance Admin Hub |
+| **PHP Runtime** | `>= 5.5.9 / 7.0+` | Server-Side Spreadsheet Generation |
+| **Excel Export Engine** | `maatwebsite/excel v2.1+` | High-Throughput Sales Report Excel Exporter |
+| **Chart Engine** | `khill/lavacharts v3.0+` | Interactive Google Charts Dashboard |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Backend & Admin** | `Laravel, PHP, MySQL, Laravel Elixir / Gulp` | Implementasi arsitektural |

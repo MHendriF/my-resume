@@ -16,6 +16,14 @@ Membangun toko online Laravel terintegrasi dengan modul manajemen berkas digital
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.0.x` | Licensed Digital Assessment Kit Storefront |
+| **PHP Runtime** | `v7.3 / v8.0+` | Secure Tokenized File Delivery Backend |
+| **File Security** | `alexusmai/laravel-file-manager v2.x` | Encrypted Download Token Generator |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Framework** | `Laravel, PHP, MySQL` | Implementasi arsitektural |

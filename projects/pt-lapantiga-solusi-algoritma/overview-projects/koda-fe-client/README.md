@@ -16,6 +16,16 @@ Membangun portal client berbasis React 19 dan React Router v7 dengan optimasi pe
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **React.js** | `v19.2.6` | Lightweight Client-Facing Traffic Monitor |
+| **React Router** | `v7.16.0` | Modular SPA Routing & Route Loaders |
+| **TypeScript** | `v5.9.3` | Strict Type Definitions for CCTV Stream Entities |
+| **Tailwind CSS** | `v4.2.2` | High-contrast Dark Mode Operational Interface |
+| **Bun Runtime** | `v1.0+` | Fast Build & Bundling Infrastructure |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Core** | `React 19, React Router v7, TypeScript 5.9` | Implementasi arsitektural |

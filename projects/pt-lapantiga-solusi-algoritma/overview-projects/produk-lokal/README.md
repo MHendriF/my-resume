@@ -16,6 +16,14 @@ Membangun marketplace UMKM berbasis Laravel dengan manajemen multi-penjual, lapo
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.0.x` | Regional MSME Marketplace Platform |
+| **PHP Runtime** | `v7.3 / v8.0+` | Multi-Vendor Inventory & Order Management |
+| **DomPDF Engine** | `barryvdh/laravel-dompdf v0.9+` | Automated Monthly Financial PDF Reports |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Backend Framework** | `Laravel, PHP, MySQL` | Implementasi arsitektural |

@@ -16,6 +16,15 @@ Membangun platform loyalitas berbasis Laravel dengan Laravel Sanctum API authent
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.75.x` | Customer Loyalty Points Redemption Hub |
+| **PHP Runtime** | `v7.3 / v8.0+` | Tamper-Proof Ledger Transaction Logic |
+| **API Authentication** | `Laravel Sanctum v2.x` | Tokenized REST API for Mobile Applications |
+| **Point Cart** | `darryldecode/cart v4.x` | Specialized Reward Point Deduction Engine |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Backend Framework** | `Laravel, PHP, MySQL` | Implementasi arsitektural |

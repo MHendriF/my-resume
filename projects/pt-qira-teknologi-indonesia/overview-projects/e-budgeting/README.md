@@ -20,6 +20,15 @@ Membangun sistem E-Budgeting berbasis Laravel dengan tabel data berkinerja tingg
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v5.4.x` | Enterprise Regional Budgeting Core |
+| **PHP Runtime** | `>= 5.6.4 / 7.0+` | Budget Calculation & Approval Workflows |
+| **Yajra DataTables** | `yajra/laravel-datatables-oracle v8.x` | High-Performance Server-Side Table Processing (>50K Rows) |
+| **RBAC Engine** | `zizaco/entrust v5.2+` | Hierarchical Role-Based Access Control |
+| **QR Code Engine** | `simplesoftwareio/simple-qrcode v2.x` | Dynamic Digital Signature Validation |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

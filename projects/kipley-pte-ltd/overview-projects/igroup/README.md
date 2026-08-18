@@ -16,6 +16,16 @@ Membangun antarmuka Next.js dengan Radix UI primitives, TanStack Query untuk dat
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v15.3.2` | Bleeding-edge App Router with Turbopack |
+| **React.js** | `v19.0.0` | Modern React UI Engine with Radix UI Primitives |
+| **TypeScript** | `v5.x` | Strict Type Checking for Research Assets |
+| **Tailwind CSS** | `v4.x` | Next-Gen Tailwind CSS Engine |
+| **Node.js Runtime** | `>= 20.x LTS` | Modern JavaScript Server Environment |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Framework** | `Next.js App Router, TypeScript, React 18` | Implementasi arsitektural |

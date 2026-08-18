@@ -20,6 +20,16 @@ Membangun portal Next.js dengan integrasi `@opencampus/ocid-connect-js`, sistem 
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v13.4.4` | App Router with Server-Side Authentication |
+| **React.js** | `v18.2.0` | Drag-and-Drop Curriculum UI (@dnd-kit/core) |
+| **Open Campus ID** | `@opencampus/ocid-connect-js` | Decentralized Educational SSO Protocol |
+| **TypeScript** | `v5.0.4` | Type Safety across Web3 Credential Schemas |
+| **Tailwind CSS** | `v3.3.2` | Responsive Design System with Headless UI |
+| **Node.js Runtime** | `>= 18.x LTS` | Vercel / Cloudflare Edge Environment |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart LR

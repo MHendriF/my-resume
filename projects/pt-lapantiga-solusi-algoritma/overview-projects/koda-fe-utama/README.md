@@ -20,6 +20,17 @@ Membangun arsitektur SPA mutakhir menggunakan React 19, React Router v7 config-b
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **React.js** | `v19.2.6` | Bleeding-Edge React UI Framework with React Server Features |
+| **React Router** | `v7.16.0` | Config-based Routing, Loaders & Type-safe Navigation |
+| **TypeScript** | `v5.9.3` | Strict-Mode Static Typing (Zero 'any' Policy) |
+| **Tailwind CSS** | `v4.2.2` | Next-Gen CSS Engine with CSS-first Configuration |
+| **Pusher WebSockets** | `pusher-js v8.x` | Persistent Real-time Traffic Event Listener |
+| **TanStack Engine** | `Query v5.x / Table v8.x` | Server-state Caching & High-Performance DataTables |
+| **Bun Runtime** | `v1.0+` | Ultra-fast Package Execution & Local Dev Server |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

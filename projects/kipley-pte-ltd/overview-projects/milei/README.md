@@ -16,6 +16,17 @@ Membangun dashboard Next.js dengan koneksi WebSocket aktif (`react-use-websocket
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v15.1.5` | High-throughput Real-time Dashboard |
+| **React.js** | `v19.0.0` | React Concurrent Rendering for WebSocket Feeds |
+| **WebSocket Engine** | `react-use-websocket v4.x` | Auto-reconnecting Socket Stream Handler |
+| **TypeScript** | `v5.x` | Strict Payload Schema Validation |
+| **Tailwind CSS** | `v3.4.1` | Real-time Ticker & Market Chart Layouts |
+| **Node.js Runtime** | `>= 18.x / 20.x LTS` | Production Server Engine |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Framework** | `Next.js, React, TypeScript` | Implementasi arsitektural |

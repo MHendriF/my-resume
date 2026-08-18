@@ -16,6 +16,15 @@ Membangun arsitektur polyglot persistence menggunakan Laravel dengan MySQL (untu
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v6.18.35 LTS` | Modular Event Core Engine |
+| **PHP Runtime** | `v7.4` | Backend Processing Runtime |
+| **MongoDB Database** | `jenssegers/mongodb v3.6.x` | High-Volume Clickstream & Activity Logging (NoSQL) |
+| **MySQL Database** | `v5.7 / v8.0` | Transactional User & Ticket Store (RDBMS) |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Backend** | `Laravel, PHP` | Implementasi arsitektural |

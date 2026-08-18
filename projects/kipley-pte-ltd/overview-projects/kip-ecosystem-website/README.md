@@ -16,6 +16,16 @@ Membangun portal landing page berbasis Next.js, animasi interaktif, dan integras
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v13.4.7` | Static Site Generation (SSG) & Incremental Revalidation |
+| **React.js** | `v18.2.0` | High-Performance Interactive Showcase Components |
+| **TypeScript** | `v5.0.4` | Type-safe Metadata & Component Props |
+| **Tailwind CSS** | `v3.3.2` | Responsive Viewport & CSS Animation Engine |
+| **Node.js Runtime** | `>= 18.x LTS` | Global CDN Edge Hosting |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Framework** | `Next.js 14, React, TypeScript` | Implementasi arsitektural |

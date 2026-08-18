@@ -20,6 +20,14 @@ Membangun backend API Laravel yang memadukan database relasional MySQL (master d
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v6.18.35 LTS` | Sales Force Automation (SFA) Gateway |
+| **PHP Runtime** | `v7.3 / v7.4+` | GPS Geo-Radius Validation Algorithms |
+| **MongoDB Database** | `jenssegers/mongodb v3.6.x` | High-Volume Field Check-in & Coordinate Logs (NoSQL) |
+| **MySQL Database** | `v5.7 / v8.0` | Master Retail Outlets & User Transaction DB (RDBMS) |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

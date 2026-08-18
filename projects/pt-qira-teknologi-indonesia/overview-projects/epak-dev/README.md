@@ -20,6 +20,15 @@ Membangun sistem web enterprise berbasis Laravel dengan modul perhitungan angka 
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.0.x` | Official Kemdikbudristek Assessment Platform |
+| **PHP Runtime** | `v7.3 / v8.0+` | High-Precision Credit Calculation Engine |
+| **File Manager** | `alexusmai/laravel-file-manager v2.x` | Secure Government Portfolio Document Vault |
+| **DomPDF Engine** | `barryvdh/laravel-dompdf v0.9+` | Official PAK Certificate Formatting Engine |
+| **MySQL Database** | `v8.0` | Multi-Tier Assessor Audit Trail Database |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

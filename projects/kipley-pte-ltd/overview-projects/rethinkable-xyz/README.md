@@ -20,6 +20,16 @@ Membangun sistem 2-tier: `tg-profile-app` (Frontend React/Tailwind/Radix) dan `t
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **React.js** | `v18.3.1` | Single Page Application (SPA) Client |
+| **Express.js** | `v4.19.2` | REST API Backend Gateway for MTProto Handshakes |
+| **Telegram MTProto** | `@mtproto/core v3.x` | Direct Telegram Protocol Cryptographic Engine |
+| **TypeScript** | `v5.5.3` | End-to-End Type Safety for Identity Verification |
+| **Tailwind CSS** | `v3.4.10` | Radix UI Primitives & Accessible Component Styling |
+| **Node.js Runtime** | `>= 18.x / 20.x LTS` | Secure Backend Server Environment |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

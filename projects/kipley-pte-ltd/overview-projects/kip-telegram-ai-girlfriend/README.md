@@ -20,6 +20,16 @@ Membangun Telegram Mini App berbasis Next.js dan `@telegram-apps/sdk-react` deng
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v14.2.4` | Optimized App Router for Telegram Mini Apps (TMA) |
+| **React.js** | `v18.x` | Client Component Hydration inside Telegram WebView |
+| **Telegram SDK** | `@telegram-apps/sdk-react v1.x` | Telegram CloudStorage & Haptic Feedback API |
+| **TypeScript** | `v5.x` | Strict Type-Safety for Telegram initData parsing |
+| **Tailwind CSS** | `v3.4.1` | Chakra UI + Emotion Component Styling |
+| **Node.js Runtime** | `>= 18.x LTS` | Serverless Edge Deployment Environment |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

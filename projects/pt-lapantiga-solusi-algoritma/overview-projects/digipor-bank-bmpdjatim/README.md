@@ -20,6 +20,15 @@ Membangun web platform Laravel yang terintegrasi langsung dengan Strava API (`ia
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
 
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.0.x` | Enterprise MVC Framework with Service Providers |
+| **PHP Runtime** | `v7.3 / v8.0+` | Server-Side Scripting & OAuth Processing |
+| **Strava API SDK** | `iamstuartwilson/strava v1.x` | Strava OAuth2 & Athlete Activity Synchronization |
+| **MySQL Database** | `v8.0 / v5.7` | Relational Leaderboard & Distance Logging Store |
+| **DomPDF Engine** | `barryvdh/laravel-dompdf v0.9+` | Dynamic PDF E-Certificate Generator |
+
 ### 🏛️ Diagram Alur Arsitektur Sistem (System Architecture)
 ```mermaid
 flowchart TD

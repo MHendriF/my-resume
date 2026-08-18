@@ -16,6 +16,15 @@ Membangun REST API Laravel dengan integrasi Firebase FCM (`apility/laravel-fcm`)
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.0.x` | RESTful Order Processing API |
+| **PHP Runtime** | `v7.3 / v8.0+` | Order State Machine & Webhook Handlers |
+| **Firebase FCM** | `apility/laravel-fcm v1.x` | Shipment Status Push Notifications |
+| **DomPDF Engine** | `barryvdh/laravel-dompdf v0.9+` | Barcode & QR Invoicing System |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Backend** | `Laravel, PHP, MySQL` | Implementasi arsitektural |

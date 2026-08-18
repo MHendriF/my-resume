@@ -16,6 +16,15 @@ Mengembangkan platform backend Laravel teroptimasi dengan integrasi Firebase FCM
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v8.65.x` | Virtual Expo & Event Management API |
+| **PHP Runtime** | `v7.3 / v8.0+` | Backend Event Pipeline Execution Engine |
+| **Firebase Cloud Messaging** | `code-lts/laravel-fcm v1.x` | Targeted Mobile Push Notification Service |
+| **MySQL Database** | `v8.0` | Event Registration & Virtual Booth Interaction DB |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Backend** | `Laravel, PHP, MySQL` | Implementasi arsitektural |

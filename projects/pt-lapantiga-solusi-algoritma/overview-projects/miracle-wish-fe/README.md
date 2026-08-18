@@ -16,6 +16,14 @@ Membangun antarmuka storefront responsif terintegrasi dengan backend API Miracle
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Laravel Framework** | `v6.0.x` | Customer Storefront MVC Layer |
+| **Vue.js** | `v2.5.7` | Reactive Shopping Cart & Custom Wish Message UI |
+| **PHP Runtime** | `>= 7.2.0` | Server-Side Template Hydration |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Frontend Core** | `HTML5, CSS3, JavaScript, Ionicons` | Implementasi arsitektural |

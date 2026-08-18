@@ -16,6 +16,16 @@ Membangun sistem administrasi Next.js dengan dukungan Authorizer & Auth0 (`@auth
 ---
 
 ## 🛠️ Tech Stack & Arsitektur Lengkap
+
+### 📦 Versi Framework & Runtime Utama (Core Technology Versions)
+| Komponen / Framework | Versi Spesifik | Keterangan & Peran Arsitektural |
+| :--- | :--- | :--- |
+| **Next.js** | `v13.4.7` | Full-stack Framework for AI RAG Pipeline Management |
+| **React.js** | `v18.2.0` | Stateful Document Indexing & Upload Dashboard |
+| **TypeScript** | `v5.0.4` | Type Verification for AWS S3 Multipart Uploads |
+| **Tailwind CSS** | `v3.3.2` | Admin Theme & File Manager UI |
+| **Node.js Runtime** | `>= 18.x LTS` | Server Runtime with AWS SDK Signature v4 |
+
 | Layer / Domain | Teknologi / Library | Keterangan Arsitektural |
 | :--- | :--- | :--- |
 | **Core** | `Next.js, TypeScript, React` | Implementasi arsitektural |
