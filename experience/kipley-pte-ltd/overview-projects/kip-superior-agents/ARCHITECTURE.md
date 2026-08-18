@@ -7,7 +7,7 @@
 ---
 
 ## 📌 Executive Architecture Summary
-Dokumen ini menguraikan arsitektur sistem, pemisahan lapisan logika (*Layer Separation*), alur transmisi data (*Data Flow*), integrasi database, dan strategi keamanan untuk subproyek **`kip-superior-agents`**.
+Dokumen ini menguraikan arsitektur sistem, pemisahan lapisan logika (*Layer Separation*), alur transmisi data (*Data Flow*), integrasi database, dan manifest dependensi terverifikasi untuk subproyek **`kip-superior-agents`**.
 
 ---
 
@@ -44,6 +44,25 @@ flowchart TD
 2. **Validation & Authorization:** Middleware memvalidasi integritas payload, sanitasi input, dan otorisasi hak akses peran pengguna.
 3. **Domain Processing:** Service layer mengeksekusi logika bisnis, perhitungan data, dan manajemen status sistem.
 4. **Persistence & Response:** Data transaksi disimpan ke database penyimpanan utama, dan status respons dikembalikan ke klien.
+
+---
+
+### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
+| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+| :--- | :--- | :--- | :--- |
+| `package.json` (`package.json`) | **`@tanstack/react-query`** | `^5.66.0` | Production Dependency |
+| `package.json` (`package.json`) | **`axios`** | `^1.7.9` | Production Dependency |
+| `package.json` (`package.json`) | **`next`** | `15.1.6` | Production Dependency |
+| `package.json` (`package.json`) | **`react`** | `^19.0.0` | Production Dependency |
+| `package.json` (`package.json`) | **`react-dom`** | `^19.0.0` | Production Dependency |
+| `package.json` (`package.json`) | **`@eslint/eslintrc`** | `^3` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`@types/node`** | `^20` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`@types/react`** | `^19` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`@types/react-dom`** | `^19` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`eslint`** | `^9` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`eslint-config-next`** | `15.1.6` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`postcss`** | `^8` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`tailwindcss`** | `^3.4.1` | Dev Tool / Bundler |
 
 ---
 

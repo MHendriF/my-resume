@@ -1,13 +1,16 @@
-# 🏛️ Milei — System Architecture & Design Blueprint
+# 🏛️ Milei Real-Time Analytics Dashboard (`milei`) — System Architecture
 
-[![Architecture Standard](https://img.shields.io/badge/Architecture-Clean_%26_Modular-blue?style=for-the-badge)](#)
+[![Architecture Pattern](https://img.shields.io/badge/Pattern-High-Throughput_WebSocket_Feed_Visualizer_with_Concurrent_React_19-blue?style=for-the-badge)](#)
 [![Company](https://img.shields.io/badge/Company-kipley-pte-ltd-purple?style=for-the-badge)](#)
 [![Project](https://img.shields.io/badge/Project-milei-green?style=for-the-badge)](#)
 
 ---
 
 ## 📌 Executive Architecture Summary
-Dokumen ini menguraikan arsitektur sistem, pemisahan lapisan logika (*Layer Separation*), alur transmisi data (*Data Flow*), integrasi database, dan strategi keamanan untuk subproyek **`milei`**.
+Dokumen ini memaparkan cetak biru arsitektur teknis (*system design blueprint*), pemisahan tanggung jawab komponen (*separation of concerns*), alur transmisi data (*data lifecycle*), serta manifest dependensi terverifikasi yang diambil langsung dari file manifest proyek (`package.json` & `composer.json`).
+
+* **Pola Arsitektur Utama:** `High-Throughput WebSocket Feed Visualizer with Concurrent React 19`
+* **Fokus Rekayasa:** Keandalan sistem, latensi rendah, integritas data, dan keamanan transaksi.
 
 ---
 
@@ -15,39 +18,67 @@ Dokumen ini menguraikan arsitektur sistem, pemisahan lapisan logika (*Layer Sepa
 
 ```mermaid
 flowchart TD
-    subgraph ClientPresentation ["Presentation Layer (Client / UI)"]
-        UI["User Interface Components"]
-        ClientState["Client State & Event Handlers"]
+    subgraph ClientUI ["Client Dashboard (Next.js 15.1.5 + React 19.0.0)"]
+        AppView["Next.js App Router Interface"]
+        SocketConsumer["react-use-websocket v4 (Auto-Reconnecting Client)"]
+        RadixComponents["Radix UI Accessible Component Suite"]
+        TailwindTheme["Tailwind CSS v3.4 + clsx + tailwind-merge"]
+        LucideSet["lucide-react UI Icons"]
     end
 
-    subgraph ApplicationCore ["Application & Domain Core Layer"]
-        RouterGateway["API Routing / Controller Layer"]
-        BusinessLogic["Core Business Logic & Services"]
-        SecurityMiddleware["Authentication & Request Validation"]
+    subgraph StatePipeline ["State & Feed Ingestion"]
+        QueryEngine["@tanstack/react-query v5 Real-time Cache"]
+        FormHandler["react-hook-form + @hookform/resolvers + zod"]
+        AxiosTransport["axios REST Fallback Engine"]
     end
 
-    subgraph InfrastructureLayer ["Data & Infrastructure Layer"]
-        PrimaryStore[(Relational / Document Database)]
-        FileStore[(File Storage / Asset Vault)]
+    subgraph ExternalFeeds ["Real-Time Market & Event Feeds"]
+        WS_Relay["High-Throughput WebSocket Server (wss://)"]
+        REST_Endpoint["Market Meta & Historical Data REST API"]
     end
 
-    UI --> ClientState --> RouterGateway
-    RouterGateway --> SecurityMiddleware --> BusinessLogic
-    BusinessLogic --> PrimaryStore
-    BusinessLogic --> FileStore
+    AppView --> SocketConsumer <--> WS_Relay
+    AppView --> RadixComponents --> TailwindTheme
+    SocketConsumer --> QueryEngine
+    FormHandler --> AxiosTransport --> REST_Endpoint
 ```
 
 ---
 
 ## 🔄 Lifecycle & Data Flow
-1. **Request Ingestion:** Klien mengirimkan request terotentikasi melalui antarmuka pengguna ke endpoint API.
-2. **Validation & Authorization:** Middleware memvalidasi integritas payload, sanitasi input, dan otorisasi hak akses peran pengguna.
-3. **Domain Processing:** Service layer mengeksekusi logika bisnis, perhitungan data, dan manajemen status sistem.
-4. **Persistence & Response:** Data transaksi disimpan ke database penyimpanan utama, dan status respons dikembalikan ke klien.
+1. **Persistent WebSocket Handshake:** `react-use-websocket` maintains an auto-reconnecting binary/text stream with market relays.
+2. **Concurrent State Updates:** React 19 concurrent mode processes rapid tick updates without dropping UI frames.
+3. **Historical Data Fallback:** REST requests through `axios` fetch historical candle data to seed charts.
+4. **Visual Rendering:** Dynamic indicators and alert modals render smoothly with Radix UI and Tailwind CSS.
 
 ---
 
-## 🔒 Security & Performance Considerations
-* **Authentication & Authorization:** Mekanisme otentikasi berbasis token/session dengan kontrol hak akses berbasis peran (RBAC).
-* **Data Sanitization:** Sanitasi input dan proteksi terhadap SQL Injection, XSS, dan CSRF.
-* **Optimasi Kinerja:** Pemanfaatan caching dan query indexing untuk memastikan responsivitas sistem.
+### 📦 Manifest Dependensi Terverifikasi (Direct from Codebase Manifests)
+| Manifest Source | Package / Library | Version Constraint | Category & Architectural Role |
+| :--- | :--- | :--- | :--- |
+| `package.json` (`package.json`) | **`axios`** | `^1.7.9` | Production Dependency |
+| `package.json` (`package.json`) | **`moment`** | `^2.30.1` | Production Dependency |
+| `package.json` (`package.json`) | **`next`** | `15.1.5` | Production Dependency |
+| `package.json` (`package.json`) | **`react`** | `^19.0.0` | Production Dependency |
+| `package.json` (`package.json`) | **`react-dom`** | `^19.0.0` | Production Dependency |
+| `package.json` (`package.json`) | **`react-use-websocket`** | `^4.11.1` | Production Dependency |
+| `package.json` (`package.json`) | **`uuid`** | `^11.0.5` | Production Dependency |
+| `package.json` (`package.json`) | **`@eslint/eslintrc`** | `^3` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`@types/node`** | `^20` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`@types/react`** | `^19` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`@types/react-dom`** | `^19` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`eslint`** | `^9` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`eslint-config-next`** | `15.1.5` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`postcss`** | `^8` | Dev Tool / Bundler |
+| `package.json` (`package.json`) | **`tailwindcss`** | `^3.4.1` | Dev Tool / Bundler |
+
+---
+
+## 🔒 Security & Access Control
+- **Secure WebSockets (WSS):** Encrypted streaming channels prevent eavesdropping.
+- **Zod Data Sanitization:** Incoming stream messages validated before ingestion.
+
+---
+
+## ⚡ Performance & Scalability Considerations
+- **Auto-Throttling:** Batched state updates prevent DOM thrashing under high message frequency.
