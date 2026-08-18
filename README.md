@@ -15,6 +15,19 @@
 
 ---
 
+## 🌟 Rekayasa Unggulan & Proyek Flagship (Executive Highlights)
+
+Untuk kemudahan peninjauan cepat (*Quick 30-Second Overview*), berikut adalah 4 proyek rekayasa perangkat lunak terpilih:
+
+| Proyek Unggulan | Institusi / Klien | Peran & Skala Sistem | Tech Stack Kunci | Arsitektur & Showcase |
+| :--- | :--- | :--- | :--- | :---: |
+| **KODA NTMC Polri** | NTMC Korlantas Polri | Real-Time Traffic & Incident Monitoring Command Center (< 500ms latency) | `React 19`, `React Router v7`, `Tailwind v4`, `TanStack Query`, `Pusher WS` | [🏛️ C4 Blueprint](./experience/pt-lapantiga-solusi-algoritma/overview-projects/koda-fe-utama/ARCHITECTURE.md) • [📖 Showcase](./experience/pt-lapantiga-solusi-algoritma/overview-projects/koda-fe-utama/README.md) |
+| **Superior Agents** | Kipley Pte. Ltd. | Autonomous Multi-Agent Web3 & AI Portal | `Next.js 15`, `App Router`, `Turbopack`, `RainbowKit`, `Ethers`, `Stripe API` | [🏛️ C4 Blueprint](./experience/kipley-pte-ltd/overview-projects/superior-agents/ARCHITECTURE.md) • [📖 Showcase](./experience/kipley-pte-ltd/overview-projects/superior-agents/README.md) |
+| **Aku Pintar EdTech** | PT Aku Pintar Indonesia | Enterprise Modular EdTech Portal (100+ Micro-Modules, 1.5M+ Siswa) | `Java OSGi / Liferay`, `WebRTC Video Stream`, `RIASEC Psychometrics`, `BCA/OVO` | [🏛️ C4 Blueprint](./experience/pt-aku-pintar-indonesia/overview-projects/aku-pintar-mvp-website/ARCHITECTURE.md) • [📖 Showcase](./experience/pt-aku-pintar-indonesia/overview-projects/aku-pintar-mvp-website/README.md) |
+| **EPAK Widyaprada** | Kemdikbudristek RI | Sistem Penilaian Angka Kredit Pejabat Fungsional Nasional | `Laravel 8`, `AWS S3 Flysystem`, `Yajra DataTables`, `DomPDF`, `Milon Barcode` | [🏛️ C4 Blueprint](./experience/pt-qira-teknologi-indonesia/overview-projects/epak-dev/ARCHITECTURE.md) • [📖 Showcase](./experience/pt-qira-teknologi-indonesia/overview-projects/epak-dev/README.md) |
+
+---
+
 ## 🌟 Gambaran Arsitektur Sistem
 
 Repositori ini adalah **Resume Generation Pipeline & Career Knowledge Vault** modular yang dikelola secara profesional berbasis data (*Single Source of Truth*). Sistem ini mengintegrasikan otomasi kompilasi dokumen multi-varian (`.docx`, `.pdf`, `.md`), lemari arsip rekam jejak teknis per perusahaan (**Experience Vault**), dan **Interactive Knowledge Graph Engine (Graphify)**.

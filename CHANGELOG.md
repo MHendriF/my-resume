@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **Executive Flagship Highlights Section (`README.md`):**
+  - Added dedicated 30-second executive summary table showcasing top enterprise systems (KODA NTMC Polri, Superior Agents Web3, Aku Pintar, EPAK Kemdikbudristek).
+- **Canonicalized Data References (`data/profile.json`):**
+  - Standardized all `project_ref` keys to strict relative filesystem paths for flawless SSOT sync.
 - **Expanded Experience Vault with 9 New Production Subprojects (Total: 37 Projects):**
   - **PT Aku Pintar Indonesia:** `aku-pintar-mvp-website` (100+ Liferay/OSGi Micro-Modules, RIASEC, WebRTC, OVO/BCA Payment).
   - **PT Lapantiga Solusi Algoritma:** `ebupot` (Tax Compliance e-Bupot), `a3jni-backend` (Logistics Fleet API), `petrokimia-asuransi` (Petrokimia Gresik Claim Portal), `flondr` (On-Demand Service), `miracle-wish-android` (Native Android Client).
@@ -61,6 +65,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **Executive Flagship Highlights Section (`README.md`):**
+  - Added dedicated 30-second executive summary table showcasing top enterprise systems (KODA NTMC Polri, Superior Agents Web3, Aku Pintar, EPAK Kemdikbudristek).
+- **Canonicalized Data References (`data/profile.json`):**
+  - Standardized all `project_ref` keys to strict relative filesystem paths for flawless SSOT sync.
 - **Expanded Experience Vault with 9 New Production Subprojects (Total: 37 Projects):**
   - **PT Aku Pintar Indonesia:** `aku-pintar-mvp-website` (100+ Liferay/OSGi Micro-Modules, RIASEC, WebRTC, OVO/BCA Payment).
   - **PT Lapantiga Solusi Algoritma:** `ebupot` (Tax Compliance e-Bupot), `a3jni-backend` (Logistics Fleet API), `petrokimia-asuransi` (Petrokimia Gresik Claim Portal), `flondr` (On-Demand Service), `miracle-wish-android` (Native Android Client).
@@ -89,6 +97,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **Executive Flagship Highlights Section (`README.md`):**
+  - Added dedicated 30-second executive summary table showcasing top enterprise systems (KODA NTMC Polri, Superior Agents Web3, Aku Pintar, EPAK Kemdikbudristek).
+- **Canonicalized Data References (`data/profile.json`):**
+  - Standardized all `project_ref` keys to strict relative filesystem paths for flawless SSOT sync.
 - **Expanded Experience Vault with 9 New Production Subprojects (Total: 37 Projects):**
   - **PT Aku Pintar Indonesia:** `aku-pintar-mvp-website` (100+ Liferay/OSGi Micro-Modules, RIASEC, WebRTC, OVO/BCA Payment).
   - **PT Lapantiga Solusi Algoritma:** `ebupot` (Tax Compliance e-Bupot), `a3jni-backend` (Logistics Fleet API), `petrokimia-asuransi` (Petrokimia Gresik Claim Portal), `flondr` (On-Demand Service), `miracle-wish-android` (Native Android Client).
