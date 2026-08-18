@@ -568,3 +568,8 @@ root_html_path = os.path.join(BASE_DIR, 'graphify.html')
 with open(root_html_path, 'w', encoding='utf-8') as f:
     f.write(html_content)
 print(f"✅ Generated Root graphify.html: {root_html_path}")
+
+index_html_path = os.path.join(BASE_DIR, 'index.html')
+with open(index_html_path, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+print(f"✅ Generated GitHub Pages index.html: {index_html_path}")

@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **GitHub Pages Deployment Pipeline (`index.html` & `.github/workflows/deploy-pages.yml`):**
+  - Automated CI/CD deployment hosting the interactive D3.js Knowledge Graph publicly at `https://mhendrif.github.io/my-resume/`.
+- **Quick-Access Resume Download Badges:**
+  - Added one-click PDF download badges at the top of the root `README.md` for instant access to Master and all role-targeted resume variants.
+- **Standardized Project Scaffolding Template (`experience/template-project/`):**
+  - Upgraded template with modern `README.md` and `ARCHITECTURE.md` blueprints matching 2026 repository standards.
 - **Dedicated ARCHITECTURE.md in Every Subproject:**
   - Authored deep system design blueprints (`ARCHITECTURE.md`) across all 28 subprojects with Mermaid component flowcharts, data transmission lifecycles, and security models.
 - **Graphify Interactive Career Knowledge Graph:**
@@ -47,6 +53,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **GitHub Pages Deployment Pipeline (`index.html` & `.github/workflows/deploy-pages.yml`):**
+  - Automated CI/CD deployment hosting the interactive D3.js Knowledge Graph publicly at `https://mhendrif.github.io/my-resume/`.
+- **Quick-Access Resume Download Badges:**
+  - Added one-click PDF download badges at the top of the root `README.md` for instant access to Master and all role-targeted resume variants.
+- **Standardized Project Scaffolding Template (`experience/template-project/`):**
+  - Upgraded template with modern `README.md` and `ARCHITECTURE.md` blueprints matching 2026 repository standards.
 - **Dedicated ARCHITECTURE.md in Every Subproject:**
   - Authored deep system design blueprints (`ARCHITECTURE.md`) across all 28 subprojects with Mermaid component flowcharts, data transmission lifecycles, and security models.
 - **Mermaid Architecture Diagrams:**
@@ -63,6 +75,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **GitHub Pages Deployment Pipeline (`index.html` & `.github/workflows/deploy-pages.yml`):**
+  - Automated CI/CD deployment hosting the interactive D3.js Knowledge Graph publicly at `https://mhendrif.github.io/my-resume/`.
+- **Quick-Access Resume Download Badges:**
+  - Added one-click PDF download badges at the top of the root `README.md` for instant access to Master and all role-targeted resume variants.
+- **Standardized Project Scaffolding Template (`experience/template-project/`):**
+  - Upgraded template with modern `README.md` and `ARCHITECTURE.md` blueprints matching 2026 repository standards.
 - **Dedicated ARCHITECTURE.md in Every Subproject:**
   - Authored deep system design blueprints (`ARCHITECTURE.md`) across all 28 subprojects with Mermaid component flowcharts, data transmission lifecycles, and security models.
 - **Multi-Variant Resume Generation Engine:**

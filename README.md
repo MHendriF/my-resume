@@ -1,107 +1,116 @@
-# 🚀 Resume & Portfolio Management Pipeline
-**Author:** Muhamad Hendri Febriansyah  
-**Stack:** Python, python-docx, Word COM (PDF Export), Markdown, JSON  
+# 🚀 Muhamad Hendri Febriansyah — Resume & Engineering Vault
+
+<div align="center">
+
+[![Live Interactive Career Graph](https://img.shields.io/badge/🌐_Live_Career_Graph-GitHub_Pages-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mhendrif.github.io/my-resume/)
+[![Download Master Resume (PDF)](https://img.shields.io/badge/📄_Download_Master_Resume-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./output/Muhamad_Hendri_Febriansyah_Resume.pdf)
+
+<br/>
+
+[![Frontend Resume](https://img.shields.io/badge/🎨_Frontend_Resume-PDF-0284c7?style=for-the-badge&logo=react&logoColor=white)](./output/variants/Resume_Frontend_Engineer.pdf)
+[![Android Resume](https://img.shields.io/badge/📱_Android_Resume-PDF-16a34a?style=for-the-badge&logo=android&logoColor=white)](./output/variants/Resume_Android_Engineer.pdf)
+[![Web3 Resume](https://img.shields.io/badge/🌐_Web3_Resume-PDF-7c3aed?style=for-the-badge&logo=ethereum&logoColor=white)](./output/variants/Resume_Web3_Engineer.pdf)
+
+</div>
 
 ---
 
 ## 🌟 Gambaran Arsitektur Sistem
 
-Pipeline ini dirancang untuk mengorganisir, memperbarui, dan men-generate **Resume profesional & ATS-friendly** secara modular dan otomatis berbasis data (*Single Source of Truth*), lengkap dengan **Experience Vault** untuk menyimpan dokumentasi proyek dan bank kalimat *STAR method* untuk interview.
+Repositori ini adalah **Resume Generation Pipeline & Career Knowledge Vault** modular yang dikelola secara profesional berbasis data (*Single Source of Truth*). Sistem ini mengintegrasikan otomasi kompilasi dokumen multi-varian (`.docx`, `.pdf`, `.md`), lemari arsip rekam jejak teknis per perusahaan (**Experience Vault**), dan **Interactive Knowledge Graph Engine (Graphify)**.
 
-```
-Formal CV/
+```text
+My Resume/
 │
-├── 📄 README.md                          <-- Panduan lengkap ini
-├── 📄 Muhamad Hendri Febriansyah - Resume.pdf   <-- Output Resume Utama (PDF)
-├── 📄 Muhamad Hendri Febriansyah - Resume.docx  <-- Output Resume Utama (Word)
+├── 📁 .agents/                          <-- AI Skills & Customizations (Graphify AST Skill)
+├── 📁 .github/workflows/               <-- GitHub Actions (Automated Pages Deployment)
+├── 📁 data/                             <-- Single Source of Truth
+│   ├── profile.json                     <-- Data profil, pengalaman kerja, kontak, edukasi
+│   ├── skills.json                      <-- Taksonomi keahlian teknis (Web3, Frontend, Backend, Mobile)
+│   └── templates/                       <-- Template resume DOCX & Markdown
 │
-├── 📂 data/                              <-- Single Source of Truth
-│   ├── profile.json                      <-- Data profil, kontak, pengalaman kerja, edukasi
-│   ├── skills.json                       <-- Inventaris skills terkategori per spesialisasi
-│   └── templates/                        <-- Konfigurasi target role
-│       ├── general.json                  <-- Target: Senior Software Engineer
-│       ├── frontend.json                 <-- Target: Senior Frontend Engineer
-│       ├── android.json                  <-- Target: Senior Android Engineer
-│       └── web3.json                     <-- Target: Full Stack Web3 Engineer
+├── 📁 experience/                       <-- Experience Vault (Rekam Jejak per Perusahaan)
+│   ├── 📄 README.md                     <-- Katalog seluruh perusahaan & panduan
+│   ├── 📁 kipley-pte-ltd/               <-- Kipley Pte. Ltd. (Web3 & AI dApps)
+│   ├── 📁 pt-lapantiga-solusi-algoritma/<-- PT Lapantiga Solusi Algoritma (NTMC Polri Command Center)
+│   ├── 📁 pt-qira-teknologi-indonesia/  <-- PT Qira Teknologi Indonesia (Kemdikbudristek, Fintech, SFA)
+│   ├── 📁 pt-aku-pintar-indonesia/      <-- PT Aku Pintar Indonesia (Android Native MVVM 1.5M Users)
+│   └── 📁 template-project/             <-- Template scaffolding subproyek baru (README & ARCHITECTURE)
 │
-├── 📂 experience/                          <-- 🗂️ Experience Vault (Koleksi Dokumentasi Proyek)
-│   ├── README.md                         <-- Katalog & indeks seluruh proyek
-│   ├── 01-ntmc-dashboard-utama/          <-- NTMC Korlantas Polri (React 19, Pusher, TanStack)
-│   │   ├── overview.md                   <-- Gambaran arsitektur, tech stack, metrik, peran
-│   │   └── resume_bullets.md             <-- Bullet points siap pakai & STAR interview story
-│   ├── 02-telegram-ai-crypto-bot/        <-- Kipley (Web3, TON, Solidity, AI)
-│   ├── 03-aku-pintar-edtech-app/         <-- Aku Pintar (Android Native, 1.5M Users, MVVM)
-│   ├── 04-qira-enterprise-crm-cms/       <-- Qira (Laravel, Midtrans/Moota, Assessment)
-│   ├── 05-lapantiga-virtual-events/      <-- Lapantiga (Virtual Events, Node.js, MongoDB)
-│   └── template-project/                 <-- Template starter proyek baru
+├── 📁 output/                           <-- Production Output (Hasil Build Terkompilasi)
+│   ├── 📄 Muhamad_Hendri_Febriansyah_Resume.pdf
+│   ├── 📄 Muhamad_Hendri_Febriansyah_Resume.docx
+│   ├── 📄 Muhamad_Hendri_Febriansyah_Resume.md
+│   ├── 📄 career_graph.html             <-- Standalone D3.js Knowledge Graph Visualizer
+│   └── 📁 variants/                     <-- Varian resume tertarget (Frontend, Android, Web3)
 │
-├── 📂 scripts/                           <-- ⚙️ Mesin Otomasi & CLI
-│   ├── build_resume.py                   <-- Script build Resume (DOCX, PDF, Markdown)
-│   └── new_project.py                    <-- Script scaffolding proyek baru
+├── 📁 scripts/                          <-- Automation Engine
+│   ├── build_resume.py                  <-- Generator multi-format (.docx, .pdf via MS Word COM, .md)
+│   ├── graphify.py                      <-- D3.js interactive career knowledge graph generator
+│   └── new_project.py                   <-- Scaffolding otomatis dokumentasi proyek baru
 │
-├── 📂 output/                            <-- 📦 Output Build Hasil Render
-│   ├── Muhamad_Hendri_Febriansyah_Resume.pdf
-│   ├── Muhamad_Hendri_Febriansyah_Resume.docx
-│   ├── Muhamad_Hendri_Febriansyah_Resume.md
-│   └── variants/                         <-- Hasil build per spesialisasi
-│       ├── Resume_Frontend_Engineer.pdf
-│       ├── Resume_Android_Engineer.pdf
-│       └── Resume_Web3_Engineer.pdf
-│
-└── 📂 archive/                           <-- 🗄️ Arsip file & draf versi lama
+├── 📄 CHANGELOG.md                      <-- Riwayat rilis & Semantic Versioning (SemVer)
+├── 📄 graphify.html / index.html        <-- Web App Knowledge Graph (GitHub Pages Entrypoint)
+├── 📄 README.md                         <-- Panduan utama repositori ini
+└── 📄 RULES.md                          <-- Single Source of Truth (SSOT) aturan & konvensi sistem
 ```
 
 ---
 
-## ⚡ Cara Menggunakan Pipeline
+## 🌐 Graphify — Interactive Career & Code Knowledge Graph
 
-### 1. 🔨 Mem-build Resume (Generate DOCX, PDF, MD)
+Repositori ini dilengkapi dengan **Graphify Engine** (D3.js Force-Directed Interactive Network Graph & Tree-Sitter AST Skill):
+* 🕸️ **Live Web Demo:** Kunjungi [**`https://mhendrif.github.io/my-resume/`**](https://mhendrif.github.io/my-resume/) untuk menjelajahi graf hubungan interaktif antara **Perusahaan ➔ Proyek ➔ Framework & Versi ➔ Kategori Keahlian**.
+* 🤖 **AI AST Skill:** Tersedia di [`.agents/skills/graphify/SKILL.md`](./.agents/skills/graphify/SKILL.md) untuk pemetaan dependensi codebase lintas-proyek secara deterministik.
+* ⚡ **Regenerate Graph:** Jalankan `python scripts/graphify.py` kapan saja untuk memperbarui visualisasi graf.
 
-Cukup jalankan script `build_resume.py` di terminal:
+---
 
-```bash
-# 1. Build Resume Utama (General / Full Stack)
-python scripts/build_resume.py
+## 🚀 Quick Start / Cara Penggunaan
 
-# 2. Build SEMUA Varian Sekaligus (General, Frontend, Android, Web3)
+### 1. Build Semua Varian Resume (DOCX, PDF & Markdown)
+```powershell
+# Generate semua 4 target peran sekaligus
 python scripts/build_resume.py --target all
-
-# 3. Build Varian Spesifik
-python scripts/build_resume.py --target frontend
-python scripts/build_resume.py --target android
-python scripts/build_resume.py --target web3
 ```
 
-Setiap kali script dijalankan, sistem akan otomatis:
-1. Membaca data dari `data/profile.json` dan `data/skills.json`.
-2. Menyusun layout ATS-compliant single-column berstandar internasional.
-3. Menghasilkan file **`.docx`**, **`.pdf`** (via native Word renderer), dan **`.md`** ke dalam folder `output/`.
+### 2. Build Varian Peran Tertentu
+```powershell
+python scripts/build_resume.py --target frontend    # Senior Frontend Engineer
+python scripts/build_resume.py --target android     # Senior Android Engineer
+python scripts/build_resume.py --target web3        # Full Stack Web3 Engineer
+python scripts/build_resume.py --target general     # Senior Software Engineer (Master)
+```
+
+### 3. Generate Interactive Knowledge Graph
+```powershell
+python scripts/graphify.py
+```
+
+### 4. Tambah Proyek Baru dari Template
+```powershell
+python scripts/new_project.py --company "pt-lapantiga-solusi-algoritma" --name "nama-proyek-baru"
+```
 
 ---
 
-### 2. ➕ Menambahkan Proyek Baru ke Experience Vault
+## 📋 Varian Resume yang Tersedia
 
-Jalankan perintah berikut:
-```bash
-python scripts/new_project.py "Nama Proyek Baru Anda"
-```
-
-Contoh:
-```bash
-python scripts/new_project.py "E-Commerce Microservices Platform"
-```
-* Folder `experience/06-e-commerce-microservices-platform/` akan otomatis dibuatkan dari template.
-* Anda tinggal mengisi file `overview.md` dan `resume_bullets.md` di dalam folder tersebut.
+| Varian Resume | Target Posisi | Highlight Proyek & Stack Utama | Output File |
+| :--- | :--- | :--- | :--- |
+| **Master / General** | Senior Software Engineer | Full Stack (React 19, Laravel 12, Android Kotlin, Web3, NTMC Polri) | [`Resume.pdf`](./output/Muhamad_Hendri_Febriansyah_Resume.pdf) |
+| **Frontend Track** | Senior Frontend / Web Lead | React 19, React Router v7, Next.js 15, Tailwind v4, Pusher WS | [`Frontend.pdf`](./output/variants/Resume_Frontend_Engineer.pdf) |
+| **Android Track** | Senior Android Engineer | Kotlin, MVVM, Clean Architecture, Jetpack, Coroutines, Room DB | [`Android.pdf`](./output/variants/Resume_Android_Engineer.pdf) |
+| **Web3 & AI Track** | Full Stack Web3 / AI Engineer | Next.js 15, Telegram TMA SDK, Solidity, Ethers, SSE Streaming | [`Web3.pdf`](./output/variants/Resume_Web3_Engineer.pdf) |
 
 ---
 
-### 3. ✏️ Memperbarui Data Diri, Pengalaman, atau Skill
+## 📝 Format Penulisan Resume (Standar Google XYZ & STAR Method)
 
-* **Ubah Kontak / Bio / Pengalaman / Pendidikan / Sertifikasi:**  
-  Edit file **[`data/profile.json`](./data/profile.json)**.
-* **Ubah Daftar Skill / Kategori Keahlian:**  
-  Edit file **[`data/skills.json`](./data/skills.json)**.
-* **Sesuaikan Urutan Pengalaman / Template Baru:**  
-  Edit file di dalam folder **[`data/templates/`](./data/templates/)**.
+Semua pencapaian dalam resume disusun dengan formula terukur:
 
-Setelah mengubah data di atas, cukup jalankan `python scripts/build_resume.py --target all` untuk memperbarui seluruh file Word, PDF, dan Markdown dalam sekejap!
+$$\text{Accomplished } [X] \text{ as measured by } [Y] \text{ by doing } [Z]$$
+
+* **Situation & Task:** Masalah nyata yang dihadapi sistem / bisnis klien.
+* **Action:** Pilihan arsitektur, teknologi spesifik, dan langkah implementasi teknis konkret.
+* **Result & Metric:** Peningkatan performa kuantitatif (latensi < 500ms, reduksi ukuran bundle 38.6%, zero failure rate).

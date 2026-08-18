@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
 """
-Scaffold a New Project in Project Vault
-======================================
+Scaffold a New Project in Experience Vault
 Usage:
+    python scripts/new_project.py --company "<company-kebab-name>" --name "<project-name>"
     python scripts/new_project.py "Nama Proyek Baru"
 """
 
@@ -18,70 +17,85 @@ if sys.stdout.encoding != 'utf-8':
     except Exception:
         pass
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SCRIPT_DIR)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXPERIENCE_DIR = os.path.join(BASE_DIR, 'experience')
 TEMPLATE_DIR = os.path.join(EXPERIENCE_DIR, 'template-project')
 
-
 def slugify(text):
     text = text.lower().strip()
-    text = re.sub(r'[^\w\s-]', '', text)
-    text = re.sub(r'[\s_-]+', '-', text)
-    return text
-
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s-]+', '-', text)
+    return text.strip('-')
 
 def main():
-    if len(sys.argv) < 2:
-        project_name = input("Masukkan nama proyek baru: ").strip()
-    else:
-        project_name = " ".join(sys.argv[1:]).strip()
+    company_name = None
+    project_name = None
+
+    args = sys.argv[1:]
+    if '--company' in args:
+        idx = args.index('--company')
+        if idx + 1 < len(args):
+            company_name = args[idx + 1]
+    if '--name' in args:
+        idx = args.index('--name')
+        if idx + 1 < len(args):
+            project_name = args[idx + 1]
 
     if not project_name:
-        print("Error: Nama proyek tidak boleh kosong.")
-        sys.exit(1)
+        if len(args) > 0 and not args[0].startswith('--'):
+            project_name = " ".join(args).strip()
+        else:
+            project_name = input("Masukkan nama subproyek baru: ").strip()
 
-    # Find next sequence number
-    existing_dirs = [d for d in os.listdir(EXPERIENCE_DIR) if os.path.isdir(os.path.join(EXPERIENCE_DIR, d))]
-    seq_nums = []
-    for d in existing_dirs:
-        match = re.match(r'^(\d+)-', d)
-        if match:
-            seq_nums.append(int(match.group(1)))
+    if not project_name:
+        print("❌ Nama proyek tidak boleh kosong.")
+        return
 
-    next_seq = (max(seq_nums) + 1) if seq_nums else 1
-    folder_name = f"{next_seq:02d}-{slugify(project_name)}"
-    target_path = os.path.join(EXPERIENCE_DIR, folder_name)
+    proj_slug = slugify(project_name)
+
+    if not company_name:
+        companies = [d for d in os.listdir(EXPERIENCE_DIR) if os.path.isdir(os.path.join(EXPERIENCE_DIR, d)) and d != 'template-project']
+        print("\nPilih Perusahaan:")
+        for i, c in enumerate(companies, 1):
+            print(f"  [{i}] {c}")
+        choice = input("Pilihan (nomor atau nama folder): ").strip()
+        if choice.isdigit() and 1 <= int(choice) <= len(companies):
+            company_name = companies[int(choice) - 1]
+        elif choice in companies:
+            company_name = choice
+        else:
+            company_name = slugify(choice)
+
+    comp_dir = os.path.join(EXPERIENCE_DIR, company_name)
+    op_dir = os.path.join(comp_dir, 'overview-projects')
+    os.makedirs(op_dir, exist_ok=True)
+
+    target_path = os.path.join(op_dir, proj_slug)
 
     if os.path.exists(target_path):
-        print(f"Error: Folder {folder_name} sudah ada.")
-        sys.exit(1)
+        print(f"❌ Subproyek '{proj_slug}' sudah ada di {op_dir}.")
+        return
 
-    shutil.copytree(TEMPLATE_DIR, target_path)
+    os.makedirs(target_path, exist_ok=True)
+    print(f"🚀 Membuat subproyek baru: {target_path}")
 
-    # Update template placeholders in overview.md
-    overview_file = os.path.join(target_path, 'overview.md')
-    if os.path.exists(overview_file):
-        with open(overview_file, 'r', encoding='utf-8') as f:
-            content = f.read()
-        content = content.replace('[Nama Proyek / Sistem]', project_name)
-        with open(overview_file, 'w', encoding='utf-8') as f:
-            f.write(content)
+    # Copy template files (README.md, ARCHITECTURE.md, resume_bullets.md)
+    for fname in os.listdir(TEMPLATE_DIR):
+        src = os.path.join(TEMPLATE_DIR, fname)
+        dst = os.path.join(target_path, fname)
+        if os.path.isfile(src):
+            with open(src, 'r', encoding='utf-8') as f:
+                content = f.read()
+            content = content.replace('[Nama Proyek / Sistem]', project_name)
+            content = content.replace('[Nama Proyek]', project_name)
+            content = content.replace('[Nama_Perusahaan]', company_name)
+            content = content.replace('[Nama Perusahaan]', company_name.replace('-', ' ').title())
+            with open(dst, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"  📄 Dibuat: {fname}")
 
-    bullets_file = os.path.join(target_path, 'resume_bullets.md')
-    if os.path.exists(bullets_file):
-        with open(bullets_file, 'r', encoding='utf-8') as f:
-            content = f.read()
-        content = content.replace('[Nama Proyek]', project_name)
-        with open(bullets_file, 'w', encoding='utf-8') as f:
-            f.write(content)
-
-    print(f"\n🎉 Berhasil membuat proyek baru di:")
-    print(f"📁 {target_path}")
-    print(f"  - {os.path.join(target_path, 'overview.md')}")
-    print(f"  - {os.path.join(target_path, 'resume_bullets.md')}")
-    print("\nSilakan isi detail overview dan bullet points pada file tersebut!")
-
+    print(f"\n✅ Berhasil membuat subproyek '{proj_slug}' di bawah '{company_name}'!")
+    print(f"👉 Silakan lengkapi {os.path.join(target_path, 'README.md')} dan {os.path.join(target_path, 'ARCHITECTURE.md')}")
 
 if __name__ == '__main__':
     main()
