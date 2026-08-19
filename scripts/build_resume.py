@@ -33,10 +33,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 TEMPLATES_DIR = os.path.join(DATA_DIR, 'templates')
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
-VARIANTS_DIR = os.path.join(OUTPUT_DIR, 'variants')
+EN_DIR = os.path.join(OUTPUT_DIR, 'en')
+ID_DIR = os.path.join(OUTPUT_DIR, 'id')
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-os.makedirs(VARIANTS_DIR, exist_ok=True)
+os.makedirs(EN_DIR, exist_ok=True)
+os.makedirs(ID_DIR, exist_ok=True)
 
 # Elegant Color Palette
 PRIMARY_COLOR = RGBColor(15, 23, 42)      # Deep Slate #0F172A
@@ -386,15 +388,11 @@ def process_target(target_name, profiles, all_skills):
     
     base_name = template.get('output_filename', f"Resume_{target_name.capitalize()}")
     
-    # Destination Paths
-    if target_name in ['general', 'general_id']:
-        docx_path = os.path.join(OUTPUT_DIR, f"{base_name}.docx")
-        pdf_path = os.path.join(OUTPUT_DIR, f"{base_name}.pdf")
-        md_path = os.path.join(OUTPUT_DIR, f"{base_name}.md")
-    else:
-        docx_path = os.path.join(VARIANTS_DIR, f"{base_name}.docx")
-        pdf_path = os.path.join(VARIANTS_DIR, f"{base_name}.pdf")
-        md_path = os.path.join(VARIANTS_DIR, f"{base_name}.md")
+    # Destination Paths grouped by language (output/en/ or output/id/)
+    target_dir = ID_DIR if lang == 'id' else EN_DIR
+    docx_path = os.path.join(target_dir, f"{base_name}.docx")
+    pdf_path = os.path.join(target_dir, f"{base_name}.pdf")
+    md_path = os.path.join(target_dir, f"{base_name}.md")
 
     display_title = template.get('display_title', target_name)
     print(f"\n🚀 Generating [{display_title}] ({lang.upper()})...")
