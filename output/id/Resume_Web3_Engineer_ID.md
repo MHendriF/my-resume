@@ -1,6 +1,6 @@
 # Muhamad Hendri Febriansyah
-Surabaya, Indonesia | [hendrifebriansyah28@gmail.com](mailto:hendrifebriansyah28@gmail.com) | [+62 822-4467-3388](tel:+62 822-4467-3388)
-[LinkedIn: linkedin.com/in/mhendrif](https://www.linkedin.com/in/mhendrif) | [GitHub: github.com/MHendriF](https://github.com/MHendriF) | [Portfolio: mhendrif.github.io/my-resume](https://mhendrif.github.io/my-resume/)
+Indonesia | [hendrifebriansyah28@gmail.com](mailto:hendrifebriansyah28@gmail.com) | [+62 822-4467-3388](tel:+62 822-4467-3388)
+[LinkedIn: linkedin.com/in/m-hendri-febriansyah](https://www.linkedin.com/in/m-hendri-febriansyah) | [GitHub: github.com/MHendriF](https://github.com/MHendriF) | [Portfolio: portfolio-mhf.vercel.app](https://portfolio-mhf.vercel.app)
 
 ---
 

@@ -2,15 +2,15 @@
   "name": "Muhamad Hendri Febriansyah",
   "title": "Senior Software Engineer (Frontend, Full Stack & Android)",
   "contact": {
-    "location": "Surabaya, Indonesia",
+    "location": "Indonesia",
     "email": "hendrifebriansyah28@gmail.com",
     "phone": "+62 822-4467-3388",
-    "linkedin": "linkedin.com/in/mhendrif",
-    "linkedin_url": "https://www.linkedin.com/in/mhendrif",
+    "linkedin": "linkedin.com/in/m-hendri-febriansyah",
+    "linkedin_url": "https://www.linkedin.com/in/m-hendri-febriansyah",
     "github": "github.com/MHendriF",
     "github_url": "https://github.com/MHendriF",
-    "portfolio": "mhendrif.github.io/my-resume",
-    "portfolio_url": "https://mhendrif.github.io/my-resume/"
+    "portfolio": "portfolio-mhf.vercel.app",
+    "portfolio_url": "https://portfolio-mhf.vercel.app"
   },
   "summaries": {
     "general": "Senior Software Engineer dengan 6+ tahun pengalaman merancang dan mengembangkan sistem Web2 dan Web3 berskala besar. Memiliki rekam jejak terbukti membangun dashboard Command Center NTMC Korlantas Polri dengan latensi stream < 500ms, mengembangkan aplikasi Android untuk 1,5 juta+ pengguna aktif (reduksi ukuran 38,6% & crash-free 99,42%), serta membangun agen AI Web3 berkonkurensi tinggi. Menguasai React 19, Next.js 15, TypeScript, Laravel 12, Kotlin, dan Solidity dengan komitmen pada type-safe clean architecture.",

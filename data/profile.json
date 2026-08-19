@@ -2,15 +2,15 @@
   "name": "MUHAMAD HENDRI FEBRIANSYAH",
   "title": "Senior Software Engineer (Frontend, Full Stack & Web3)",
   "contact": {
-    "location": "Surabaya / Jakarta, Indonesia",
+    "location": "Indonesia",
     "email": "hendrifebriansyah28@gmail.com",
     "phone": "+62 896 9827 7267",
-    "linkedin": "linkedin.com/in/hendrifebriansyah",
-    "linkedin_url": "https://linkedin.com/in/hendrifebriansyah",
-    "portfolio": "Portfolio",
-    "portfolio_url": "https://hendrifebriansyah.dev",
-    "github": "github.com/hendrifebriansyah",
-    "github_url": "https://github.com/hendrifebriansyah"
+    "linkedin": "linkedin.com/in/m-hendri-febriansyah",
+    "linkedin_url": "https://www.linkedin.com/in/m-hendri-febriansyah",
+    "portfolio": "portfolio-mhf.vercel.app",
+    "portfolio_url": "https://portfolio-mhf.vercel.app",
+    "github": "github.com/MHendriF",
+    "github_url": "https://github.com/MHendriF"
   },
   "summaries": {
     "general": "Results-driven Senior Software Engineer with 6+ years of experience architecting high-scale Web2 and Web3 systems. Demonstrated track record building real-time mission-critical dashboards for NTMC Korlantas Polri (< 500ms streaming latency), scaling native Android platforms to 1.5M+ active users (38.6% APK reduction, 99.42% crash-free rate), and developing autonomous Web3 AI agents. Deeply proficient in React 19, Next.js 15, TypeScript, Laravel 12, Kotlin, and Solidity, with a strong focus on type-safe clean architecture.",
