@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![CI Health Check](https://github.com/MHendriF/my-resume/actions/workflows/ci.yml/badge.svg)](https://github.com/MHendriF/my-resume/actions/workflows/ci.yml)
 [![Live Interactive Career Graph](https://img.shields.io/badge/🌐_Live_Career_Graph-GitHub_Pages-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mhendrif.github.io/my-resume/)
 
 <br/>

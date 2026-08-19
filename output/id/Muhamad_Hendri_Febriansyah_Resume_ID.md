@@ -14,35 +14,35 @@ Senior Software Engineer dengan 6+ tahun pengalaman merancang dan mengembangkan 
 ### Freelance Software Engineer | PT Lapantiga Solusi Algoritma (Surabaya, Indonesia)
 *Jan 2019 – Sekarang*
 
-- Mengembangkan Dashboard Utama NTMC Korlantas Polri, aplikasi web pemantauan operasional dan lalu lintas real-time menggunakan React 19, React Router v7, TypeScript, Tailwind CSS v4, dan shadcn/ui.
-- Mengintegrasikan komunikasi WebSocket real-time via Pusher JS untuk penyiaran insiden langsung, peringatan operasional instan, dan pembaruan visual dashboard seketika (< 500ms).
-- Merancang tabel data server-side berkinerja tinggi menggunakan TanStack Table v8 dan caching status server via TanStack Query v5, mendukung penyaringan multi-field, pengurutan, dan paginasi dataset besar.
-- Membangun form input type-safe dengan React Hook Form dan validasi skema Zod, serta grafik visual analitik interaktif menggunakan Recharts.
-- Mengembangkan arsitektur backend, platform virtual exhibition (Efosh), sistem e-Bupot pajak, dan solusi klaim asuransi Petrokimia Gresik berbasis Laravel 10/12, Livewire, AWS S3, dan MySQL.
+- Merancang arsitektur dan membangun **Dashboard Utama NTMC Korlantas Polri**, platform pemantauan lalu lintas & insiden real-time berbasis **React 19**, **React Router v7**, **TypeScript**, **Tailwind CSS v4**, dan **shadcn/ui**.
+- Mengintegrasikan komunikasi data dua arah via **Pusher WebSockets**, menghasilkan **latensi siaran insiden < 500ms** dan sinkronisasi telemetri instan.
+- Mengoptimalkan tabel data server-side berkinerja tinggi menggunakan **TanStack Table v8** dan caching status via **TanStack Query v5** untuk mendukung pemrosesan dataset besar secara responsif.
+- Membangun alur form type-safe dengan **React Hook Form** dan validasi skema ketat **Zod**, serta visualisasi analitik interaktif menggunakan **Recharts**.
+- Mengembangkan backend enterprise, platform virtual expo (**Efosh**), sistem e-Bupot pajak, dan klaim asuransi **Petrokimia Gresik** berbasis **Laravel 12/10**, **Livewire**, **AWS S3**, dan **MySQL**.
 
 ### Full Stack Developer (Web3 & AI) | Kipley Pte. Ltd. (Singapura (Remote))
 *Nov 2024 – Jul 2025*
 
-- Membangun dan mengintegrasikan REST & GraphQL API berkinerja tinggi untuk 5+ proyek Kipley, meningkatkan kecepatan respons frontend sebesar 30% melalui optimalisasi caching dan manajemen state.
-- Mengintegrasikan smart contract Ethereum (Solidity) dengan arsitektur frontend Web3 (Next.js 15, Ethers.js/Wagmi), memfasilitasi transaksi terdesentralisasi yang aman untuk fitur DeFi dan NFT.
-- Mengembangkan Asisten AI Telegram berkonkurensi tinggi dengan integrasi transaksi multi-chain (TON, USDT, Telegram Stars) dan payment gateway fiat Stripe.
-- Berkolaborasi erat dengan tim produk, UI/UX, dan backend dalam lingkungan Agile untuk merilis fitur secara tepat waktu dengan zero-failure settlement.
+- Merancang dan mengoptimalkan **REST & GraphQL API** untuk 5+ proyek dApp unggulan, meningkatkan kecepatan respons antarmuka sebesar **30%** melalui layer caching terstruktur.
+- Mengintegrasikan **Smart Contract Ethereum (Solidity)** dengan arsitektur frontend **Next.js 15 (App Router, Turbopack)** melalui **Wagmi v2** dan **Ethers.js v6** untuk transaksi terdesentralisasi yang aman.
+- Membangun agen otonom **Asisten AI Telegram** dengan dukungan penyelesaian multi-chain (**TON, USDT, Telegram Stars**) serta gateway fiat dengan **keandalan transaksi 100%**.
+- Memimpin eksekusi sprint Agile dan berkolaborasi lintas fungsi dengan tim UI/UX serta produk untuk merilis fitur secara tepat waktu.
 
-### Android Developer | PT Aku Pintar Indonesia (Surabaya, Indonesia)
+### Software Developer | PT Aku Pintar Indonesia (Surabaya, Indonesia)
 *Feb 2021 – Mei 2024*
 
-- Memimpin pengembangan native Android aplikasi edukasi unggulan dengan 1.500.000+ pengguna aktif dan rating 4.42/5.00 di Google Play Store.
-- Merancang ulang arsitektur aplikasi ke dalam struktur modular MVVM menggunakan Android Jetpack, mereduksi ukuran aplikasi sebesar 38,6% (dari 69,5 MB menjadi 42,7 MB) dan meningkatkan performa runtime.
-- Mengoptimalkan modul inti aplikasi sehingga mencapai tingkat crash-free pengguna 99,42%+ selama siklus rilis berkelanjutan 90 hari.
-- Mengelola dan memelihara modul portal web Liferay OSGi (100+ modul mandiri) mencakup tes psikometri RIASEC, video konseling WebRTC, dan integrasi payment gateway (BCA, OVO, KoinWorks).
+- Memimpin pengembangan native **Android (Kotlin & Java)** aplikasi edukasi unggulan dengan **1.500.000+ pengguna aktif** dan rating **4.42/5.00 di Google Play Store**.
+- Merancang restrukturisasi modular **Clean Architecture & MVVM** menggunakan **Android Jetpack**, mereduksi ukuran bundle APK sebesar **38,6%** (**69,5 MB menjadi 42,7 MB**) serta mempercepat performa rendering runtime.
+- Mengoptimalkan alokasi memori dan proses sinkronisasi latar belakang hingga mencapai tingkat **crash-free session 99,42%+** selama siklus rilis 90 hari berkelanjutan.
+- Mengelola modul portal web **Liferay OSGi** (100+ modul mandiri) mencakup tes psikometri nasional **RIASEC**, video konseling live **WebRTC**, dan integrasi payment gateway (**BCA, OVO**).
 
 ### Software Developer | PT Qira Teknologi Indonesia (Surabaya, Indonesia)
 *Nov 2020 – Jan 2024*
 
-- Mengembangkan backend sistem informasi pemerintahan Kemdikbudristek RI (EPAK Widyaprada), e-commerce otomotif, CRM, dan sistem psikometri menggunakan PHP Laravel, MySQL, dan AWS S3.
-- Mengintegrasikan alur payment gateway Midtrans Snap dan Moota dengan akurasi transaksi 99,9% serta rekonsiliasi otomatis tanpa kendala keamanan.
-- Mengembangkan aplikasi pendamping native Android menggunakan Java, Kotlin, Android Jetpack, dan Firebase untuk sinkronisasi data real-time.
-- Mengonfigurasi pipeline deployment dan lingkungan server Linux/SSH, cPanel, dan Plesk untuk menjamin ketersediaan tinggi dan rilis tanpa downtime.
+- Merancang arsitektur backend sistem **Kemdikbudristek RI (EPAK Widyaprada)** untuk penilaian angka kredit ribuan pejabat fungsional nasional, e-commerce otomotif, dan CRM menggunakan **PHP Laravel**, **MySQL**, dan **AWS S3**.
+- Mengintegrasikan alur payment gateway (**Midtrans Snap**, **Moota**) dan Google APIs dengan **akurasi transaksi 99,9%** serta rekonsiliasi otomatis tanpa kendala keamanan.
+- Mengembangkan aplikasi mobile pendamping native Android menggunakan **Kotlin**, **Android Jetpack**, dan **Firebase** untuk sinkronisasi data real-time.
+- Mengonfigurasi pipeline deployment pada **Linux/SSH**, **cPanel**, dan **Plesk** untuk menjamin ketersediaan tinggi dan rilis produksi tanpa downtime.
 
 ---
 

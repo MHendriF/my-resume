@@ -1,0 +1,34 @@
+name: CI Repository Health & Integrity Suite
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    name: Health Check (Verify Pipeline)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-docx
+
+      - name: Run Repository Health & Link Diagnostics
+        run: |
+          python scripts/verify.py
+
+      - name: Validate Graphify Engine Output
+        run: |
+          python scripts/graphify.py

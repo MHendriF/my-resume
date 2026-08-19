@@ -14,6 +14,7 @@ Usage:
 import os
 import sys
 import json
+import re
 import argparse
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
@@ -155,10 +156,19 @@ def build_docx(profile, skills, template, output_docx_path):
         p.paragraph_format.space_after = Pt(2 if is_last else 0.5)
         p.paragraph_format.line_spacing = 1.08
         
-        run = p.add_run(text)
-        run.font.name = 'Calibri'
-        run.font.size = Pt(9.5)
-        run.font.color.rgb = TEXT_COLOR
+        # Parse **bold** markdown tokens into distinct Word runs
+        parts = re.split(r'(\*\*.*?\*\*)', text)
+        for part in parts:
+            if not part: continue
+            if part.startswith('**') and part.endswith('**'):
+                run = p.add_run(part[2:-2])
+                run.bold = True
+                run.font.color.rgb = PRIMARY_COLOR
+            else:
+                run = p.add_run(part)
+                run.font.color.rgb = TEXT_COLOR
+            run.font.name = 'Calibri'
+            run.font.size = Pt(9.5)
 
     # 1. Header (Name & Contact)
     p_name = doc.add_paragraph()

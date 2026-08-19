@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2026-08-18
 
 ### 🚀 Added
+- **Visual Anchoring & High-Impact Power Verbs:**
+  - Upgraded bullet points across all 4 tracks with quantifiable metric anchors and technical keywords.
+  - Enhanced `scripts/build_resume.py` to parse markdown bold tokens into styled DOCX/PDF runs.
+- **GitHub Actions CI Quality Assurance:**
+  - Created `.github/workflows/ci.yml` for automated health check and schema validation on every push/PR.
 - **Full Multilingual Pipeline & Indonesian Resume Variants:**
   - Added dedicated Indonesian profile (`data/profile_id.json`) and skills taxonomy (`data/skills_id.json`).
   - Added 4 Indonesian ATS-compliant resume templates (`general_id`, `frontend_id`, `android_id`, `web3_id`).
@@ -76,6 +81,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-08-17
 
 ### 🚀 Added
+- **Visual Anchoring & High-Impact Power Verbs:**
+  - Upgraded bullet points across all 4 tracks with quantifiable metric anchors and technical keywords.
+  - Enhanced `scripts/build_resume.py` to parse markdown bold tokens into styled DOCX/PDF runs.
+- **GitHub Actions CI Quality Assurance:**
+  - Created `.github/workflows/ci.yml` for automated health check and schema validation on every push/PR.
 - **Full Multilingual Pipeline & Indonesian Resume Variants:**
   - Added dedicated Indonesian profile (`data/profile_id.json`) and skills taxonomy (`data/skills_id.json`).
   - Added 4 Indonesian ATS-compliant resume templates (`general_id`, `frontend_id`, `android_id`, `web3_id`).
@@ -119,6 +129,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-08-16
 
 ### 🚀 Added
+- **Visual Anchoring & High-Impact Power Verbs:**
+  - Upgraded bullet points across all 4 tracks with quantifiable metric anchors and technical keywords.
+  - Enhanced `scripts/build_resume.py` to parse markdown bold tokens into styled DOCX/PDF runs.
+- **GitHub Actions CI Quality Assurance:**
+  - Created `.github/workflows/ci.yml` for automated health check and schema validation on every push/PR.
 - **Full Multilingual Pipeline & Indonesian Resume Variants:**
   - Added dedicated Indonesian profile (`data/profile_id.json`) and skills taxonomy (`data/skills_id.json`).
   - Added 4 Indonesian ATS-compliant resume templates (`general_id`, `frontend_id`, `android_id`, `web3_id`).
