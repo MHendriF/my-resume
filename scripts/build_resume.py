@@ -259,7 +259,7 @@ def build_docx(profile, skills, template, output_docx_path):
     r_sep4.font.name = 'Calibri'
 
     # Portfolio & Career Graph (clickable)
-    portfolio_label = "Portofolio & Career Graph" if lang == 'id' else "Portfolio & Career Graph"
+    portfolio_label = "Portofolio" if lang == 'id' else "Portfolio"
     add_hyperlink(p_contact, c.get('portfolio_url', 'https://mhendrif.github.io/my-resume/'), portfolio_label, hex_color="2563EB", underline=True, font_size_pt=9)
 
     # 2. Summary
