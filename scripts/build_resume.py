@@ -1,6 +1,6 @@
 """
 Professional Resume Generator Pipeline (DOCX, PDF & Markdown)
-Supports Multi-Target Role Variants in both English & Indonesian.
+Supports Multi-Target Role Variants in both English & Indonesian with Clickable Hyperlinks.
 
 Usage:
     python scripts/build_resume.py --target all          # Build all 8 variants (EN + ID)
@@ -15,7 +15,9 @@ import os
 import sys
 import json
 import re
+import html
 import argparse
+import docx
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -81,6 +83,38 @@ def set_cell_margins(cell, top=0, bottom=0, left=0, right=0):
         tcMar.append(node)
     tcPr.append(tcMar)
 
+def add_hyperlink(paragraph, url, text, hex_color="2563EB", underline=True, font_size_pt=9):
+    """Inserts a real, clickable hyperlink into a python-docx paragraph."""
+    part = paragraph.part
+    r_id = part.relate_to(url, docx.opc.constants.RELATIONSHIP_TYPE.HYPERLINK, is_external=True)
+
+    hyperlink = parse_xml(f'<w:hyperlink xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="{r_id}" w:history="1"/>')
+    
+    r = parse_xml(r'<w:r xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>')
+    rPr = parse_xml(r'<w:rPr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>')
+    
+    rFonts = parse_xml(r'<w:rFonts xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:ascii="Calibri" w:hAnsi="Calibri"/>')
+    rPr.append(rFonts)
+    
+    sz_val = int(font_size_pt * 2)
+    sz = parse_xml(f'<w:sz xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:val="{sz_val}"/>')
+    rPr.append(sz)
+    
+    c = parse_xml(f'<w:color xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:val="{hex_color}"/>')
+    rPr.append(c)
+    
+    if underline:
+        u = parse_xml(r'<w:u xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:val="single"/>')
+        rPr.append(u)
+        
+    escaped_text = html.escape(text)
+    t = parse_xml(f'<w:t xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xml:space="preserve">{escaped_text}</w:t>')
+    
+    r.append(rPr)
+    r.append(t)
+    hyperlink.append(r)
+    paragraph._p.append(hyperlink)
+
 def build_docx(profile, skills, template, output_docx_path):
     lang = template.get('lang', 'en')
     titles = SECTION_TITLES.get(lang, SECTION_TITLES['en'])
@@ -136,7 +170,7 @@ def build_docx(profile, skills, template, output_docx_path):
         r_left.bold = not is_sub
         r_left.font.color.rgb = PRIMARY_COLOR if not is_sub else TEXT_COLOR
         
-        # Right Text (Date / Location)
+        # Right Text (Date / Location strictly 1 line)
         p_right = c_right.paragraphs[0]
         p_right.alignment = WD_ALIGN_PARAGRAPH.RIGHT
         p_right.paragraph_format.space_before = Pt(2 if not is_sub else 0)
@@ -170,7 +204,7 @@ def build_docx(profile, skills, template, output_docx_path):
             run.font.name = 'Calibri'
             run.font.size = Pt(9.5)
 
-    # 1. Header (Name & Contact)
+    # 1. Header (Name & Clickable Contact Line)
     p_name = doc.add_paragraph()
     p_name.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_name.paragraph_format.space_before = Pt(0)
@@ -182,26 +216,51 @@ def build_docx(profile, skills, template, output_docx_path):
     r_name.font.color.rgb = PRIMARY_COLOR
     r_name.font.name = 'Calibri'
 
-    # Contact Line
+    # Clickable Contact Line
     c = profile['contact']
     p_contact = doc.add_paragraph()
     p_contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_contact.paragraph_format.space_before = Pt(0)
     p_contact.paragraph_format.space_after = Pt(4)
     
-    contact_parts = [
-        c.get('location', ''),
-        c.get('email', ''),
-        c.get('phone', ''),
-        f"LinkedIn: {c.get('linkedin', '')}",
-        f"GitHub: {c.get('github', '')}",
-        f"Portfolio: {c.get('portfolio', '')}"
-    ]
-    contact_text = "  •  ".join([cp for cp in contact_parts if cp])
-    r_contact = p_contact.add_run(contact_text)
-    r_contact.font.size = Pt(9)
-    r_contact.font.color.rgb = MUTED_COLOR
-    r_contact.font.name = 'Calibri'
+    # Location
+    r_loc = p_contact.add_run(f"{c.get('location', '')}  •  ")
+    r_loc.font.size = Pt(9)
+    r_loc.font.color.rgb = MUTED_COLOR
+    r_loc.font.name = 'Calibri'
+    
+    # Email (mailto link)
+    add_hyperlink(p_contact, f"mailto:{c.get('email', '')}", c.get('email', ''), hex_color="2563EB", underline=False, font_size_pt=9)
+    r_sep1 = p_contact.add_run("  •  ")
+    r_sep1.font.size = Pt(9)
+    r_sep1.font.color.rgb = MUTED_COLOR
+    r_sep1.font.name = 'Calibri'
+
+    # Phone (tel link)
+    phone_clean = c.get('phone', '').replace(' ', '').replace('-', '')
+    add_hyperlink(p_contact, f"tel:{phone_clean}", c.get('phone', ''), hex_color="2563EB", underline=False, font_size_pt=9)
+    r_sep2 = p_contact.add_run("  •  ")
+    r_sep2.font.size = Pt(9)
+    r_sep2.font.color.rgb = MUTED_COLOR
+    r_sep2.font.name = 'Calibri'
+
+    # LinkedIn (clickable)
+    add_hyperlink(p_contact, c.get('linkedin_url', 'https://linkedin.com/in/mhendrif'), "LinkedIn", hex_color="2563EB", underline=True, font_size_pt=9)
+    r_sep3 = p_contact.add_run("  •  ")
+    r_sep3.font.size = Pt(9)
+    r_sep3.font.color.rgb = MUTED_COLOR
+    r_sep3.font.name = 'Calibri'
+
+    # GitHub (clickable)
+    add_hyperlink(p_contact, c.get('github_url', 'https://github.com/MHendriF'), "GitHub", hex_color="2563EB", underline=True, font_size_pt=9)
+    r_sep4 = p_contact.add_run("  •  ")
+    r_sep4.font.size = Pt(9)
+    r_sep4.font.color.rgb = MUTED_COLOR
+    r_sep4.font.name = 'Calibri'
+
+    # Portfolio & Career Graph (clickable)
+    portfolio_label = "Portofolio & Career Graph" if lang == 'id' else "Portfolio & Career Graph"
+    add_hyperlink(p_contact, c.get('portfolio_url', 'https://mhendrif.github.io/my-resume/'), portfolio_label, hex_color="2563EB", underline=True, font_size_pt=9)
 
     # 2. Summary
     summary_key = template.get('summary_key', 'general')
@@ -317,8 +376,8 @@ def build_markdown(profile, skills, template, output_md_path):
 
     lines = []
     lines.append(f"# {profile['name']}")
-    lines.append(f"{c['location']} | {c['email']} | {c['phone']}")
-    lines.append(f"[LinkedIn: {c['linkedin']}]({c['linkedin_url']}) | [Portfolio: {c['portfolio']}]({c['portfolio_url']}) | [GitHub: {c['github']}]({c['github_url']})\n")
+    lines.append(f"{c['location']} | [{c['email']}](mailto:{c['email']}) | [{c['phone']}](tel:{c['phone']})")
+    lines.append(f"[LinkedIn: {c['linkedin']}]({c['linkedin_url']}) | [GitHub: {c['github']}]({c['github_url']}) | [Portfolio: {c['portfolio']}]({c['portfolio_url']})\n")
     lines.append("---\n")
     lines.append(f"## {titles['summary']}")
     lines.append(summary_text + "\n")

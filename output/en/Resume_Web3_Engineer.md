@@ -1,6 +1,6 @@
 # MUHAMAD HENDRI FEBRIANSYAH
-Surabaya / Jakarta, Indonesia | hendrifebriansyah28@gmail.com | +62 896 9827 7267
-[LinkedIn: linkedin.com/in/hendrifebriansyah](https://linkedin.com/in/hendrifebriansyah) | [Portfolio: Portfolio](https://hendrifebriansyah.dev) | [GitHub: github.com/hendrifebriansyah](https://github.com/hendrifebriansyah)
+Surabaya / Jakarta, Indonesia | [hendrifebriansyah28@gmail.com](mailto:hendrifebriansyah28@gmail.com) | [+62 896 9827 7267](tel:+62 896 9827 7267)
+[LinkedIn: linkedin.com/in/hendrifebriansyah](https://linkedin.com/in/hendrifebriansyah) | [GitHub: github.com/hendrifebriansyah](https://github.com/hendrifebriansyah) | [Portfolio: Portfolio](https://hendrifebriansyah.dev)
 
 ---
 
