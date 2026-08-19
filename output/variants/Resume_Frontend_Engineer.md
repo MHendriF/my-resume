@@ -5,7 +5,7 @@ Surabaya / Jakarta, Indonesia | hendrifebriansyah28@gmail.com | +62 896 9827 726
 ---
 
 ## PROFESSIONAL SUMMARY
-Senior Frontend Engineer with 6+ years of experience building high-performance, real-time web applications. Specialized in modern TypeScript ecosystems, React 19, React Router v7, Tailwind CSS v4, shadcn/ui, and TanStack Query/Table. Proven success leading the frontend architecture for the NTMC Traffic Monitoring Dashboard (handling real-time WebSockets via Pusher, complex server-side data tables, and strict Zod validation) and integrating Web3 interfaces with smart contracts.
+Senior Frontend Engineer with 6+ years of experience building high-performance, real-time web applications. Proven success leading the frontend architecture for the NTMC Traffic Command Center using React 19, React Router v7, Tailwind CSS v4, and Pusher WebSockets (< 500ms event latency). Specialized in modern TypeScript ecosystems, TanStack Query/Table, Next.js 15, and Web3 UI integration, committed to pixel-perfect performance and type-safe architecture.
 
 ---
 

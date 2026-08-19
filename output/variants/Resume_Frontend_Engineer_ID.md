@@ -5,7 +5,7 @@ Surabaya, Indonesia | hendrifebriansyah28@gmail.com | +62 822-4467-3388
 ---
 
 ## RINGKASAN PROFESIONAL
-Senior Frontend Engineer dengan pengalaman lebih dari 6 tahun dalam membangun aplikasi web real-time berkinerja tinggi. Spesialis dalam ekosistem modern TypeScript, React 19, React Router v7, Tailwind CSS v4, shadcn/ui, dan TanStack Query/Table. Berpengalaman memimpin arsitektur antarmuka Dashboard Monitoring NTMC Polri (menangani WebSocket real-time via Pusher, tabel data server-side berskala besar, serta validasi skema ketat Zod) dan mengintegrasikan antarmuka Web3 dengan smart contracts.
+Senior Frontend Engineer dengan 6+ tahun pengalaman membangun aplikasi web real-time berkinerja tinggi. Berpengalaman memimpin arsitektur antarmuka Command Center NTMC Polri menggunakan React 19, React Router v7, Tailwind CSS v4, dan Pusher WebSockets (< 500ms latensi). Spesialis dalam ekosistem TypeScript, TanStack Query/Table, Next.js 15, dan integrasi Web3 dengan penekanan pada performa optimal dan reliabilitas antarmuka.
 
 ---
 

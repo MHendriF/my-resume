@@ -5,7 +5,7 @@ Surabaya, Indonesia | hendrifebriansyah28@gmail.com | +62 822-4467-3388
 ---
 
 ## RINGKASAN PROFESIONAL
-Senior Android Engineer dengan pengalaman lebih dari 6 tahun dalam merancang aplikasi mobile berkinerja tinggi menggunakan Kotlin, Java, dan Android Jetpack. Memiliki rekam jejak memimpin pengembangan native Android platform edukasi dengan 1,5 juta+ pengguna aktif, berhasil mereduksi ukuran bundle APK sebesar 38,6% (dari 69,5 MB menjadi 42,7 MB), serta mempertahankan crash-free session > 99,42%. Lulusan tersertifikasi Android Developer Expert (MADE) dengan keahlian mendalam pada Clean Architecture, MVVM, dan Room DB.
+Senior Android Engineer dengan 6+ tahun pengalaman mengembangkan aplikasi mobile skala besar menggunakan Kotlin, Java, dan Android Jetpack. Memimpin pengembangan native Android platform edukasi dengan 1,5 juta+ pengguna aktif (rating 4.42/5.00), mereduksi ukuran APK sebesar 38,6% (69,5 MB ke 42,7 MB), dan mempertahankan crash-free rate 99,42%+. Tersertifikasi Android Developer Expert (MADE) dengan keahlian mendalam pada Clean Architecture, MVVM, dan Room DB.
 
 ---
 

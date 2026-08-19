@@ -5,7 +5,7 @@ Surabaya / Jakarta, Indonesia | hendrifebriansyah28@gmail.com | +62 896 9827 726
 ---
 
 ## PROFESSIONAL SUMMARY
-Senior Android Engineer with 6+ years of experience architecting robust mobile applications using Kotlin, Java, and Android Jetpack. Track record includes leading native Android development for an education platform with 1.5M+ users, achieving a 38.6% reduction in APK bundle size (69.5 MB to 42.7 MB), and maintaining 99.42%+ crash-free user sessions. Certified Android Developer Expert (MADE) with deep expertise in Clean Architecture, MVVM, and Room DB.
+Senior Android Engineer with 6+ years of experience engineering robust, high-scale mobile applications using Kotlin, Java, and Android Jetpack. Spearheaded native Android development for an education platform with 1.5M+ active users (4.42/5.00 Play Store rating), reducing APK size by 38.6% (69.5 MB to 42.7 MB) and maintaining 99.42%+ crash-free sessions. Certified Android Developer Expert (MADE) specialized in Clean Architecture, MVVM, Coroutines, and Room DB.
 
 ---
 

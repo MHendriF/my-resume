@@ -5,7 +5,7 @@ Surabaya, Indonesia | hendrifebriansyah28@gmail.com | +62 822-4467-3388
 ---
 
 ## RINGKASAN PROFESIONAL
-Full Stack Web3 Engineer dengan pengalaman luas dalam pengembangan aplikasi terdesentralisasi (dApp), smart contract Ethereum (Solidity), dan ekosistem blockchain TON. Memiliki rekam jejak di Kipley Pte. Ltd. membangun asisten AI Telegram dengan dukungan multi-chain kripto (TON, USDT, Stars) dan menghubungkan frontend Next.js/React dengan protokol DeFi/NFT melalui Wagmi dan Ethers.js.
+Full Stack Web3 & AI Engineer dengan pengalaman luas dalam pengembangan aplikasi terdesentralisasi (dApp), smart contract Ethereum (Solidity), dan Telegram Mini Apps (TMA). Berpengalaman di Kipley Pte. Ltd. mengembangkan asisten AI Telegram berkonkurensi tinggi dengan integrasi multi-chain kripto (TON, USDT, Stars) dan menghubungkan frontend Next.js 15 dengan protokol DeFi/NFT dengan keandalan transaksi 100%.
 
 ---
 

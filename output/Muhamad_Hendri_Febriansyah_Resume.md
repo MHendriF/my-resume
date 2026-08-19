@@ -5,7 +5,7 @@ Surabaya / Jakarta, Indonesia | hendrifebriansyah28@gmail.com | +62 896 9827 726
 ---
 
 ## PROFESSIONAL SUMMARY
-Results-driven Software Engineer with over 6 years of experience architecting and delivering scalable Web2 and Web3 applications. Proven frontend & full-stack expertise across modern technologies including React 19, React Router v7, TypeScript, Tailwind CSS v4, shadcn/ui, TanStack Query/Table, Laravel, native Android (Kotlin, Jetpack), and decentralized solutions (Solidity, TON SDK). Demonstrated track record building real-time operational traffic monitoring dashboards (NTMC), optimizing flagship mobile apps serving 1.5M+ users (38.6% size reduction, 99.42% crash-free stability), and developing high-concurrency Telegram AI assistants with crypto payments. Adept in Agile leadership, type-safe clean architecture, and cross-functional team collaboration.
+Results-driven Senior Software Engineer with 6+ years of experience architecting high-scale Web2 and Web3 systems. Demonstrated track record building real-time mission-critical dashboards for NTMC Korlantas Polri (< 500ms streaming latency), scaling native Android platforms to 1.5M+ active users (38.6% APK reduction, 99.42% crash-free rate), and developing autonomous Web3 AI agents. Deeply proficient in React 19, Next.js 15, TypeScript, Laravel 12, Kotlin, and Solidity, with a strong focus on type-safe clean architecture.
 
 ---
 

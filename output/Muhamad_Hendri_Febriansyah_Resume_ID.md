@@ -5,7 +5,7 @@ Surabaya, Indonesia | hendrifebriansyah28@gmail.com | +62 822-4467-3388
 ---
 
 ## RINGKASAN PROFESIONAL
-Software Engineer berorientasi pada hasil dengan pengalaman lebih dari 6 tahun dalam merancang dan mengembangkan aplikasi Web2 dan Web3 berskala besar. Memiliki keahlian mendalam pada ekosistem modern termasuk React 19, React Router v7, TypeScript, Tailwind CSS v4, shadcn/ui, TanStack Query/Table, Laravel, native Android (Kotlin, Jetpack), serta solusi terdesentralisasi (Solidity, TON SDK). Terbukti sukses membangun dashboard monitoring operasional real-time Command Center NTMC Polri, mengoptimalkan aplikasi mobile dengan 1,5 juta+ pengguna (reduksi ukuran 38,6% & crash-free rate 99,42%), serta mengembangkan bot asisten AI Telegram dengan integrasi transaksi kripto. Terbiasa memimpin dalam metodologi Agile, clean architecture, dan kolaborasi tim lintas fungsi.
+Senior Software Engineer dengan 6+ tahun pengalaman merancang dan mengembangkan sistem Web2 dan Web3 berskala besar. Memiliki rekam jejak terbukti membangun dashboard Command Center NTMC Korlantas Polri dengan latensi stream < 500ms, mengembangkan aplikasi Android untuk 1,5 juta+ pengguna aktif (reduksi ukuran 38,6% & crash-free 99,42%), serta membangun agen AI Web3 berkonkurensi tinggi. Menguasai React 19, Next.js 15, TypeScript, Laravel 12, Kotlin, dan Solidity dengan komitmen pada type-safe clean architecture.
 
 ---
 
