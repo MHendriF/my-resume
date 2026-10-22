@@ -39,8 +39,9 @@ node_modules/
 projects/
 **/code/
 
-# Scratch & Temporary Testing
+# Scratch & Job Applications
 scratch/
+applications/
 
 # Security, Credentials & Private Keys
 *.pem
