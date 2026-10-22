@@ -109,6 +109,12 @@
   ],
   "certifications_ai": [
     {
+      "title": "Alibaba Cloud Certified Developer",
+      "issuer": "Alibaba Cloud",
+      "period": "Jul 2023 – Jul 2026",
+      "focus": "Arsitektur Cloud, Pengembangan Aplikasi Cloud, Layanan Komputasi & Kontainer, Deployment Skalabel"
+    },
+    {
       "title": "Belajar Machine Learning untuk Pemula",
       "issuer": "Dicoding Indonesia / Google Developers",
       "period": "Agu 2024 – Agu 2027",

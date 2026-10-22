@@ -48,11 +48,11 @@ Senior Software Engineer dengan 6+ tahun pengalaman dalam pengembangan sistem we
 
 ## KEAHLIAN TEKNIS
 
-- **Computer Vision & OCR:** OpenCV, YOLO (v8/v11), PaddleOCR, Tesseract OCR, TensorFlow / Keras (CNN), Pra-pemrosesan Citra, Deteksi Objek
-- **AI, Machine Learning & Optimasi Edge:** Pemodelan Prediktif, Analisis Statistik, Scikit-learn, Kuantisasi Model (TFLite / ONNX), Inferensi Edge (Perangkat Mobile), Pipeline RAG
-- **Pipeline Data & MLOps:** Python (NumPy, Pandas, Matplotlib), SQL (PostgreSQL, MySQL), MLflow, Apache Airflow, Docker, Linux/SSH, Git / GitHub Actions
-- **API & Integrasi Sistem Operasional:** RESTful & GraphQL API, Integrasi API KoboToolbox, Dashboard Operasional Real-time (WebSockets, SSE), FastAPI, Flask, Redis
-- **Platform Mobile & Edge:** Android Jetpack (Kotlin/Java), Room SQLite, Caching Offline-first, Profiling Memori, Optimasi ProGuard/R8
+- **Deep Learning & Computer Vision:** TensorFlow (2.15+), Keras 3, Convolutional Neural Networks (CNN), OpenCV, ImageDataGenerator, Augmentasi Citra (Pillow/PIL), Callbacks Model (EarlyStopping, ModelCheckpoint), Serialisasi Model .keras & Inferensi CLI
+- **Machine Learning & Pemodelan Prediktif:** Scikit-Learn, Supervised Learning (Decision Tree, SVM/SVC, SVR, Regresi Logistik & Linear), Unsupervised Learning (K-Means Clustering, Elbow Method), PCA (Reduksi Dimensi), Optimasi Hyperparameter (GridSearchCV), K-Fold Cross-Validation
+- **Data Science, Analisis Statistik & Visualisasi:** Python (Pandas, NumPy, SciPy), Statistik Deskriptif & Deteksi Outlier (IQR, Skewness, Varians), Data Wrangling & Rekayasa Fitur, Matplotlib, Seaborn, Dashboard Interaktif (Streamlit, Recharts), Jupyter Notebook, Google Colab
+- **Cloud & Infrastruktur Produksi:** Alibaba Cloud (Certified Developer), Google Cloud Platform (GCE, Cloud Storage), Docker, Linux/SSH, Git / GitHub Actions, RESTful & GraphQL API, SQL (PostgreSQL, MySQL)
+- **Integrasi Edge & Sistem:** Inferensi Mobile Edge (Android Jetpack, Kotlin/Java), Room SQLite, Caching Offline-first, WebSockets Real-Time (Pusher JS), Integrasi Dashboard Operasional Live
 
 ---
 
@@ -67,6 +67,8 @@ Senior Software Engineer dengan 6+ tahun pengalaman dalam pengembangan sistem we
 
 ## SERTIFIKASI
 
+- **Alibaba Cloud Certified Developer** – Alibaba Cloud *(Jul 2023 – Jul 2026)*
+  *Kompetensi Kunci: Arsitektur Cloud, Pengembangan Aplikasi Cloud, Layanan Komputasi & Kontainer, Deployment Skalabel*
 - **Belajar Machine Learning untuk Pemula** – Dicoding Indonesia / Google Developers *(Agu 2024 – Agu 2027)*
   *Kompetensi Kunci: Supervised & Unsupervised Learning, SVM, Neural Network, Klasifikasi Citra CNN, TensorFlow*
 - **Belajar Dasar AI** – Dicoding Indonesia / Google Cloud Partner *(Agu 2024 – Agu 2027)*

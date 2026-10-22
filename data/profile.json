@@ -116,6 +116,12 @@
   ],
   "certifications_ai": [
     {
+      "title": "Alibaba Cloud Certified Developer",
+      "issuer": "Alibaba Cloud",
+      "period": "Jul 2023 – Jul 2026",
+      "focus": "Cloud Architecture, Cloud Application Development, Container & Compute Services, Scalable Deployment"
+    },
+    {
       "title": "Belajar Machine Learning untuk Pemula",
       "issuer": "Dicoding Indonesia / Google Developers",
       "period": "Aug 2024 – Aug 2027",

@@ -48,11 +48,11 @@ Senior Software Engineer with 6+ years of experience building high-performance w
 
 ## TECHNICAL SKILLS
 
-- **Computer Vision & OCR:** OpenCV, YOLO (v8/v11), PaddleOCR, Tesseract OCR, TensorFlow / Keras (CNN), Image Preprocessing, Object Detection
-- **AI, ML & Edge Optimization:** Predictive Modeling, Statistical Analysis, Scikit-learn, Model Quantization (TFLite / ONNX), Edge Inference (Android / Mobile Devices), RAG Pipelines
-- **Data Pipelines & MLOps:** Python (NumPy, Pandas, Matplotlib), SQL (PostgreSQL, MySQL), MLflow, Apache Airflow, Docker, Linux/SSH, Git / GitHub Actions
-- **APIs & Operational Integration:** RESTful & GraphQL APIs, KoboToolbox API Integration, Live Operational Dashboards (WebSockets, SSE), FastAPI, Flask, Redis
-- **Mobile & Edge Platform:** Android Jetpack (Kotlin/Java), Room SQLite, Offline-first Caching, Memory Leak Profiling, ProGuard/R8 Optimization
+- **Deep Learning & Computer Vision:** TensorFlow (2.15+), Keras 3, Convolutional Neural Networks (CNN), OpenCV, ImageDataGenerator, Image Augmentation (Pillow/PIL), Callbacks (EarlyStopping, ModelCheckpoint), .keras Model Serialization & CLI Inference
+- **Machine Learning & Predictive Modeling:** Scikit-Learn, Supervised Learning (Decision Tree, SVM/SVC, SVR, Logistic & Linear Regression), Unsupervised Learning (K-Means Clustering, Elbow Method), PCA (Dimensionality Reduction), Hyperparameter Tuning (GridSearchCV), K-Fold Cross-Validation
+- **Data Science, Statistics & Visualization:** Python (Pandas, NumPy, SciPy), Descriptive Statistics & Outlier Detection (IQR, Skewness, Variance), Data Wrangling & Feature Engineering, Matplotlib, Seaborn, Interactive Dashboards (Streamlit, Recharts), Jupyter Notebook, Google Colab
+- **Cloud & Production Environments:** Alibaba Cloud (Certified Developer), Google Cloud Platform (GCE, Cloud Storage), Docker, Linux/SSH, Git / GitHub Actions, RESTful & GraphQL APIs, SQL (PostgreSQL, MySQL)
+- **Edge & Systems Integration:** Mobile Edge Inference (Android Jetpack, Kotlin/Java), Room SQLite, Offline-first Caching, Real-Time WebSockets (Pusher JS), Live Operational Dashboard Integration
 
 ---
 
@@ -67,6 +67,8 @@ Senior Software Engineer with 6+ years of experience building high-performance w
 
 ## CERTIFICATIONS
 
+- **Alibaba Cloud Certified Developer** – Alibaba Cloud *(Jul 2023 – Jul 2026)*
+  *Core Focus: Cloud Architecture, Cloud Application Development, Container & Compute Services, Scalable Deployment*
 - **Belajar Machine Learning untuk Pemula** – Dicoding Indonesia / Google Developers *(Aug 2024 – Aug 2027)*
   *Core Focus: Supervised & Unsupervised Learning, SVM, Neural Networks, CNN Image Classification, TensorFlow*
 - **Belajar Dasar AI** – Dicoding Indonesia / Google Cloud Partner *(Aug 2024 – Aug 2027)*

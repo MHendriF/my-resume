@@ -89,24 +89,24 @@
   ],
   "ai": [
     {
-      "category": "Computer Vision & OCR",
-      "items": "OpenCV, YOLO (v8/v11), PaddleOCR, Tesseract OCR, TensorFlow / Keras (CNN), Pra-pemrosesan Citra, Deteksi Objek"
+      "category": "Deep Learning & Computer Vision",
+      "items": "TensorFlow (2.15+), Keras 3, Convolutional Neural Networks (CNN), OpenCV, ImageDataGenerator, Augmentasi Citra (Pillow/PIL), Callbacks Model (EarlyStopping, ModelCheckpoint), Serialisasi Model .keras & Inferensi CLI"
     },
     {
-      "category": "AI, Machine Learning & Optimasi Edge",
-      "items": "Pemodelan Prediktif, Analisis Statistik, Scikit-learn, Kuantisasi Model (TFLite / ONNX), Inferensi Edge (Perangkat Mobile), Pipeline RAG"
+      "category": "Machine Learning & Pemodelan Prediktif",
+      "items": "Scikit-Learn, Supervised Learning (Decision Tree, SVM/SVC, SVR, Regresi Logistik & Linear), Unsupervised Learning (K-Means Clustering, Elbow Method), PCA (Reduksi Dimensi), Optimasi Hyperparameter (GridSearchCV), K-Fold Cross-Validation"
     },
     {
-      "category": "Pipeline Data & MLOps",
-      "items": "Python (NumPy, Pandas, Matplotlib), SQL (PostgreSQL, MySQL), MLflow, Apache Airflow, Docker, Linux/SSH, Git / GitHub Actions"
+      "category": "Data Science, Analisis Statistik & Visualisasi",
+      "items": "Python (Pandas, NumPy, SciPy), Statistik Deskriptif & Deteksi Outlier (IQR, Skewness, Varians), Data Wrangling & Rekayasa Fitur, Matplotlib, Seaborn, Dashboard Interaktif (Streamlit, Recharts), Jupyter Notebook, Google Colab"
     },
     {
-      "category": "API & Integrasi Sistem Operasional",
-      "items": "RESTful & GraphQL API, Integrasi API KoboToolbox, Dashboard Operasional Real-time (WebSockets, SSE), FastAPI, Flask, Redis"
+      "category": "Cloud & Infrastruktur Produksi",
+      "items": "Alibaba Cloud (Certified Developer), Google Cloud Platform (GCE, Cloud Storage), Docker, Linux/SSH, Git / GitHub Actions, RESTful & GraphQL API, SQL (PostgreSQL, MySQL)"
     },
     {
-      "category": "Platform Mobile & Edge",
-      "items": "Android Jetpack (Kotlin/Java), Room SQLite, Caching Offline-first, Profiling Memori, Optimasi ProGuard/R8"
+      "category": "Integrasi Edge & Sistem",
+      "items": "Inferensi Mobile Edge (Android Jetpack, Kotlin/Java), Room SQLite, Caching Offline-first, WebSockets Real-Time (Pusher JS), Integrasi Dashboard Operasional Live"
     }
   ]
 }

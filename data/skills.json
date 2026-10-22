@@ -89,24 +89,24 @@
   ],
   "ai": [
     {
-      "category": "Computer Vision & OCR",
-      "items": "OpenCV, YOLO (v8/v11), PaddleOCR, Tesseract OCR, TensorFlow / Keras (CNN), Image Preprocessing, Object Detection"
+      "category": "Deep Learning & Computer Vision",
+      "items": "TensorFlow (2.15+), Keras 3, Convolutional Neural Networks (CNN), OpenCV, ImageDataGenerator, Image Augmentation (Pillow/PIL), Callbacks (EarlyStopping, ModelCheckpoint), .keras Model Serialization & CLI Inference"
     },
     {
-      "category": "AI, ML & Edge Optimization",
-      "items": "Predictive Modeling, Statistical Analysis, Scikit-learn, Model Quantization (TFLite / ONNX), Edge Inference (Android / Mobile Devices), RAG Pipelines"
+      "category": "Machine Learning & Predictive Modeling",
+      "items": "Scikit-Learn, Supervised Learning (Decision Tree, SVM/SVC, SVR, Logistic & Linear Regression), Unsupervised Learning (K-Means Clustering, Elbow Method), PCA (Dimensionality Reduction), Hyperparameter Tuning (GridSearchCV), K-Fold Cross-Validation"
     },
     {
-      "category": "Data Pipelines & MLOps",
-      "items": "Python (NumPy, Pandas, Matplotlib), SQL (PostgreSQL, MySQL), MLflow, Apache Airflow, Docker, Linux/SSH, Git / GitHub Actions"
+      "category": "Data Science, Statistics & Visualization",
+      "items": "Python (Pandas, NumPy, SciPy), Descriptive Statistics & Outlier Detection (IQR, Skewness, Variance), Data Wrangling & Feature Engineering, Matplotlib, Seaborn, Interactive Dashboards (Streamlit, Recharts), Jupyter Notebook, Google Colab"
     },
     {
-      "category": "APIs & Operational Integration",
-      "items": "RESTful & GraphQL APIs, KoboToolbox API Integration, Live Operational Dashboards (WebSockets, SSE), FastAPI, Flask, Redis"
+      "category": "Cloud & Production Environments",
+      "items": "Alibaba Cloud (Certified Developer), Google Cloud Platform (GCE, Cloud Storage), Docker, Linux/SSH, Git / GitHub Actions, RESTful & GraphQL APIs, SQL (PostgreSQL, MySQL)"
     },
     {
-      "category": "Mobile & Edge Platform",
-      "items": "Android Jetpack (Kotlin/Java), Room SQLite, Offline-first Caching, Memory Leak Profiling, ProGuard/R8 Optimization"
+      "category": "Edge & Systems Integration",
+      "items": "Mobile Edge Inference (Android Jetpack, Kotlin/Java), Room SQLite, Offline-first Caching, Real-Time WebSockets (Pusher JS), Live Operational Dashboard Integration"
     }
   ]
 }
