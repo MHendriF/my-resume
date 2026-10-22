@@ -69,12 +69,12 @@ Senior Android Engineer with 6+ years of experience engineering robust, high-sca
 
 - **Belajar Fundamental Aplikasi Web dengan React** – Dicoding Indonesia *(Apr 2024 – Apr 2027)*
   *Core Focus: Single Page Application (SPA), React.js, Tailwind CSS, Vite*
-- **Belajar Analisis Data dengan Python** – Dicoding Indonesia *(Jan 2024 – Jan 2027)*
-  *Core Focus: Data Wrangling, Exploratory Data Analysis, Visualization*
+- **Belajar Machine Learning untuk Pemula** – Dicoding Indonesia / Google Developers *(Aug 2024 – Aug 2027)*
+  *Core Focus: Supervised Learning, Neural Networks, CNN Image Classification, TensorFlow*
+- **Belajar Analisis Data dengan Python** – Dicoding Indonesia / Google Developers *(Jan 2024 – Jan 2027)*
+  *Core Focus: Descriptive Statistics, Data Wrangling, Exploratory Data Analysis (EDA), Streamlit*
 - **Menjadi Android Developer Expert (MADE)** – Dicoding Indonesia *(Jan 2021 – Jan 2024)*
   *Core Focus: Clean Architecture, MVVM Design Pattern, Room Database, App Security & Certificate Pinning*
-- **Belajar Android Jetpack Pro** – Dicoding Indonesia *(Dec 2020 – Dec 2023)*
-  *Core Focus: Android Architecture Components, LiveData, ViewModel, Room Library*
 
 ---
 

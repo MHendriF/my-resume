@@ -86,5 +86,27 @@
       "category": "Payments & DeFi",
       "items": "Multichain Payments (TON, USDT, Telegram Stars), DeFi Interaction, NFT Minting & Gateways"
     }
+  ],
+  "ai": [
+    {
+      "category": "Computer Vision & OCR",
+      "items": "OpenCV, YOLO (v8/v11), PaddleOCR, Tesseract OCR, TensorFlow / Keras (CNN), Image Preprocessing, Object Detection"
+    },
+    {
+      "category": "AI, ML & Edge Optimization",
+      "items": "Predictive Modeling, Statistical Analysis, Scikit-learn, Model Quantization (TFLite / ONNX), Edge Inference (Android / Mobile Devices), RAG Pipelines"
+    },
+    {
+      "category": "Data Pipelines & MLOps",
+      "items": "Python (NumPy, Pandas, Matplotlib), SQL (PostgreSQL, MySQL), MLflow, Apache Airflow, Docker, Linux/SSH, Git / GitHub Actions"
+    },
+    {
+      "category": "APIs & Operational Integration",
+      "items": "RESTful & GraphQL APIs, KoboToolbox API Integration, Live Operational Dashboards (WebSockets, SSE), FastAPI, Flask, Redis"
+    },
+    {
+      "category": "Mobile & Edge Platform",
+      "items": "Android Jetpack (Kotlin/Java), Room SQLite, Offline-first Caching, Memory Leak Profiling, ProGuard/R8 Optimization"
+    }
   ]
 }

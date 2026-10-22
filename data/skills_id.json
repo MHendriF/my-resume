@@ -86,5 +86,27 @@
       "category": "Smart Contract Tooling",
       "items": "Hardhat, Remix, Web3.js, Etherscan API, MetaMask, Tonkeeper, Telegram Stars / USDT Payments"
     }
+  ],
+  "ai": [
+    {
+      "category": "Computer Vision & OCR",
+      "items": "OpenCV, YOLO (v8/v11), PaddleOCR, Tesseract OCR, TensorFlow / Keras (CNN), Pra-pemrosesan Citra, Deteksi Objek"
+    },
+    {
+      "category": "AI, Machine Learning & Optimasi Edge",
+      "items": "Pemodelan Prediktif, Analisis Statistik, Scikit-learn, Kuantisasi Model (TFLite / ONNX), Inferensi Edge (Perangkat Mobile), Pipeline RAG"
+    },
+    {
+      "category": "Pipeline Data & MLOps",
+      "items": "Python (NumPy, Pandas, Matplotlib), SQL (PostgreSQL, MySQL), MLflow, Apache Airflow, Docker, Linux/SSH, Git / GitHub Actions"
+    },
+    {
+      "category": "API & Integrasi Sistem Operasional",
+      "items": "RESTful & GraphQL API, Integrasi API KoboToolbox, Dashboard Operasional Real-time (WebSockets, SSE), FastAPI, Flask, Redis"
+    },
+    {
+      "category": "Platform Mobile & Edge",
+      "items": "Android Jetpack (Kotlin/Java), Room SQLite, Caching Offline-first, Profiling Memori, Optimasi ProGuard/R8"
+    }
   ]
 }

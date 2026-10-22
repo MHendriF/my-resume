@@ -1,0 +1,14 @@
+{
+  "target_id": "ai_id",
+  "display_title": "AI Engineer (Bahasa Indonesia)",
+  "output_filename": "Resume_AI_Engineer_ID",
+  "lang": "id",
+  "summary_key": "ai",
+  "skills_key": "ai",
+  "experience_order": [
+    "kipley",
+    "lapantiga",
+    "aku-pintar",
+    "qira"
+  ]
+}

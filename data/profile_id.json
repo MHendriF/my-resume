@@ -16,7 +16,8 @@
     "general": "Senior Software Engineer dengan 6+ tahun pengalaman merancang dan mengembangkan sistem Web2 dan Web3 berskala besar. Memiliki rekam jejak terbukti membangun dashboard Command Center NTMC Korlantas Polri dengan latensi stream < 500ms, mengembangkan aplikasi Android untuk 1,5 juta+ pengguna aktif (reduksi ukuran 38,6% & crash-free 99,42%), serta membangun agen AI Web3 berkonkurensi tinggi. Menguasai React 19, Next.js 15, TypeScript, Laravel 12, Kotlin, dan Solidity dengan komitmen pada type-safe clean architecture.",
     "frontend": "Senior Frontend Engineer dengan 6+ tahun pengalaman membangun aplikasi web real-time berkinerja tinggi. Berpengalaman memimpin arsitektur antarmuka Command Center NTMC Polri menggunakan React 19, React Router v7, Tailwind CSS v4, dan Pusher WebSockets (< 500ms latensi). Spesialis dalam ekosistem TypeScript, TanStack Query/Table, Next.js 15, dan integrasi Web3 dengan penekanan pada performa optimal dan reliabilitas antarmuka.",
     "android": "Senior Android Engineer dengan 6+ tahun pengalaman mengembangkan aplikasi mobile skala besar menggunakan Kotlin, Java, dan Android Jetpack. Memimpin pengembangan native Android platform edukasi dengan 1,5 juta+ pengguna aktif (rating 4.42/5.00), mereduksi ukuran APK sebesar 38,6% (69,5 MB ke 42,7 MB), dan mempertahankan crash-free rate 99,42%+. Tersertifikasi Android Developer Expert (MADE) dengan keahlian mendalam pada Clean Architecture, MVVM, dan Room DB.",
-    "web3": "Full Stack Web3 & AI Engineer dengan pengalaman luas dalam pengembangan aplikasi terdesentralisasi (dApp), smart contract Ethereum (Solidity), dan Telegram Mini Apps (TMA). Berpengalaman di Kipley Pte. Ltd. mengembangkan asisten AI Telegram berkonkurensi tinggi dengan integrasi multi-chain kripto (TON, USDT, Stars) dan menghubungkan frontend Next.js 15 dengan protokol DeFi/NFT dengan keandalan transaksi 100%."
+    "web3": "Full Stack Web3 & AI Engineer dengan pengalaman luas dalam pengembangan aplikasi terdesentralisasi (dApp), smart contract Ethereum (Solidity), dan Telegram Mini Apps (TMA). Berpengalaman di Kipley Pte. Ltd. mengembangkan asisten AI Telegram berkonkurensi tinggi dengan integrasi multi-chain kripto (TON, USDT, Stars) dan menghubungkan frontend Next.js 15 dengan protokol DeFi/NFT dengan keandalan transaksi 100%.",
+    "ai": "Senior Software Engineer dengan 6+ tahun pengalaman dalam pengembangan sistem web, mobile, dan backend berkinerja tinggi, didukung pemahaman praktis pada alur kerja AI/ML. Memiliki rekam jejak terbukti membangun dashboard Command Center NTMC Korlantas Polri (< 500ms latensi streaming), mengoptimalkan aplikasi Android native untuk 1,5 juta+ pengguna aktif (reduksi ukuran 38,6% & crash-free 99,42%), serta mengintegrasikan fitur bertenaga AI termasuk asisten percakapan dan pipeline basis pengetahuan. Menguasai Python, SQL, Docker, Linux, dan Git, serta memiliki sertifikasi Machine Learning dan Analisis Data dari Dicoding Indonesia."
   },
   "experiences": [
     {
@@ -104,6 +105,32 @@
       "issuer": "Dicoding Indonesia (ID: 0725547)",
       "period": "2020",
       "focus": "Progressive Web Apps (PWA), Web Components, Performance & Webpack"
+    }
+  ],
+  "certifications_ai": [
+    {
+      "title": "Belajar Machine Learning untuk Pemula",
+      "issuer": "Dicoding Indonesia / Google Developers",
+      "period": "Agu 2024 – Agu 2027",
+      "focus": "Supervised & Unsupervised Learning, SVM, Neural Network, Klasifikasi Citra CNN, TensorFlow"
+    },
+    {
+      "title": "Belajar Dasar AI",
+      "issuer": "Dicoding Indonesia / Google Cloud Partner",
+      "period": "Agu 2024 – Agu 2027",
+      "focus": "Fondasi Artificial Intelligence, Prinsip Machine Learning, Konsep Deep Learning"
+    },
+    {
+      "title": "Belajar Analisis Data dengan Python",
+      "issuer": "Dicoding Indonesia / Google Developers",
+      "period": "Jan 2024 – Jan 2027",
+      "focus": "Statistik Deskriptif, Data Wrangling, Exploratory Data Analysis (EDA), Visualisasi Data, Streamlit"
+    },
+    {
+      "title": "Belajar Dasar Google Cloud",
+      "issuer": "Dicoding Indonesia / Google Cloud Partner",
+      "period": "Agu 2024 – Agu 2027",
+      "focus": "Google Cloud Platform (GCP), Compute Engine, Cloud Storage, VPC, Cloud IAM & Keamanan"
     }
   ],
   "languages": [

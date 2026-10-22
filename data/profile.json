@@ -16,7 +16,8 @@
     "general": "Results-driven Senior Software Engineer with 6+ years of experience architecting high-scale Web2 and Web3 systems. Demonstrated track record building real-time mission-critical dashboards for NTMC Korlantas Polri (< 500ms streaming latency), scaling native Android platforms to 1.5M+ active users (38.6% APK reduction, 99.42% crash-free rate), and developing autonomous Web3 AI agents. Deeply proficient in React 19, Next.js 15, TypeScript, Laravel 12, Kotlin, and Solidity, with a strong focus on type-safe clean architecture.",
     "frontend": "Senior Frontend Engineer with 6+ years of experience building high-performance, real-time web applications. Proven success leading the frontend architecture for the NTMC Traffic Command Center using React 19, React Router v7, Tailwind CSS v4, and Pusher WebSockets (< 500ms event latency). Specialized in modern TypeScript ecosystems, TanStack Query/Table, Next.js 15, and Web3 UI integration, committed to pixel-perfect performance and type-safe architecture.",
     "android": "Senior Android Engineer with 6+ years of experience engineering robust, high-scale mobile applications using Kotlin, Java, and Android Jetpack. Spearheaded native Android development for an education platform with 1.5M+ active users (4.42/5.00 Play Store rating), reducing APK size by 38.6% (69.5 MB to 42.7 MB) and maintaining 99.42%+ crash-free sessions. Certified Android Developer Expert (MADE) specialized in Clean Architecture, MVVM, Coroutines, and Room DB.",
-    "web3": "Full Stack Web3 & AI Engineer with extensive experience building decentralized applications (dApps), Ethereum smart contracts (Solidity), and Telegram Mini Apps (TMA). Proven track record at Kipley Pte. Ltd. engineering high-concurrency Telegram AI agents with multi-chain crypto settlement (TON, USDT, Stars) and integrating Next.js 15 frontends with DeFi/NFT protocols via Wagmi and Ethers.js with zero-failure transaction reliability."
+    "web3": "Full Stack Web3 & AI Engineer with extensive experience building decentralized applications (dApps), Ethereum smart contracts (Solidity), and Telegram Mini Apps (TMA). Proven track record at Kipley Pte. Ltd. engineering high-concurrency Telegram AI agents with multi-chain crypto settlement (TON, USDT, Stars) and integrating Next.js 15 frontends with DeFi/NFT protocols via Wagmi and Ethers.js with zero-failure transaction reliability.",
+    "ai": "Senior Software Engineer with 6+ years of experience building high-performance web, mobile, and backend systems, with practical background in AI/ML workflows. Proven track record building real-time mission-critical dashboards for NTMC Korlantas Polri (< 500ms streaming latency), optimizing native Android applications for 1.5M+ active users (38.6% size reduction, 99.42% crash-free rate), and integrating AI-powered features including conversational agents and knowledge base pipelines. Proficient in Python, SQL, Docker, Linux, and Git, with certifications in Machine Learning and Data Analysis from Dicoding Indonesia."
   },
   "experiences": [
     {
@@ -95,22 +96,48 @@
       "focus": "Single Page Application (SPA), React.js, Tailwind CSS, Vite"
     },
     {
+      "title": "Belajar Machine Learning untuk Pemula",
+      "issuer": "Dicoding Indonesia / Google Developers",
+      "period": "Aug 2024 – Aug 2027",
+      "focus": "Supervised Learning, Neural Networks, CNN Image Classification, TensorFlow"
+    },
+    {
       "title": "Belajar Analisis Data dengan Python",
-      "issuer": "Dicoding Indonesia",
+      "issuer": "Dicoding Indonesia / Google Developers",
       "period": "Jan 2024 – Jan 2027",
-      "focus": "Data Wrangling, Exploratory Data Analysis, Visualization"
+      "focus": "Descriptive Statistics, Data Wrangling, Exploratory Data Analysis (EDA), Streamlit"
     },
     {
       "title": "Menjadi Android Developer Expert (MADE)",
       "issuer": "Dicoding Indonesia",
       "period": "Jan 2021 – Jan 2024",
       "focus": "Clean Architecture, MVVM Design Pattern, Room Database, App Security & Certificate Pinning"
+    }
+  ],
+  "certifications_ai": [
+    {
+      "title": "Belajar Machine Learning untuk Pemula",
+      "issuer": "Dicoding Indonesia / Google Developers",
+      "period": "Aug 2024 – Aug 2027",
+      "focus": "Supervised & Unsupervised Learning, SVM, Neural Networks, CNN Image Classification, TensorFlow"
     },
     {
-      "title": "Belajar Android Jetpack Pro",
-      "issuer": "Dicoding Indonesia",
-      "period": "Dec 2020 – Dec 2023",
-      "focus": "Android Architecture Components, LiveData, ViewModel, Room Library"
+      "title": "Belajar Dasar AI",
+      "issuer": "Dicoding Indonesia / Google Cloud Partner",
+      "period": "Aug 2024 – Aug 2027",
+      "focus": "Artificial Intelligence Fundamentals, Machine Learning Concepts, Deep Learning Principles"
+    },
+    {
+      "title": "Belajar Analisis Data dengan Python",
+      "issuer": "Dicoding Indonesia / Google Developers",
+      "period": "Jan 2024 – Jan 2027",
+      "focus": "Descriptive Statistics, Data Wrangling, Exploratory Data Analysis (EDA), Data Visualization, Streamlit"
+    },
+    {
+      "title": "Belajar Dasar Google Cloud",
+      "issuer": "Dicoding Indonesia / Google Cloud Partner",
+      "period": "Aug 2024 – Aug 2027",
+      "focus": "Google Cloud Platform (GCP), Compute Engine, Cloud Storage, VPC, Cloud IAM & Security"
     }
   ],
   "languages": [

@@ -1,0 +1,8 @@
+{
+  "target_id": "ai",
+  "display_title": "AI Engineer",
+  "summary_key": "ai",
+  "skills_key": "ai",
+  "experience_order": ["kipley", "lapantiga", "aku-pintar", "qira"],
+  "output_filename": "Resume_AI_Engineer"
+}

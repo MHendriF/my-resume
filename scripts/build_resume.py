@@ -284,10 +284,11 @@ def build_docx(profile, skills, template, output_docx_path):
     for eid in ordered_ids:
         if eid in exp_map:
             exp = exp_map[eid]
-            role_header = f"{exp['role']} | {exp['company']} ({exp['location']})"
+            role_text = exp.get(f'role_{summary_key}', exp['role'])
+            role_header = f"{role_text} | {exp['company']} ({exp['location']})"
             add_table_header(role_header, exp['period'])
             
-            bullets = exp.get('bullets', [])
+            bullets = exp.get(f'bullets_{summary_key}', exp.get('bullets', []))
             for idx, bullet in enumerate(bullets):
                 add_bullet(bullet, is_first=(idx == 0), is_last=(idx == len(bullets) - 1))
 
@@ -329,7 +330,8 @@ def build_docx(profile, skills, template, output_docx_path):
 
     # 6. Certifications
     add_heading(titles['certifications'])
-    for cert in profile.get('certifications', []):
+    target_certs = profile.get(f'certifications_{summary_key}', profile.get('certifications', []))
+    for cert in target_certs:
         add_table_header(f"{cert['title']} | {cert['issuer']}", cert['period'])
         if 'focus' in cert:
             p_cert_det = doc.add_paragraph()
@@ -387,9 +389,11 @@ def build_markdown(profile, skills, template, output_md_path):
     for eid in ordered_ids:
         if eid in exp_map:
             exp = exp_map[eid]
-            lines.append(f"### {exp['role']} | {exp['company']} ({exp['location']})")
+            role_text = exp.get(f'role_{summary_key}', exp['role'])
+            lines.append(f"### {role_text} | {exp['company']} ({exp['location']})")
             lines.append(f"*{exp['period']}*\n")
-            for b in exp.get('bullets', []):
+            bullets = exp.get(f'bullets_{summary_key}', exp.get('bullets', []))
+            for b in bullets:
                 lines.append(f"- {b}")
             lines.append("")
 
@@ -411,7 +415,8 @@ def build_markdown(profile, skills, template, output_md_path):
 
     lines.append("---\n")
     lines.append(f"## {titles['certifications']}\n")
-    for cert in profile.get('certifications', []):
+    target_certs = profile.get(f'certifications_{summary_key}', profile.get('certifications', []))
+    for cert in target_certs:
         lines.append(f"- **{cert['title']}** – {cert['issuer']} *({cert['period']})*")
         if 'focus' in cert:
             focus_label = "Kompetensi Kunci" if lang == 'id' else "Core Focus"
@@ -488,9 +493,9 @@ def main():
     if args.target == 'all':
         targets = []
         if args.lang in ['en', 'all']:
-            targets.extend(['general', 'frontend', 'android', 'web3'])
+            targets.extend(['general', 'frontend', 'android', 'web3', 'ai'])
         if args.lang in ['id', 'all']:
-            targets.extend(['general_id', 'frontend_id', 'android_id', 'web3_id'])
+            targets.extend(['general_id', 'frontend_id', 'android_id', 'web3_id', 'ai_id'])
             
         for t in targets:
             process_target(t, profiles, all_skills)
