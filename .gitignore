@@ -35,5 +35,19 @@ node_modules/
 **/.env.local
 **/.env.*.local
 
-# Ignore external code clones in projects (they have their own standalone git repositories)
+# Ignore external code clones and reference projects
+projects/
 **/code/
+
+# Scratch & Temporary Testing
+scratch/
+
+# Security, Credentials & Private Keys
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+.env
+.env.*
+!.env.example
